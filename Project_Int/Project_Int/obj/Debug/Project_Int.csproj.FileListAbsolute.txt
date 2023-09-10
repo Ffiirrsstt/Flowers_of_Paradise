@@ -1,0 +1,10 @@
+D:\มหาลัย\cpe263\Project_Int\Project_Int\bin\Debug\Project_Int.exe.config
+D:\มหาลัย\cpe263\Project_Int\Project_Int\bin\Debug\Project_Int.exe
+D:\มหาลัย\cpe263\Project_Int\Project_Int\bin\Debug\Project_Int.pdb
+D:\มหาลัย\cpe263\Project_Int\Project_Int\obj\Debug\Project_Int.csproj.AssemblyReference.cache
+D:\มหาลัย\cpe263\Project_Int\Project_Int\obj\Debug\Project_Int.Form.resources
+D:\มหาลัย\cpe263\Project_Int\Project_Int\obj\Debug\Project_Int.Properties.Resources.resources
+D:\มหาลัย\cpe263\Project_Int\Project_Int\obj\Debug\Project_Int.csproj.GenerateResource.cache
+D:\มหาลัย\cpe263\Project_Int\Project_Int\obj\Debug\Project_Int.csproj.CoreCompileInputs.cache
+D:\มหาลัย\cpe263\Project_Int\Project_Int\obj\Debug\Project_Int.exe
+D:\มหาลัย\cpe263\Project_Int\Project_Int\obj\Debug\Project_Int.pdb

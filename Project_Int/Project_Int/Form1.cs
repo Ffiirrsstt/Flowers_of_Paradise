@@ -15,7 +15,6 @@ namespace Project_Int
     public partial class Form : System.Windows.Forms.Form
     {
 
-        //string forimg = "1-2.jpeg";
         string[][] forimg = { 
             new[] { "2-1.jpg", "3-1.jpg", "6-1.jpg", "7-1.jpg" },
             new[] {  "9-1.jpeg", "10-1.jpeg", "11-1.jpeg", "12-1.jpeg" },
@@ -41,23 +40,40 @@ namespace Project_Int
         int CountPage, indexselect;
         double numberCal;
 
+        //แสดงภาพในรูปภาพสำหรับหน้ารูปภาพและหนาล็อกอิน
         private void dataFlower(object sender, EventArgs e)
         {
-            pictureBox1.ImageLocation = Path.Combine(Application.StartupPath, "img", forimg[CountPage][0]);
-            pictureBox2.ImageLocation = Path.Combine(Application.StartupPath, "img", forimg[CountPage][1]);
-            pictureBox3.ImageLocation = Path.Combine(Application.StartupPath, "img", forimg[CountPage][2]);
-            pictureBox4.ImageLocation = Path.Combine(Application.StartupPath, "img", forimg[CountPage][3]);
-            nameflower1.Text = forname[CountPage][0];
-            nameflower2.Text = forname[CountPage][1];
-            nameflower3.Text = forname[CountPage][2];
-            nameflower4.Text = forname[CountPage][3];
+            string[] forimgData = new string[4], fornameData = new string[4];
+            for (int forcount = 0; forcount <= 3; forcount++)
+            {
+                forimgData[forcount] = Path.Combine(Application.StartupPath, "img", forimg[CountPage][forcount]);
+                fornameData[forcount] = forname[CountPage][forcount];
+            }
+            //login
+            imglog1.ImageLocation = forimgData[0];
+            imglog2.ImageLocation = forimgData[1];
+            imglog3.ImageLocation = forimgData[2];
+            imglog4.ImageLocation = forimgData[3];
+            nameflowerlog1.Text = fornameData[0];
+            nameflowerlog2.Text = fornameData[1];
+            nameflowerlog3.Text = fornameData[2];
+            nameflowerlog4.Text = fornameData[3];
+            //img
+            img1.ImageLocation = forimgData[0];
+            img2.ImageLocation = forimgData[1];
+            img3.ImageLocation = forimgData[2];
+            img4.ImageLocation = forimgData[3];
+            nameflower1.Text = fornameData[0];
+            nameflower2.Text = fornameData[1];
+            nameflower3.Text = fornameData[2];
+            nameflower4.Text = fornameData[3];
         }
 
         private void dataDetail(object sender, EventArgs e)
         {
-            Flowers.TabPages.Add(tabPage3);
+            Flowers.TabPages.Add(detailPage);
 
-            Flowers.SelectedTab = Flowers.TabPages[3];
+            Flowers.SelectedTab = Flowers.TabPages[6];
 
             detailImg.ImageLocation = Path.Combine(Application.StartupPath, "img", forimg[CountPage][indexselect]);
             head.Text = forname[CountPage][indexselect];
@@ -77,6 +93,82 @@ namespace Project_Int
 
         }
 
+        private void reduce(object sender, EventArgs e)
+        {
+            CountPage--;
+            dataFlower(sender, e);
+            if (CountPage == 0)
+            {
+                //login
+                btnReduce.Hide();
+                btnIncrease.Show();
+                //img
+                btn_reduce.Hide();
+                btn_increase.Show();
+            }
+
+        }
+
+        private void increase(object sender, EventArgs e)
+        {
+            CountPage++;
+            dataFlower(sender, e);
+            if (CountPage != 0)
+            {
+                //login
+                btnReduce.Show();
+                btnIncrease.Hide();
+                //img
+                btn_reduce.Show();
+                btn_increase.Hide();
+            }
+        }
+
+        private void imgset1(object sender, EventArgs e)
+        {
+            indexselect = 0;
+            dataDetail(sender, e);
+        }
+        private void imgset2(object sender, EventArgs e)
+        {
+            indexselect = 1;
+            dataDetail(sender, e);
+        }
+        private void imgset3(object sender, EventArgs e)
+        {
+            indexselect = 2;
+            dataDetail(sender, e);
+        }
+        private void imgset4(object sender, EventArgs e)
+        {
+            indexselect = 3;
+            dataDetail(sender, e);
+        }
+
+        private void loadImg(object sender, EventArgs e)
+        {
+            Flowers.TabPages.Remove(detailPage);
+            CountPage = 0;
+            dataFlower(sender, e);
+            //login
+            btnReduce.Hide();
+            btnIncrease.Show();
+            //img
+            btn_reduce.Hide();
+            btn_increase.Show();
+        }
+
+        private void defultRemoveTab(object sender, EventArgs e)
+        {
+            Flowers.TabPages.Remove(detailPage);
+            Flowers.TabPages.Remove(windowSignIn);
+            Flowers.TabPages.Remove(windowSignUp);
+        }
+        private void callWindow(object sender, EventArgs e)
+        {
+            Flowers.SelectedTab = Flowers.TabPages[6];
+        }
+
         public Form()
 
         {
@@ -85,42 +177,56 @@ namespace Project_Int
 
         private void Form_Load(object sender, EventArgs e)
         {
-            Flowers.TabPages.Remove(tabPage3);
+            defultRemoveTab(sender, e);
+            loadImg(sender, e);//ถ้าไม่ได้มีต้องการให้หน้าของสินค้าเริ่มต้นที่สินค้าชิ้นแรก แต่ถ้าต้องการให้เริ่มที่สินค้าชิ้นแรกให้ใส่ที่ tab แทน
+        }
+        private void tabControl_Click(object sender, EventArgs e)
+        {
+            defultRemoveTab(sender, e);
         }
 
-        private void tabPage1_Click(object sender, EventArgs e)
-        {
-            Flowers.TabPages.Remove(tabPage3);
-        }
-        private void tabPage2_Click(object sender, EventArgs e)
-        {
-            Flowers.TabPages.Remove(tabPage3);
-            CountPage = 0;
-            btn_reduce.Hide();
-            btn_increase.Show();
-            dataFlower(sender,e);
-            
-        }
-
+        //ปุ่มเปลี่ยนหน้าสำหรับรูปภาพ
         private void btn_increase_Click(object sender, EventArgs e)
         {
-            CountPage++;
-            dataFlower(sender, e);
-            if (CountPage != 0) {
-             btn_reduce.Show();
-             btn_increase.Hide();
-            }
+            increase(sender, e);
         }
 
         private void btn_reduce_Click(object sender, EventArgs e)
         {
-            CountPage--;
-            dataFlower(sender, e);
-            if (CountPage == 0){
-             btn_reduce.Hide();
-             btn_increase.Show();
-            }
+            reduce(sender, e);
+        }
 
+        private void btnIncrease_Click(object sender, EventArgs e)
+        {
+            increase(sender, e);
+        }
+
+        private void btnReduce_Click(object sender, EventArgs e)
+        {
+            reduce(sender, e);
+        }
+
+        //เช็กค่าที่ได้รับในหน้าราคาสำหรับการคำนวณ
+        private void numberCal1_Click(object sender, EventArgs e)
+        {
+            if (!double.TryParse(numberCal1.Text, out numberCal)) numberCal1.Clear();
+            numberCal1.Focus();
+        }
+
+        private void numberCal2_Click(object sender, EventArgs e)
+        {
+            if (!double.TryParse(numberCal2.Text, out numberCal)) numberCal2.Clear();
+        }
+
+        private void numberCal3_Click(object sender, EventArgs e)
+        {
+            if (!double.TryParse(numberCal3.Text, out numberCal)) numberCal3.Clear();
+
+        }
+
+        private void numberCal4_Click(object sender, EventArgs e)
+        {
+            if (!double.TryParse(numberCal4.Text, out numberCal)) numberCal4.Clear();
         }
 
         //คำนวณเงิน
@@ -178,75 +284,25 @@ namespace Project_Int
             }
         
         }
-
-        //เรียกหน้ารายละเอียด
-        private void nameflower1_Click(object sender, EventArgs e)
+        private void discount_CheckedChanged(object sender, EventArgs e)
         {
-            indexselect = 0;
-            dataDetail(sender, e);
-        }
-
-        private void nameflower2_Click(object sender, EventArgs e)
-        {
-            indexselect = 1;
-            dataDetail(sender, e);
-        }
-        private void nameflower3_Click(object sender, EventArgs e)
-        {
-            indexselect = 2;
-            dataDetail(sender, e);
-        }
-        private void nameflower4_Click(object sender, EventArgs e)
-        {
-            indexselect = 3;
-            dataDetail(sender, e);
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            indexselect = 0;
-            dataDetail(sender, e);
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-            indexselect = 1;
-            dataDetail(sender, e);
-        }
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-            indexselect = 2;
-            dataDetail(sender, e);
-        }
-        private void pictureBox4_Click(object sender, EventArgs e)
-        {
-            indexselect = 3;
-            dataDetail(sender, e);
-        }
-
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label21_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void head_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label36_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox5_Click(object sender, EventArgs e)
-        {
-
+            double foroutput;
+            if (discount.Checked)
+            {
+                if (double.TryParse(numTotalPrice.Text, out numberCal))
+                {
+                    foroutput = numberCal * 0.9;
+                    numTotalPrice.Text = foroutput.ToString();
+                }
+            }
+            else
+            {
+                if (double.TryParse(numTotalPrice.Text, out numberCal))
+                {
+                    foroutput = numberCal * 100 / 90;
+                    numTotalPrice.Text = foroutput.ToString();
+                }
+            }
         }
 
         private void numberCal1_TextChanged(object sender, EventArgs e)
@@ -269,55 +325,91 @@ namespace Project_Int
             calChange(sender, e);
         }
 
-        private void discount_CheckedChanged(object sender, EventArgs e)
+        //เรียกหน้ารายละเอียด
+        private void imglogin1_Click(object sender, EventArgs e)
         {
-            double foroutput;
-            if (discount.Checked)
-            {
-                if (double.TryParse(numTotalPrice.Text, out numberCal))
-                {
-                    foroutput = numberCal * 0.9;
-                    numTotalPrice.Text = foroutput.ToString();
-                }
-            }
-            else
-            {
-                if (double.TryParse(numTotalPrice.Text, out numberCal))
-                {
-                    foroutput = numberCal * 100/90;
-                    numTotalPrice.Text = foroutput.ToString();
-                }
-            }
-        }
-        private void tabPage3_Click(object sender, EventArgs e)
-        {
-
-        }
-        private void numberCal1_Click(object sender, EventArgs e)
-        {
-           if (!double.TryParse(numberCal1.Text, out numberCal)) numberCal1.Clear();
-            numberCal1.Focus();
+            imgset1(sender, e);
         }
 
-        private void numberCal2_Click(object sender, EventArgs e)
+        private void imglog2_Click(object sender, EventArgs e)
         {
-            if (!double.TryParse(numberCal2.Text, out numberCal)) numberCal2.Clear();
+            imgset2(sender, e);
         }
 
-        private void numberCal3_Click(object sender, EventArgs e)
+        private void imglog3_Click(object sender, EventArgs e)
         {
-            if (!double.TryParse(numberCal3.Text, out numberCal)) numberCal3.Clear();
- 
+            imgset3(sender, e);
         }
 
-        private void label38_Click(object sender, EventArgs e)
+        private void imglog4_Click(object sender, EventArgs e)
         {
-
+            imgset4(sender, e);
+        }
+        private void nameflowerlog1_Click(object sender, EventArgs e)
+        {
+            imgset1(sender, e);
         }
 
-        private void numberCal4_Click(object sender, EventArgs e)
+        private void nameflowerlog2_Click(object sender, EventArgs e)
         {
-            if (!double.TryParse(numberCal4.Text, out numberCal)) numberCal4.Clear();
+            imgset2(sender, e);
         }
+
+        private void nameflowerlog3_Click(object sender, EventArgs e)
+        {
+            imgset3(sender, e);
+        }
+
+        private void nameflowerlog4_Click(object sender, EventArgs e)
+        {
+            imgset4(sender, e);
+        }
+        private void nameflower1_Click(object sender, EventArgs e)
+        {
+            imgset1(sender, e);
+        }
+
+        private void nameflower2_Click(object sender, EventArgs e)
+        {
+            imgset2(sender, e);
+        }
+        private void nameflower3_Click(object sender, EventArgs e)
+        {
+            imgset3(sender, e);
+        }
+        private void nameflower4_Click(object sender, EventArgs e)
+        {
+            imgset4(sender, e);
+        }
+        private void img1_Click(object sender, EventArgs e)
+        {
+            imgset1(sender, e);
+        }
+
+        private void img2_Click(object sender, EventArgs e)
+        {
+            imgset2(sender, e);
+        }
+        private void img3_Click(object sender, EventArgs e)
+        {
+            imgset3(sender, e);
+        }
+        private void img4_Click(object sender, EventArgs e)
+        {
+            imgset4(sender, e);
+        }
+        //การเรียกหน้าต่างล็อกอินและหน้าต่างลงทะเบียน
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            Flowers.TabPages.Add(windowSignIn);
+            callWindow(sender, e);
+        }
+
+        private void btnSignUp_Click(object sender, EventArgs e)
+        {
+            Flowers.TabPages.Add(windowSignUp);
+            callWindow(sender, e);
+        }
+
     }
     }

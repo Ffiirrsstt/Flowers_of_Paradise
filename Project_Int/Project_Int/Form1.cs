@@ -37,8 +37,76 @@ namespace Project_Int
                 new[] { "Grace Kelly", "ความสง่างามของดอกกุหลาบนานาชนิด", "ช่อดอกไม้คลาสสิกนี้เพอร์เฟคที่สุดสำหรับหญิงอันงดงามในชีวิตของคุณ การผสมผสานกันระหว่างดอกกุหลาบสีชมพูและสีพีชชวนให้นึกถึงความงดงามและความสง่างามของนักแสดงชาวอเมริกันสุดคลาสสิกอย่าง Grace Kelly ได้อย่างสมบูรณ์แบบ กุหลาบสีชมพูเป็นสัญลักษณ์แห่งความอ่อนช้อยและความงาม ในขณะที่ดอกกุหลาบสีพีชเป็นสัญลักษณ์แห่งความจริงใจ เพราะฉะนั้นแล้วการมอบช่อดอกไม้ช่อนี้ในกับคนพิเศษของคุณถือเป็นวิธีที่ดีที่สุดที่จะทำให้เค้ารับรู้ถึงความรู้สึกที่แท้จริงของคุณ เหมือนกับ  Grace Kelly คนรักของคุณจะล่องลอยไปกับสายลมเมื่อได้รับช่อดอกไม่ช่อนี้" }}
         };
 
-        int CountPage, indexselect;
+        int CountPage, indexselect, countEyePassSignUp, countEyePassConSignUp, countEyePassSignIn;
         double numberCal;
+
+        //การซ่อนสลับกับเปิดรหัสผ่านให้สามารถอ่านได้
+        private void checkEye(object sender, EventArgs e, string selectData)
+        {
+            string dataPathEye, dataPathEyeHide;
+            dataPathEye = Application.StartupPath + "\\img\\eye.jpg";
+            dataPathEyeHide = Application.StartupPath + "\\img\\eyehide.jpg";
+            if (selectData == "signUp")
+            {
+                if (countEyePassSignUp % 2 == 0)
+                {
+                    passwordSignUp.PasswordChar = '*';
+                    eyePassSignUp.ImageLocation = dataPathEye;
+                }
+                else
+                {
+                    passwordSignUp.PasswordChar = '\0';
+                    eyePassSignUp.ImageLocation = dataPathEyeHide;
+                }
+                countEyePassSignUp++;
+            }
+            else if (selectData == "confirmSignUp")
+            {
+                if (countEyePassConSignUp % 2 == 0)
+                {
+                    passwordConSignUp.PasswordChar = '*';
+                    eyeConfirmPass.ImageLocation = dataPathEye;
+                }
+                else
+                {
+                    passwordConSignUp.PasswordChar = '\0';
+                    eyeConfirmPass.ImageLocation = dataPathEyeHide;
+                }
+                countEyePassConSignUp++;
+            }
+            else
+            {
+                if (countEyePassSignIn % 2 == 0)
+                {
+                    passwordSignIn.PasswordChar = '*';
+                    eyePassSignIn.ImageLocation = dataPathEye;
+                }
+                else
+                {
+                    passwordSignIn.PasswordChar = '\0';
+                    eyePassSignIn.ImageLocation = dataPathEyeHide;
+                }
+                countEyePassSignIn++;
+            }
+        }
+
+        private void basicSignIn(object sender, EventArgs e)
+        {
+            callWindow(sender, e);
+            countEyePassSignIn = 0;
+            passwordSignIn.Clear();
+            checkEye(sender, e, "signIn");
+        }
+        private void basicSignUp(object sender, EventArgs e)
+        {
+            callWindow(sender, e);
+            countEyePassSignUp = 0;
+            countEyePassConSignUp = 0;
+            passwordSignUp.Clear();
+            passwordConSignUp.Clear();
+            checkEye(sender, e, "signUp");
+            checkEye(sender, e, "confirmSignUp");
+        }
 
         //แสดงภาพในรูปภาพสำหรับหน้ารูปภาพและหนาล็อกอิน
         private void dataFlower(object sender, EventArgs e)
@@ -395,22 +463,37 @@ namespace Project_Int
         {
             imgset3(sender, e);
         }
+
         private void img4_Click(object sender, EventArgs e)
         {
             imgset4(sender, e);
         }
+
         //การเรียกหน้าต่างล็อกอินและหน้าต่างลงทะเบียน
         private void btnLogin_Click(object sender, EventArgs e)
         {
             Flowers.TabPages.Add(windowSignIn);
-            callWindow(sender, e);
+            basicSignIn(sender, e);
         }
-
         private void btnSignUp_Click(object sender, EventArgs e)
         {
             Flowers.TabPages.Add(windowSignUp);
-            callWindow(sender, e);
+            basicSignUp(sender, e);
         }
 
+        //การเรียกใช้การซ่อนพาสเวิร์ด
+        private void eyePassSignUp_Click(object sender, EventArgs e)
+        {
+            checkEye(sender, e,"signUp");
+        }
+
+        private void eyeConfirmPass_Click(object sender, EventArgs e)
+        {
+            checkEye(sender, e, "confirmSignUp");
+        }
+        private void eyePassSignIn_Click(object sender, EventArgs e)
+        {
+            checkEye(sender, e, "signIn");
+        }
     }
     }

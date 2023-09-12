@@ -179,6 +179,7 @@ namespace Project_Int
         {
             defultRemoveTab(sender, e);
             loadImg(sender, e);//ถ้าไม่ได้มีต้องการให้หน้าของสินค้าเริ่มต้นที่สินค้าชิ้นแรก แต่ถ้าต้องการให้เริ่มที่สินค้าชิ้นแรกให้ใส่ที่ tab แทน
+            headSignUp.Text = "ลงทะเบียนสมาชิกเพื่อใช้บริการ\nFlowers of Paradise ID";
         }
         private void tabControl_Click(object sender, EventArgs e)
         {

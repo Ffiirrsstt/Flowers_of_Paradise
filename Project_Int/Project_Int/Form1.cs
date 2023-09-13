@@ -116,12 +116,12 @@ namespace Project_Int
             {
                 if (countEyePassSignIn % 2 == 0)
                 {
-                    passwordSignIn.PasswordChar = '*';
+                    password.PasswordChar = '*';
                     eyePassSignIn.ImageLocation = dataPathEye;
                 }
                 else
                 {
-                    passwordSignIn.PasswordChar = '\0';
+                    password.PasswordChar = '\0';
                     eyePassSignIn.ImageLocation = dataPathEyeHide;
                 }
                 countEyePassSignIn++;
@@ -132,18 +132,25 @@ namespace Project_Int
         {
             callWindow(sender, e);
             countEyePassSignIn = 0;
-            passwordSignIn.Clear();
+            user.Clear();
+            password.Clear();
             checkEye(sender, e, "signIn");
+            describesUser.Text = "";
+            describesPassword.Text = "";
         }
         private void basicSignUp(object sender, EventArgs e)
         {
             callWindow(sender, e);
             countEyePassSignUp = 0;
             countEyePassConSignUp = 0;
+            newUser.Clear();
             passwordSignUp.Clear();
             passwordConSignUp.Clear();
             checkEye(sender, e, "signUp");
             checkEye(sender, e, "confirmSignUp");
+            textDesName.Text = "";
+            textDesPassword.Text = "";
+            textDesConfirm.Text = "";
         }
 
         //แสดงภาพในรูปภาพสำหรับหน้ารูปภาพและหนาล็อกอิน
@@ -542,6 +549,7 @@ namespace Project_Int
             else
                 textDesName.Text = "";
         }
+
         private void passwordSignUp_TextChanged(object sender, EventArgs e)
         {
             if (passwordSignUp.Text.Length<8)
@@ -560,23 +568,31 @@ namespace Project_Int
             if (!userRepeat)
             {
                 if (passwordSignUp.Text.Length < 8)
+                {
                     MessageBox.Show("ขออภัย! กรุณาสร้างรหัสผ่านอย่างน้อย 8 อักขระ\nโดยสามารถใช้ได้ทั้งตัวเลข ตัวอักษรรวมทั้งตัวอักขระพิเศษ");
+                    passwordSignUp.Focus();
+                }
                 else { 
                     if (passwordConfirmOk)
                     {
                         MessageBox.Show("การลงทะเบียนสำเร็จ!");
                         List<string> fornewUser = new List<string> { newUser.Text, passwordSignUp.Text };
                         dataSignUp.Add(fornewUser);
-                        defultRemoveTab(sender, e);
+                        Flowers.TabPages.Remove(windowSignUp);
                         callWindowUp(sender, e);    
-                        newUser.Text = "";
-                        textDesPassword.Text = "";
                     }
                     else
+                    {
                         MessageBox.Show("ขออภัย! รหัสผ่านกับรหัสยืนยันไม่ตรงกัน");
+                        passwordConSignUp.Focus();
+                    }
                 }
             }
-            else MessageBox.Show("มีผู้ใช้ได้ใช้งานชื่อนี้แล้ว");
+            else
+            {
+                MessageBox.Show("มีผู้ใช้ได้ใช้งานชื่อนี้แล้ว");
+                newUser.Focus();
+            }
         }
 
         private void linkWindowIn_Click(object sender, EventArgs e)
@@ -588,7 +604,40 @@ namespace Project_Int
         //เข้าสู่ระบบ
         private void signIn_Click(object sender, EventArgs e)
         {
-           //if()
+           Boolean member = false;
+           foreach(List<string> checkSignIn in dataSignUp)
+            {
+                if (checkSignIn[0]==user.Text&& checkSignIn[1]==password.Text)
+                {
+                    MessageBox.Show("ลงชื่อเข้าใช้สำเร็จ!\nFlowers of Paradise\nยินดีให้บริการส่งมอบของขวัญที่แสนพิเศษให้คนที่คุณรัก");
+                    Flowers.SelectedTab = Flowers.TabPages[3];
+                    Flowers.TabPages.Remove(windowSignIn);
+                    member = true;
+                    break;
+                }
+                else if(checkSignIn[0] == user.Text) {
+                    MessageBox.Show("ขออถัย! รหัสผ่านไม่ถูกต้อง");
+                    describesUser.Text = "";
+                    password.Text = "";
+                    password.Focus();
+                    describesPassword.Text = "รหัสผ่านไม่ถูกต้อง";
+                    member = true;
+                    break;
+                }
+            }
+           if(!member)
+            {
+                MessageBox.Show("ชื่อผู้ใช้ไม่ถูกต้อง");
+                Flowers.TabPages.Remove(windowSignIn);
+                callWindowIn(sender, e);
+                describesUser.Text = "ชื่อผู้ใช้ไม่ถูกต้อง";
+                user.Focus();
+            }
+        }
+        private void linkSingUp_Click(object sender, EventArgs e)
+        {
+            Flowers.TabPages.Remove(windowSignIn);
+            callWindowUp(sender, e);
         }
     }
     }

@@ -148,7 +148,7 @@
             this.label58 = new System.Windows.Forms.Label();
             this.btn = new System.Windows.Forms.Button();
             this.label57 = new System.Windows.Forms.Label();
-            this.passwordSignIn = new System.Windows.Forms.TextBox();
+            this.password = new System.Windows.Forms.TextBox();
             this.label56 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label55 = new System.Windows.Forms.Label();
@@ -158,7 +158,7 @@
             this.label53 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label52 = new System.Windows.Forms.Label();
-            this.userSignIn = new System.Windows.Forms.TextBox();
+            this.user = new System.Windows.Forms.TextBox();
             this.label51 = new System.Windows.Forms.Label();
             this.label46 = new System.Windows.Forms.Label();
             this.windowSignUp = new System.Windows.Forms.TabPage();
@@ -195,6 +195,10 @@
             this.label67 = new System.Windows.Forms.Label();
             this.textDesConfirm = new System.Windows.Forms.Label();
             this.textDesName = new System.Windows.Forms.Label();
+            this.DesPasswordSignIn = new System.Windows.Forms.Label();
+            this.describesPassword = new System.Windows.Forms.Label();
+            this.label74 = new System.Windows.Forms.Label();
+            this.describesUser = new System.Windows.Forms.Label();
             this.Flowers.SuspendLayout();
             this.firstPage.SuspendLayout();
             this.mainPage.SuspendLayout();
@@ -1635,11 +1639,15 @@
             // windowSignIn
             // 
             this.windowSignIn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(168)))), ((int)(((byte)(208)))));
+            this.windowSignIn.Controls.Add(this.describesUser);
+            this.windowSignIn.Controls.Add(this.label74);
+            this.windowSignIn.Controls.Add(this.describesPassword);
+            this.windowSignIn.Controls.Add(this.DesPasswordSignIn);
             this.windowSignIn.Controls.Add(this.eyePassSignIn);
             this.windowSignIn.Controls.Add(this.label58);
             this.windowSignIn.Controls.Add(this.btn);
             this.windowSignIn.Controls.Add(this.label57);
-            this.windowSignIn.Controls.Add(this.passwordSignIn);
+            this.windowSignIn.Controls.Add(this.password);
             this.windowSignIn.Controls.Add(this.label56);
             this.windowSignIn.Controls.Add(this.textBox5);
             this.windowSignIn.Controls.Add(this.label55);
@@ -1649,7 +1657,7 @@
             this.windowSignIn.Controls.Add(this.label53);
             this.windowSignIn.Controls.Add(this.textBox2);
             this.windowSignIn.Controls.Add(this.label52);
-            this.windowSignIn.Controls.Add(this.userSignIn);
+            this.windowSignIn.Controls.Add(this.user);
             this.windowSignIn.Controls.Add(this.label51);
             this.windowSignIn.Controls.Add(this.label46);
             this.windowSignIn.Cursor = System.Windows.Forms.Cursors.Arrow;
@@ -1662,9 +1670,9 @@
             // eyePassSignIn
             // 
             this.eyePassSignIn.Image = ((System.Drawing.Image)(resources.GetObject("eyePassSignIn.Image")));
-            this.eyePassSignIn.Location = new System.Drawing.Point(812, 406);
+            this.eyePassSignIn.Location = new System.Drawing.Point(830, 416);
             this.eyePassSignIn.Name = "eyePassSignIn";
-            this.eyePassSignIn.Size = new System.Drawing.Size(81, 81);
+            this.eyePassSignIn.Size = new System.Drawing.Size(63, 54);
             this.eyePassSignIn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.eyePassSignIn.TabIndex = 16;
             this.eyePassSignIn.TabStop = false;
@@ -1680,6 +1688,7 @@
             this.label58.TabIndex = 15;
             this.label58.Text = "ยังไม่ได้ลงทะเบียนสมาชิก?";
             this.label58.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label58.Click += new System.EventHandler(this.linkSingUp_Click);
             // 
             // btn
             // 
@@ -1699,21 +1708,21 @@
             this.label57.BackColor = System.Drawing.Color.White;
             this.label57.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.label57.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(57)))), ((int)(((byte)(108)))));
-            this.label57.Location = new System.Drawing.Point(480, 367);
+            this.label57.Location = new System.Drawing.Point(480, 377);
             this.label57.Name = "label57";
             this.label57.Size = new System.Drawing.Size(261, 36);
             this.label57.TabIndex = 13;
             this.label57.Text = "รหัสผ่าน";
             // 
-            // passwordSignIn
+            // password
             // 
-            this.passwordSignIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.passwordSignIn.Location = new System.Drawing.Point(480, 406);
-            this.passwordSignIn.Multiline = true;
-            this.passwordSignIn.Name = "passwordSignIn";
-            this.passwordSignIn.PasswordChar = '*';
-            this.passwordSignIn.Size = new System.Drawing.Size(316, 81);
-            this.passwordSignIn.TabIndex = 12;
+            this.password.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.password.Location = new System.Drawing.Point(480, 416);
+            this.password.Multiline = true;
+            this.password.Name = "password";
+            this.password.PasswordChar = '*';
+            this.password.Size = new System.Drawing.Size(333, 54);
+            this.password.TabIndex = 12;
             // 
             // label56
             // 
@@ -1792,20 +1801,20 @@
             this.label52.BackColor = System.Drawing.Color.White;
             this.label52.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.label52.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(57)))), ((int)(((byte)(108)))));
-            this.label52.Location = new System.Drawing.Point(480, 222);
+            this.label52.Location = new System.Drawing.Point(480, 230);
             this.label52.Name = "label52";
             this.label52.Size = new System.Drawing.Size(131, 35);
             this.label52.TabIndex = 3;
             this.label52.Text = "ชื่อผู้ใช้";
             // 
-            // userSignIn
+            // user
             // 
-            this.userSignIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.userSignIn.Location = new System.Drawing.Point(480, 260);
-            this.userSignIn.Multiline = true;
-            this.userSignIn.Name = "userSignIn";
-            this.userSignIn.Size = new System.Drawing.Size(414, 77);
-            this.userSignIn.TabIndex = 2;
+            this.user.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.user.Location = new System.Drawing.Point(480, 268);
+            this.user.Multiline = true;
+            this.user.Name = "user";
+            this.user.Size = new System.Drawing.Size(414, 55);
+            this.user.TabIndex = 2;
             // 
             // label51
             // 
@@ -2199,6 +2208,50 @@
             this.textDesName.TabIndex = 32;
             this.textDesName.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
+            // DesPasswordSignIn
+            // 
+            this.DesPasswordSignIn.BackColor = System.Drawing.Color.White;
+            this.DesPasswordSignIn.ForeColor = System.Drawing.Color.Red;
+            this.DesPasswordSignIn.Location = new System.Drawing.Point(1616, 826);
+            this.DesPasswordSignIn.Name = "DesPasswordSignIn";
+            this.DesPasswordSignIn.Size = new System.Drawing.Size(175, 35);
+            this.DesPasswordSignIn.TabIndex = 34;
+            this.DesPasswordSignIn.Text = "รหัสผ่านไม่ถูกต้อง";
+            this.DesPasswordSignIn.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // describesPassword
+            // 
+            this.describesPassword.BackColor = System.Drawing.Color.White;
+            this.describesPassword.ForeColor = System.Drawing.Color.Red;
+            this.describesPassword.Location = new System.Drawing.Point(719, 377);
+            this.describesPassword.Name = "describesPassword";
+            this.describesPassword.Size = new System.Drawing.Size(175, 36);
+            this.describesPassword.TabIndex = 34;
+            this.describesPassword.Text = "รหัสผ่านไม่ถูกต้อง";
+            this.describesPassword.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // label74
+            // 
+            this.label74.BackColor = System.Drawing.Color.White;
+            this.label74.ForeColor = System.Drawing.Color.Red;
+            this.label74.Location = new System.Drawing.Point(1624, 834);
+            this.label74.Name = "label74";
+            this.label74.Size = new System.Drawing.Size(175, 35);
+            this.label74.TabIndex = 35;
+            this.label74.Text = "รหัสผ่านไม่ถูกต้อง";
+            this.label74.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // describesUser
+            // 
+            this.describesUser.BackColor = System.Drawing.Color.White;
+            this.describesUser.ForeColor = System.Drawing.Color.Red;
+            this.describesUser.Location = new System.Drawing.Point(719, 230);
+            this.describesUser.Name = "describesUser";
+            this.describesUser.Size = new System.Drawing.Size(175, 35);
+            this.describesUser.TabIndex = 34;
+            this.describesUser.Text = "ชื่อผู้ใช้ไม่ถูกต้อง";
+            this.describesUser.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
             // Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -2374,9 +2427,9 @@
         private System.Windows.Forms.Label btnSignIn;
         private System.Windows.Forms.Label btnSignUp;
         private System.Windows.Forms.Label label46;
-        private System.Windows.Forms.TextBox userSignIn;
+        private System.Windows.Forms.TextBox user;
         private System.Windows.Forms.Label label51;
-        private System.Windows.Forms.TextBox passwordSignIn;
+        private System.Windows.Forms.TextBox password;
         private System.Windows.Forms.Label label56;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label55;
@@ -2425,6 +2478,10 @@
         private System.Windows.Forms.Label textDesPassword;
         private System.Windows.Forms.Label textDesConfirm;
         private System.Windows.Forms.Label textDesName;
+        private System.Windows.Forms.Label describesUser;
+        private System.Windows.Forms.Label label74;
+        private System.Windows.Forms.Label describesPassword;
+        private System.Windows.Forms.Label DesPasswordSignIn;
     }
 }
 

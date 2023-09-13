@@ -146,7 +146,7 @@
             this.windowSignIn = new System.Windows.Forms.TabPage();
             this.eyePassSignIn = new System.Windows.Forms.PictureBox();
             this.label58 = new System.Windows.Forms.Label();
-            this.btnConfirmIn = new System.Windows.Forms.Button();
+            this.btn = new System.Windows.Forms.Button();
             this.label57 = new System.Windows.Forms.Label();
             this.passwordSignIn = new System.Windows.Forms.TextBox();
             this.label56 = new System.Windows.Forms.Label();
@@ -158,10 +158,11 @@
             this.label53 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label52 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.userSignIn = new System.Windows.Forms.TextBox();
             this.label51 = new System.Windows.Forms.Label();
             this.label46 = new System.Windows.Forms.Label();
             this.windowSignUp = new System.Windows.Forms.TabPage();
+            this.textDesPassword = new System.Windows.Forms.Label();
             this.eyeConfirmPass = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.eyePassSignUp = new System.Windows.Forms.PictureBox();
@@ -188,10 +189,12 @@
             this.label64 = new System.Windows.Forms.Label();
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.label65 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.newUser = new System.Windows.Forms.TextBox();
             this.headSignUp = new System.Windows.Forms.Label();
             this.passwordSignUp = new System.Windows.Forms.TextBox();
             this.label67 = new System.Windows.Forms.Label();
+            this.textDesConfirm = new System.Windows.Forms.Label();
+            this.textDesName = new System.Windows.Forms.Label();
             this.Flowers.SuspendLayout();
             this.firstPage.SuspendLayout();
             this.mainPage.SuspendLayout();
@@ -338,7 +341,7 @@
             this.mainPage.Name = "mainPage";
             this.mainPage.Size = new System.Drawing.Size(3406, 1687);
             this.mainPage.TabIndex = 4;
-            this.mainPage.Text = "หน้าหลัก";
+            this.mainPage.Text = "เข้าสู่ระบบ";
             this.mainPage.UseVisualStyleBackColor = true;
             // 
             // btnSignUp
@@ -1634,7 +1637,7 @@
             this.windowSignIn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(168)))), ((int)(((byte)(208)))));
             this.windowSignIn.Controls.Add(this.eyePassSignIn);
             this.windowSignIn.Controls.Add(this.label58);
-            this.windowSignIn.Controls.Add(this.btnConfirmIn);
+            this.windowSignIn.Controls.Add(this.btn);
             this.windowSignIn.Controls.Add(this.label57);
             this.windowSignIn.Controls.Add(this.passwordSignIn);
             this.windowSignIn.Controls.Add(this.label56);
@@ -1646,7 +1649,7 @@
             this.windowSignIn.Controls.Add(this.label53);
             this.windowSignIn.Controls.Add(this.textBox2);
             this.windowSignIn.Controls.Add(this.label52);
-            this.windowSignIn.Controls.Add(this.textBox1);
+            this.windowSignIn.Controls.Add(this.userSignIn);
             this.windowSignIn.Controls.Add(this.label51);
             this.windowSignIn.Controls.Add(this.label46);
             this.windowSignIn.Cursor = System.Windows.Forms.Cursors.Arrow;
@@ -1673,22 +1676,23 @@
             this.label58.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(151)))), ((int)(((byte)(177)))));
             this.label58.Location = new System.Drawing.Point(485, 493);
             this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(226, 102);
+            this.label58.Size = new System.Drawing.Size(232, 102);
             this.label58.TabIndex = 15;
-            this.label58.Text = "ยังไม่ได้ลงทะเบียนสมาชิก ?";
+            this.label58.Text = "ยังไม่ได้ลงทะเบียนสมาชิก?";
             this.label58.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // btnConfirmIn
+            // btn
             // 
-            this.btnConfirmIn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(57)))), ((int)(((byte)(108)))));
-            this.btnConfirmIn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnConfirmIn.ForeColor = System.Drawing.Color.White;
-            this.btnConfirmIn.Location = new System.Drawing.Point(717, 514);
-            this.btnConfirmIn.Name = "btnConfirmIn";
-            this.btnConfirmIn.Size = new System.Drawing.Size(177, 56);
-            this.btnConfirmIn.TabIndex = 14;
-            this.btnConfirmIn.Text = "เข้าสู่ระบบ";
-            this.btnConfirmIn.UseVisualStyleBackColor = false;
+            this.btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(57)))), ((int)(((byte)(108)))));
+            this.btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn.ForeColor = System.Drawing.Color.White;
+            this.btn.Location = new System.Drawing.Point(717, 514);
+            this.btn.Name = "btn";
+            this.btn.Size = new System.Drawing.Size(177, 56);
+            this.btn.TabIndex = 14;
+            this.btn.Text = "เข้าสู่ระบบ";
+            this.btn.UseVisualStyleBackColor = false;
+            this.btn.Click += new System.EventHandler(this.signIn_Click);
             // 
             // label57
             // 
@@ -1794,14 +1798,14 @@
             this.label52.TabIndex = 3;
             this.label52.Text = "ชื่อผู้ใช้";
             // 
-            // textBox1
+            // userSignIn
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.textBox1.Location = new System.Drawing.Point(480, 260);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(414, 77);
-            this.textBox1.TabIndex = 2;
+            this.userSignIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.userSignIn.Location = new System.Drawing.Point(480, 260);
+            this.userSignIn.Multiline = true;
+            this.userSignIn.Name = "userSignIn";
+            this.userSignIn.Size = new System.Drawing.Size(414, 77);
+            this.userSignIn.TabIndex = 2;
             // 
             // label51
             // 
@@ -1827,6 +1831,9 @@
             // windowSignUp
             // 
             this.windowSignUp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(168)))), ((int)(((byte)(208)))));
+            this.windowSignUp.Controls.Add(this.textDesName);
+            this.windowSignUp.Controls.Add(this.textDesConfirm);
+            this.windowSignUp.Controls.Add(this.textDesPassword);
             this.windowSignUp.Controls.Add(this.eyeConfirmPass);
             this.windowSignUp.Controls.Add(this.pictureBox2);
             this.windowSignUp.Controls.Add(this.eyePassSignUp);
@@ -1853,7 +1860,7 @@
             this.windowSignUp.Controls.Add(this.label64);
             this.windowSignUp.Controls.Add(this.textBox11);
             this.windowSignUp.Controls.Add(this.label65);
-            this.windowSignUp.Controls.Add(this.textBox12);
+            this.windowSignUp.Controls.Add(this.newUser);
             this.windowSignUp.Controls.Add(this.headSignUp);
             this.windowSignUp.Controls.Add(this.passwordSignUp);
             this.windowSignUp.Controls.Add(this.label67);
@@ -1863,6 +1870,17 @@
             this.windowSignUp.Size = new System.Drawing.Size(3406, 1687);
             this.windowSignUp.TabIndex = 9;
             this.windowSignUp.Text = "หน้าต่างลงทะเบียน";
+            // 
+            // textDesPassword
+            // 
+            this.textDesPassword.BackColor = System.Drawing.Color.White;
+            this.textDesPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.textDesPassword.ForeColor = System.Drawing.Color.Red;
+            this.textDesPassword.Location = new System.Drawing.Point(578, 309);
+            this.textDesPassword.Name = "textDesPassword";
+            this.textDesPassword.Size = new System.Drawing.Size(315, 29);
+            this.textDesPassword.TabIndex = 30;
+            this.textDesPassword.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // eyeConfirmPass
             // 
@@ -1914,6 +1932,7 @@
             this.passwordConSignUp.PasswordChar = '*';
             this.passwordConSignUp.Size = new System.Drawing.Size(344, 50);
             this.passwordConSignUp.TabIndex = 12;
+            this.passwordConSignUp.TextChanged += new System.EventHandler(this.passwordConSignUp_TextChanged);
             // 
             // label71
             // 
@@ -2009,8 +2028,9 @@
             this.label59.Name = "label59";
             this.label59.Size = new System.Drawing.Size(226, 102);
             this.label59.TabIndex = 15;
-            this.label59.Text = "ลงทะเบียนสมาชิกแล้ว ?";
+            this.label59.Text = "ลงทะเบียนสมาชิกแล้ว?";
             this.label59.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label59.Click += new System.EventHandler(this.linkWindowIn_Click);
             // 
             // button9
             // 
@@ -2023,6 +2043,7 @@
             this.button9.TabIndex = 14;
             this.button9.Text = "ลงทะเบียน";
             this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.signUp_Click);
             // 
             // label60
             // 
@@ -2118,13 +2139,14 @@
             this.label65.TabIndex = 3;
             this.label65.Text = "ชื่อผู้ใช้";
             // 
-            // textBox12
+            // newUser
             // 
-            this.textBox12.Location = new System.Drawing.Point(480, 245);
-            this.textBox12.Multiline = true;
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(414, 50);
-            this.textBox12.TabIndex = 2;
+            this.newUser.Location = new System.Drawing.Point(480, 245);
+            this.newUser.Multiline = true;
+            this.newUser.Name = "newUser";
+            this.newUser.Size = new System.Drawing.Size(414, 50);
+            this.newUser.TabIndex = 2;
+            this.newUser.TextChanged += new System.EventHandler(this.user_TextChanged);
             // 
             // headSignUp
             // 
@@ -2146,6 +2168,7 @@
             this.passwordSignUp.PasswordChar = '*';
             this.passwordSignUp.Size = new System.Drawing.Size(344, 50);
             this.passwordSignUp.TabIndex = 24;
+            this.passwordSignUp.TextChanged += new System.EventHandler(this.passwordSignUp_TextChanged);
             // 
             // label67
             // 
@@ -2156,12 +2179,32 @@
             this.label67.Size = new System.Drawing.Size(523, 525);
             this.label67.TabIndex = 0;
             // 
+            // textDesConfirm
+            // 
+            this.textDesConfirm.BackColor = System.Drawing.Color.White;
+            this.textDesConfirm.ForeColor = System.Drawing.Color.Red;
+            this.textDesConfirm.Location = new System.Drawing.Point(617, 410);
+            this.textDesConfirm.Name = "textDesConfirm";
+            this.textDesConfirm.Size = new System.Drawing.Size(277, 35);
+            this.textDesConfirm.TabIndex = 31;
+            this.textDesConfirm.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // textDesName
+            // 
+            this.textDesName.BackColor = System.Drawing.Color.White;
+            this.textDesName.ForeColor = System.Drawing.Color.Red;
+            this.textDesName.Location = new System.Drawing.Point(596, 207);
+            this.textDesName.Name = "textDesName";
+            this.textDesName.Size = new System.Drawing.Size(298, 35);
+            this.textDesName.TabIndex = 32;
+            this.textDesName.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
             // Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(168)))), ((int)(((byte)(208)))));
-            this.ClientSize = new System.Drawing.Size(1113, 570);
+            this.ClientSize = new System.Drawing.Size(1376, 714);
             this.Controls.Add(this.Flowers);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form";
@@ -2331,7 +2374,7 @@
         private System.Windows.Forms.Label btnSignIn;
         private System.Windows.Forms.Label btnSignUp;
         private System.Windows.Forms.Label label46;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox userSignIn;
         private System.Windows.Forms.Label label51;
         private System.Windows.Forms.TextBox passwordSignIn;
         private System.Windows.Forms.Label label56;
@@ -2343,7 +2386,7 @@
         private System.Windows.Forms.Label label53;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label52;
-        private System.Windows.Forms.Button btnConfirmIn;
+        private System.Windows.Forms.Button btn;
         private System.Windows.Forms.Label label57;
         private System.Windows.Forms.Label label58;
         private System.Windows.Forms.TabPage windowSignUp;
@@ -2360,7 +2403,7 @@
         private System.Windows.Forms.Label label64;
         private System.Windows.Forms.TextBox textBox11;
         private System.Windows.Forms.Label label65;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox newUser;
         private System.Windows.Forms.Label headSignUp;
         private System.Windows.Forms.Label label67;
         private System.Windows.Forms.TabControl Flowers;
@@ -2379,6 +2422,9 @@
         private System.Windows.Forms.PictureBox eyeConfirmPass;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox eyePassSignUp;
+        private System.Windows.Forms.Label textDesPassword;
+        private System.Windows.Forms.Label textDesConfirm;
+        private System.Windows.Forms.Label textDesName;
     }
 }
 

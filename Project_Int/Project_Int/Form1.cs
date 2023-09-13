@@ -37,8 +37,46 @@ namespace Project_Int
                 new[] { "Grace Kelly", "ความสง่างามของดอกกุหลาบนานาชนิด", "ช่อดอกไม้คลาสสิกนี้เพอร์เฟคที่สุดสำหรับหญิงอันงดงามในชีวิตของคุณ การผสมผสานกันระหว่างดอกกุหลาบสีชมพูและสีพีชชวนให้นึกถึงความงดงามและความสง่างามของนักแสดงชาวอเมริกันสุดคลาสสิกอย่าง Grace Kelly ได้อย่างสมบูรณ์แบบ กุหลาบสีชมพูเป็นสัญลักษณ์แห่งความอ่อนช้อยและความงาม ในขณะที่ดอกกุหลาบสีพีชเป็นสัญลักษณ์แห่งความจริงใจ เพราะฉะนั้นแล้วการมอบช่อดอกไม้ช่อนี้ในกับคนพิเศษของคุณถือเป็นวิธีที่ดีที่สุดที่จะทำให้เค้ารับรู้ถึงความรู้สึกที่แท้จริงของคุณ เหมือนกับ  Grace Kelly คนรักของคุณจะล่องลอยไปกับสายลมเมื่อได้รับช่อดอกไม่ช่อนี้" }}
         };
 
+        List<List<string>> dataSignUp = new List<List<string>>();
+        Boolean userRepeat, passwordConfirmOk;
         int CountPage, indexselect, countEyePassSignUp, countEyePassConSignUp, countEyePassSignIn;
         double numberCal;
+
+        //การเรียกหน้าต่างล็อกอินและหน้าต่างลงทะเบียน
+        private void callWindowIn(object sender, EventArgs e)
+        {
+            Flowers.TabPages.Add(windowSignIn);
+            basicSignIn(sender, e);
+        }
+        private void callWindowUp(object sender, EventArgs e)
+        {
+            Flowers.TabPages.Add(windowSignUp);
+            basicSignUp(sender, e);
+        }
+
+        //การลงทะเบียน
+        private void checkNameRepeat(object sender, EventArgs e)
+        {
+            userRepeat = false;
+            foreach (List<string> checkUser in dataSignUp)
+            {
+                if (checkUser[0]==newUser.Text)
+                {
+                    userRepeat = true;
+                    break;
+                }
+            }
+        }
+
+        private void checkPassword(object sender, EventArgs e)
+        {
+            passwordConfirmOk = (passwordSignUp.Text == passwordConSignUp.Text);
+            if (!passwordConfirmOk)
+                textDesConfirm.Text = "รหัสผ่านกับรหัสยืนยันไม่ตรงกัน";
+            else textDesConfirm.Text = "";
+            if (passwordConSignUp.Text == "")
+                textDesConfirm.Text = "";
+        }
 
         //การซ่อนสลับกับเปิดรหัสผ่านให้สามารถอ่านได้
         private void checkEye(object sender, EventArgs e, string selectData)
@@ -472,13 +510,12 @@ namespace Project_Int
         //การเรียกหน้าต่างล็อกอินและหน้าต่างลงทะเบียน
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            Flowers.TabPages.Add(windowSignIn);
-            basicSignIn(sender, e);
+            callWindowIn(sender, e);
         }
+
         private void btnSignUp_Click(object sender, EventArgs e)
         {
-            Flowers.TabPages.Add(windowSignUp);
-            basicSignUp(sender, e);
+            callWindowUp(sender, e);    
         }
 
         //การเรียกใช้การซ่อนพาสเวิร์ด
@@ -494,6 +531,64 @@ namespace Project_Int
         private void eyePassSignIn_Click(object sender, EventArgs e)
         {
             checkEye(sender, e, "signIn");
+        }
+
+        //การลงทะเบียน
+        private void user_TextChanged(object sender, EventArgs e)
+        {
+            checkNameRepeat(sender, e);
+            if (userRepeat)
+                textDesName.Text = "มีผู้ใช้ได้ใช้งานชื่อนี้แล้ว";
+            else
+                textDesName.Text = "";
+        }
+        private void passwordSignUp_TextChanged(object sender, EventArgs e)
+        {
+            if (passwordSignUp.Text.Length<8)
+                textDesPassword.Text = "กรุณาสร้างรหัสผ่านอย่างน้อย 8 อักขระ";
+            else
+                textDesPassword.Text = "";
+            checkPassword(sender, e);
+        }
+        private void passwordConSignUp_TextChanged(object sender, EventArgs e)
+        {
+            checkPassword(sender, e);
+        }
+        private void signUp_Click(object sender, EventArgs e)
+        {
+            //เช็กว่าชื่อผู้ใช้ซ้ำไหม
+            if (!userRepeat)
+            {
+                if (passwordSignUp.Text.Length < 8)
+                    MessageBox.Show("ขออภัย! กรุณาสร้างรหัสผ่านอย่างน้อย 8 อักขระ\nโดยสามารถใช้ได้ทั้งตัวเลข ตัวอักษรรวมทั้งตัวอักขระพิเศษ");
+                else { 
+                    if (passwordConfirmOk)
+                    {
+                        MessageBox.Show("การลงทะเบียนสำเร็จ!");
+                        List<string> fornewUser = new List<string> { newUser.Text, passwordSignUp.Text };
+                        dataSignUp.Add(fornewUser);
+                        defultRemoveTab(sender, e);
+                        callWindowUp(sender, e);    
+                        newUser.Text = "";
+                        textDesPassword.Text = "";
+                    }
+                    else
+                        MessageBox.Show("ขออภัย! รหัสผ่านกับรหัสยืนยันไม่ตรงกัน");
+                }
+            }
+            else MessageBox.Show("มีผู้ใช้ได้ใช้งานชื่อนี้แล้ว");
+        }
+
+        private void linkWindowIn_Click(object sender, EventArgs e)
+        {
+            Flowers.TabPages.Remove(windowSignUp);
+            callWindowIn(sender, e);
+        }
+
+        //เข้าสู่ระบบ
+        private void signIn_Click(object sender, EventArgs e)
+        {
+           //if()
         }
     }
     }

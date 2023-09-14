@@ -121,8 +121,14 @@
   <data name="11-11" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\img\11-1.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="7-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\img\7-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="11-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\img\11-1.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\img\3-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="6-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\img\6-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="10-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\img\10-1.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -130,13 +136,16 @@
   <data name="12-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\img\12-1.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="11-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\img\11-1.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="3-2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\img\3-2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="7-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\img\7-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="6-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\img\6-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Card" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\img\Card.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

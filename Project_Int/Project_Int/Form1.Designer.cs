@@ -52,10 +52,6 @@
             this.nameflowerlog4 = new System.Windows.Forms.Label();
             this.nameflowerlog2 = new System.Windows.Forms.Label();
             this.nameflowerlog3 = new System.Windows.Forms.Label();
-            this.imglog3 = new System.Windows.Forms.PictureBox();
-            this.imglog4 = new System.Windows.Forms.PictureBox();
-            this.imglog2 = new System.Windows.Forms.PictureBox();
-            this.imglog1 = new System.Windows.Forms.PictureBox();
             this.label48 = new System.Windows.Forms.Label();
             this.loginPageV2 = new System.Windows.Forms.TabPage();
             this.imgPage = new System.Windows.Forms.TabPage();
@@ -75,10 +71,6 @@
             this.nameflower4 = new System.Windows.Forms.Label();
             this.nameflower2 = new System.Windows.Forms.Label();
             this.nameflower3 = new System.Windows.Forms.Label();
-            this.img3 = new System.Windows.Forms.PictureBox();
-            this.img4 = new System.Windows.Forms.PictureBox();
-            this.img2 = new System.Windows.Forms.PictureBox();
-            this.img1 = new System.Windows.Forms.PictureBox();
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
@@ -102,21 +94,17 @@
             this.button8 = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.numberCal4 = new System.Windows.Forms.TextBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.label45 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.numberCal3 = new System.Windows.Forms.TextBox();
             this.label40 = new System.Windows.Forms.Label();
             this.label44 = new System.Windows.Forms.Label();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.numberCal2 = new System.Windows.Forms.TextBox();
             this.label43 = new System.Windows.Forms.Label();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.numberCal1 = new System.Windows.Forms.TextBox();
             this.label42 = new System.Windows.Forms.Label();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label39 = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
             this.numTotalPrice = new System.Windows.Forms.Label();
@@ -128,7 +116,6 @@
             this.label29 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
-            this.memberPage = new System.Windows.Forms.TabPage();
             this.detailPage = new System.Windows.Forms.TabPage();
             this.label31 = new System.Windows.Forms.Label();
             this.detailHead = new System.Windows.Forms.Label();
@@ -140,11 +127,11 @@
             this.button5 = new System.Windows.Forms.Button();
             this.price = new System.Windows.Forms.Label();
             this.head = new System.Windows.Forms.Label();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.detailImg = new System.Windows.Forms.PictureBox();
             this.windowSignIn = new System.Windows.Forms.TabPage();
-            this.eyePassSignIn = new System.Windows.Forms.PictureBox();
+            this.describesUser = new System.Windows.Forms.Label();
+            this.label74 = new System.Windows.Forms.Label();
+            this.describesPassword = new System.Windows.Forms.Label();
+            this.DesPasswordSignIn = new System.Windows.Forms.Label();
             this.label58 = new System.Windows.Forms.Label();
             this.btn = new System.Windows.Forms.Button();
             this.label57 = new System.Windows.Forms.Label();
@@ -162,10 +149,9 @@
             this.label51 = new System.Windows.Forms.Label();
             this.label46 = new System.Windows.Forms.Label();
             this.windowSignUp = new System.Windows.Forms.TabPage();
+            this.textDesName = new System.Windows.Forms.Label();
+            this.textDesConfirm = new System.Windows.Forms.Label();
             this.textDesPassword = new System.Windows.Forms.Label();
-            this.eyeConfirmPass = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.eyePassSignUp = new System.Windows.Forms.PictureBox();
             this.label72 = new System.Windows.Forms.Label();
             this.passwordConSignUp = new System.Windows.Forms.TextBox();
             this.label71 = new System.Windows.Forms.Label();
@@ -193,45 +179,100 @@
             this.headSignUp = new System.Windows.Forms.Label();
             this.passwordSignUp = new System.Windows.Forms.TextBox();
             this.label67 = new System.Windows.Forms.Label();
-            this.textDesConfirm = new System.Windows.Forms.Label();
-            this.textDesName = new System.Windows.Forms.Label();
-            this.DesPasswordSignIn = new System.Windows.Forms.Label();
-            this.describesPassword = new System.Windows.Forms.Label();
-            this.label74 = new System.Windows.Forms.Label();
-            this.describesUser = new System.Windows.Forms.Label();
+            this.imglog3 = new System.Windows.Forms.PictureBox();
+            this.imglog4 = new System.Windows.Forms.PictureBox();
+            this.imglog2 = new System.Windows.Forms.PictureBox();
+            this.imglog1 = new System.Windows.Forms.PictureBox();
+            this.img3 = new System.Windows.Forms.PictureBox();
+            this.img4 = new System.Windows.Forms.PictureBox();
+            this.img2 = new System.Windows.Forms.PictureBox();
+            this.img1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.detailImg = new System.Windows.Forms.PictureBox();
+            this.eyePassSignIn = new System.Windows.Forms.PictureBox();
+            this.eyeConfirmPass = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.eyePassSignUp = new System.Windows.Forms.PictureBox();
+            this.label79 = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.label82 = new System.Windows.Forms.Label();
+            this.label77 = new System.Windows.Forms.Label();
+            this.label80 = new System.Windows.Forms.Label();
+            this.label83 = new System.Windows.Forms.Label();
+            this.label86 = new System.Windows.Forms.Label();
+            this.label87 = new System.Windows.Forms.Label();
+            this.label88 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label89 = new System.Windows.Forms.Label();
+            this.label78 = new System.Windows.Forms.Label();
+            this.nameMemberCard = new System.Windows.Forms.Label();
+            this.label76 = new System.Windows.Forms.Label();
+            this.label92 = new System.Windows.Forms.Label();
+            this.label75 = new System.Windows.Forms.Label();
+            this.label91 = new System.Windows.Forms.Label();
+            this.label73 = new System.Windows.Forms.Label();
+            this.memberPage = new System.Windows.Forms.TabPage();
+            this.label81 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label84 = new System.Windows.Forms.Label();
+            this.label85 = new System.Windows.Forms.Label();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.label90 = new System.Windows.Forms.Label();
+            this.label93 = new System.Windows.Forms.Label();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.label94 = new System.Windows.Forms.Label();
+            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.label95 = new System.Windows.Forms.Label();
+            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.label96 = new System.Windows.Forms.Label();
+            this.textBox19 = new System.Windows.Forms.TextBox();
+            this.label97 = new System.Windows.Forms.Label();
+            this.textBox20 = new System.Windows.Forms.TextBox();
+            this.label98 = new System.Windows.Forms.Label();
+            this.textBox21 = new System.Windows.Forms.TextBox();
+            this.label100 = new System.Windows.Forms.Label();
             this.Flowers.SuspendLayout();
             this.firstPage.SuspendLayout();
             this.mainPage.SuspendLayout();
             this.groupBox6.SuspendLayout();
+            this.imgPage.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.pricePage.SuspendLayout();
+            this.groupBox5.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.detailPage.SuspendLayout();
+            this.windowSignIn.SuspendLayout();
+            this.windowSignUp.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imglog3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imglog4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imglog2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imglog1)).BeginInit();
-            this.imgPage.SuspendLayout();
-            this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.img3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.img4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.img2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.img1)).BeginInit();
-            this.pricePage.SuspendLayout();
-            this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            this.detailPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.detailImg)).BeginInit();
-            this.windowSignIn.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.eyePassSignIn)).BeginInit();
-            this.windowSignUp.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.eyeConfirmPass)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.eyePassSignUp)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.memberPage.SuspendLayout();
             this.SuspendLayout();
             // 
             // Flowers
@@ -496,50 +537,6 @@
             this.nameflowerlog3.Text = "La Vie En Rose";
             this.nameflowerlog3.Click += new System.EventHandler(this.nameflowerlog3_Click);
             // 
-            // imglog3
-            // 
-            this.imglog3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.imglog3.Location = new System.Drawing.Point(679, 38);
-            this.imglog3.Name = "imglog3";
-            this.imglog3.Size = new System.Drawing.Size(301, 334);
-            this.imglog3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imglog3.TabIndex = 3;
-            this.imglog3.TabStop = false;
-            this.imglog3.Click += new System.EventHandler(this.imglog3_Click);
-            // 
-            // imglog4
-            // 
-            this.imglog4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.imglog4.Location = new System.Drawing.Point(1009, 38);
-            this.imglog4.Name = "imglog4";
-            this.imglog4.Size = new System.Drawing.Size(301, 334);
-            this.imglog4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imglog4.TabIndex = 2;
-            this.imglog4.TabStop = false;
-            this.imglog4.Click += new System.EventHandler(this.imglog4_Click);
-            // 
-            // imglog2
-            // 
-            this.imglog2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.imglog2.Location = new System.Drawing.Point(349, 38);
-            this.imglog2.Name = "imglog2";
-            this.imglog2.Size = new System.Drawing.Size(301, 334);
-            this.imglog2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imglog2.TabIndex = 1;
-            this.imglog2.TabStop = false;
-            this.imglog2.Click += new System.EventHandler(this.imglog2_Click);
-            // 
-            // imglog1
-            // 
-            this.imglog1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.imglog1.Location = new System.Drawing.Point(21, 38);
-            this.imglog1.Name = "imglog1";
-            this.imglog1.Size = new System.Drawing.Size(301, 334);
-            this.imglog1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imglog1.TabIndex = 0;
-            this.imglog1.TabStop = false;
-            this.imglog1.Click += new System.EventHandler(this.imglogin1_Click);
-            // 
             // label48
             // 
             this.label48.BackColor = System.Drawing.Color.Transparent;
@@ -779,50 +776,6 @@
             this.nameflower3.TabIndex = 5;
             this.nameflower3.Text = "La Vie En Rose";
             this.nameflower3.Click += new System.EventHandler(this.nameflower3_Click);
-            // 
-            // img3
-            // 
-            this.img3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.img3.Location = new System.Drawing.Point(679, 38);
-            this.img3.Name = "img3";
-            this.img3.Size = new System.Drawing.Size(301, 334);
-            this.img3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.img3.TabIndex = 3;
-            this.img3.TabStop = false;
-            this.img3.Click += new System.EventHandler(this.img3_Click);
-            // 
-            // img4
-            // 
-            this.img4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.img4.Location = new System.Drawing.Point(1009, 38);
-            this.img4.Name = "img4";
-            this.img4.Size = new System.Drawing.Size(301, 334);
-            this.img4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.img4.TabIndex = 2;
-            this.img4.TabStop = false;
-            this.img4.Click += new System.EventHandler(this.img4_Click);
-            // 
-            // img2
-            // 
-            this.img2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.img2.Location = new System.Drawing.Point(349, 38);
-            this.img2.Name = "img2";
-            this.img2.Size = new System.Drawing.Size(301, 334);
-            this.img2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.img2.TabIndex = 1;
-            this.img2.TabStop = false;
-            this.img2.Click += new System.EventHandler(this.img2_Click);
-            // 
-            // img1
-            // 
-            this.img1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.img1.Location = new System.Drawing.Point(21, 38);
-            this.img1.Name = "img1";
-            this.img1.Size = new System.Drawing.Size(301, 334);
-            this.img1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.img1.TabIndex = 0;
-            this.img1.TabStop = false;
-            this.img1.Click += new System.EventHandler(this.img1_Click);
             // 
             // label20
             // 
@@ -1140,17 +1093,6 @@
             this.numberCal4.Click += new System.EventHandler(this.numberCal4_Click);
             this.numberCal4.TextChanged += new System.EventHandler(this.numberCal4_TextChanged);
             // 
-            // pictureBox10
-            // 
-            this.pictureBox10.Image = global::Project_Int.Properties.Resources._12_1;
-            this.pictureBox10.Location = new System.Drawing.Point(22, 29);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(150, 154);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox10.TabIndex = 9;
-            this.pictureBox10.TabStop = false;
-            this.pictureBox10.UseWaitCursor = true;
-            // 
             // label45
             // 
             this.label45.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
@@ -1215,17 +1157,6 @@
             this.label44.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label44.UseWaitCursor = true;
             // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Image = global::Project_Int.Properties.Resources._11_11;
-            this.pictureBox9.Location = new System.Drawing.Point(22, 29);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(150, 154);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox9.TabIndex = 6;
-            this.pictureBox9.TabStop = false;
-            this.pictureBox9.UseWaitCursor = true;
-            // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.numberCal2);
@@ -1267,17 +1198,6 @@
             this.label43.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label43.UseWaitCursor = true;
             // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Image = global::Project_Int.Properties.Resources._7_1;
-            this.pictureBox8.Location = new System.Drawing.Point(22, 29);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(150, 154);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox8.TabIndex = 3;
-            this.pictureBox8.TabStop = false;
-            this.pictureBox8.UseWaitCursor = true;
-            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.numberCal1);
@@ -1318,18 +1238,6 @@
             this.label42.Text = "Always on my Mind";
             this.label42.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label42.UseWaitCursor = true;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::Project_Int.Properties.Resources._6_1;
-            this.pictureBox5.InitialImage = null;
-            this.pictureBox5.Location = new System.Drawing.Point(22, 29);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(150, 154);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 0;
-            this.pictureBox5.TabStop = false;
-            this.pictureBox5.UseWaitCursor = true;
             // 
             // label39
             // 
@@ -1471,16 +1379,6 @@
             this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label25.UseWaitCursor = true;
             // 
-            // memberPage
-            // 
-            this.memberPage.Cursor = System.Windows.Forms.Cursors.Default;
-            this.memberPage.Location = new System.Drawing.Point(4, 34);
-            this.memberPage.Name = "memberPage";
-            this.memberPage.Size = new System.Drawing.Size(3406, 1687);
-            this.memberPage.TabIndex = 7;
-            this.memberPage.Text = "สมาชิก";
-            this.memberPage.UseVisualStyleBackColor = true;
-            // 
             // detailPage
             // 
             this.detailPage.Controls.Add(this.label31);
@@ -1611,31 +1509,6 @@
             this.head.Text = "Burning Love";
             this.head.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Location = new System.Drawing.Point(1463, 552);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(496, 599);
-            this.pictureBox7.TabIndex = 2;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Location = new System.Drawing.Point(1455, 544);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(496, 599);
-            this.pictureBox6.TabIndex = 1;
-            this.pictureBox6.TabStop = false;
-            // 
-            // detailImg
-            // 
-            this.detailImg.Location = new System.Drawing.Point(26, 108);
-            this.detailImg.Name = "detailImg";
-            this.detailImg.Size = new System.Drawing.Size(498, 534);
-            this.detailImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.detailImg.TabIndex = 0;
-            this.detailImg.TabStop = false;
-            // 
             // windowSignIn
             // 
             this.windowSignIn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(168)))), ((int)(((byte)(208)))));
@@ -1643,7 +1516,6 @@
             this.windowSignIn.Controls.Add(this.label74);
             this.windowSignIn.Controls.Add(this.describesPassword);
             this.windowSignIn.Controls.Add(this.DesPasswordSignIn);
-            this.windowSignIn.Controls.Add(this.eyePassSignIn);
             this.windowSignIn.Controls.Add(this.label58);
             this.windowSignIn.Controls.Add(this.btn);
             this.windowSignIn.Controls.Add(this.label57);
@@ -1660,6 +1532,7 @@
             this.windowSignIn.Controls.Add(this.user);
             this.windowSignIn.Controls.Add(this.label51);
             this.windowSignIn.Controls.Add(this.label46);
+            this.windowSignIn.Controls.Add(this.eyePassSignIn);
             this.windowSignIn.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.windowSignIn.Location = new System.Drawing.Point(4, 34);
             this.windowSignIn.Name = "windowSignIn";
@@ -1667,16 +1540,49 @@
             this.windowSignIn.TabIndex = 5;
             this.windowSignIn.Text = "หน้าต่างเข้าสู่ระบบ";
             // 
-            // eyePassSignIn
+            // describesUser
             // 
-            this.eyePassSignIn.Image = ((System.Drawing.Image)(resources.GetObject("eyePassSignIn.Image")));
-            this.eyePassSignIn.Location = new System.Drawing.Point(830, 416);
-            this.eyePassSignIn.Name = "eyePassSignIn";
-            this.eyePassSignIn.Size = new System.Drawing.Size(63, 54);
-            this.eyePassSignIn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.eyePassSignIn.TabIndex = 16;
-            this.eyePassSignIn.TabStop = false;
-            this.eyePassSignIn.Click += new System.EventHandler(this.eyePassSignIn_Click);
+            this.describesUser.BackColor = System.Drawing.Color.White;
+            this.describesUser.ForeColor = System.Drawing.Color.Red;
+            this.describesUser.Location = new System.Drawing.Point(719, 230);
+            this.describesUser.Name = "describesUser";
+            this.describesUser.Size = new System.Drawing.Size(175, 35);
+            this.describesUser.TabIndex = 34;
+            this.describesUser.Text = "ชื่อผู้ใช้ไม่ถูกต้อง";
+            this.describesUser.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // label74
+            // 
+            this.label74.BackColor = System.Drawing.Color.White;
+            this.label74.ForeColor = System.Drawing.Color.Red;
+            this.label74.Location = new System.Drawing.Point(1624, 834);
+            this.label74.Name = "label74";
+            this.label74.Size = new System.Drawing.Size(175, 35);
+            this.label74.TabIndex = 35;
+            this.label74.Text = "รหัสผ่านไม่ถูกต้อง";
+            this.label74.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // describesPassword
+            // 
+            this.describesPassword.BackColor = System.Drawing.Color.White;
+            this.describesPassword.ForeColor = System.Drawing.Color.Red;
+            this.describesPassword.Location = new System.Drawing.Point(719, 377);
+            this.describesPassword.Name = "describesPassword";
+            this.describesPassword.Size = new System.Drawing.Size(175, 36);
+            this.describesPassword.TabIndex = 34;
+            this.describesPassword.Text = "รหัสผ่านไม่ถูกต้อง";
+            this.describesPassword.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // DesPasswordSignIn
+            // 
+            this.DesPasswordSignIn.BackColor = System.Drawing.Color.White;
+            this.DesPasswordSignIn.ForeColor = System.Drawing.Color.Red;
+            this.DesPasswordSignIn.Location = new System.Drawing.Point(1616, 826);
+            this.DesPasswordSignIn.Name = "DesPasswordSignIn";
+            this.DesPasswordSignIn.Size = new System.Drawing.Size(175, 35);
+            this.DesPasswordSignIn.TabIndex = 34;
+            this.DesPasswordSignIn.Text = "รหัสผ่านไม่ถูกต้อง";
+            this.DesPasswordSignIn.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // label58
             // 
@@ -1843,9 +1749,6 @@
             this.windowSignUp.Controls.Add(this.textDesName);
             this.windowSignUp.Controls.Add(this.textDesConfirm);
             this.windowSignUp.Controls.Add(this.textDesPassword);
-            this.windowSignUp.Controls.Add(this.eyeConfirmPass);
-            this.windowSignUp.Controls.Add(this.pictureBox2);
-            this.windowSignUp.Controls.Add(this.eyePassSignUp);
             this.windowSignUp.Controls.Add(this.label72);
             this.windowSignUp.Controls.Add(this.passwordConSignUp);
             this.windowSignUp.Controls.Add(this.label71);
@@ -1873,12 +1776,35 @@
             this.windowSignUp.Controls.Add(this.headSignUp);
             this.windowSignUp.Controls.Add(this.passwordSignUp);
             this.windowSignUp.Controls.Add(this.label67);
+            this.windowSignUp.Controls.Add(this.eyeConfirmPass);
+            this.windowSignUp.Controls.Add(this.pictureBox2);
+            this.windowSignUp.Controls.Add(this.eyePassSignUp);
             this.windowSignUp.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.windowSignUp.Location = new System.Drawing.Point(4, 34);
             this.windowSignUp.Name = "windowSignUp";
             this.windowSignUp.Size = new System.Drawing.Size(3406, 1687);
             this.windowSignUp.TabIndex = 9;
             this.windowSignUp.Text = "หน้าต่างลงทะเบียน";
+            // 
+            // textDesName
+            // 
+            this.textDesName.BackColor = System.Drawing.Color.White;
+            this.textDesName.ForeColor = System.Drawing.Color.Red;
+            this.textDesName.Location = new System.Drawing.Point(596, 207);
+            this.textDesName.Name = "textDesName";
+            this.textDesName.Size = new System.Drawing.Size(298, 35);
+            this.textDesName.TabIndex = 32;
+            this.textDesName.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // textDesConfirm
+            // 
+            this.textDesConfirm.BackColor = System.Drawing.Color.White;
+            this.textDesConfirm.ForeColor = System.Drawing.Color.Red;
+            this.textDesConfirm.Location = new System.Drawing.Point(617, 410);
+            this.textDesConfirm.Name = "textDesConfirm";
+            this.textDesConfirm.Size = new System.Drawing.Size(277, 35);
+            this.textDesConfirm.TabIndex = 31;
+            this.textDesConfirm.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // textDesPassword
             // 
@@ -1890,38 +1816,6 @@
             this.textDesPassword.Size = new System.Drawing.Size(315, 29);
             this.textDesPassword.TabIndex = 30;
             this.textDesPassword.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // eyeConfirmPass
-            // 
-            this.eyeConfirmPass.Image = ((System.Drawing.Image)(resources.GetObject("eyeConfirmPass.Image")));
-            this.eyeConfirmPass.Location = new System.Drawing.Point(841, 447);
-            this.eyeConfirmPass.Name = "eyeConfirmPass";
-            this.eyeConfirmPass.Size = new System.Drawing.Size(52, 49);
-            this.eyeConfirmPass.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.eyeConfirmPass.TabIndex = 29;
-            this.eyeConfirmPass.TabStop = false;
-            this.eyeConfirmPass.Click += new System.EventHandler(this.eyeConfirmPass_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(1677, 818);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(53, 50);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 28;
-            this.pictureBox2.TabStop = false;
-            // 
-            // eyePassSignUp
-            // 
-            this.eyePassSignUp.Image = ((System.Drawing.Image)(resources.GetObject("eyePassSignUp.Image")));
-            this.eyePassSignUp.Location = new System.Drawing.Point(841, 348);
-            this.eyePassSignUp.Name = "eyePassSignUp";
-            this.eyePassSignUp.Size = new System.Drawing.Size(53, 50);
-            this.eyePassSignUp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.eyePassSignUp.TabIndex = 27;
-            this.eyePassSignUp.TabStop = false;
-            this.eyePassSignUp.Click += new System.EventHandler(this.eyePassSignUp_Click);
             // 
             // label72
             // 
@@ -2188,69 +2082,678 @@
             this.label67.Size = new System.Drawing.Size(523, 525);
             this.label67.TabIndex = 0;
             // 
-            // textDesConfirm
+            // imglog3
             // 
-            this.textDesConfirm.BackColor = System.Drawing.Color.White;
-            this.textDesConfirm.ForeColor = System.Drawing.Color.Red;
-            this.textDesConfirm.Location = new System.Drawing.Point(617, 410);
-            this.textDesConfirm.Name = "textDesConfirm";
-            this.textDesConfirm.Size = new System.Drawing.Size(277, 35);
-            this.textDesConfirm.TabIndex = 31;
-            this.textDesConfirm.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.imglog3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.imglog3.Location = new System.Drawing.Point(679, 38);
+            this.imglog3.Name = "imglog3";
+            this.imglog3.Size = new System.Drawing.Size(301, 334);
+            this.imglog3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imglog3.TabIndex = 3;
+            this.imglog3.TabStop = false;
+            this.imglog3.Click += new System.EventHandler(this.imglog3_Click);
             // 
-            // textDesName
+            // imglog4
             // 
-            this.textDesName.BackColor = System.Drawing.Color.White;
-            this.textDesName.ForeColor = System.Drawing.Color.Red;
-            this.textDesName.Location = new System.Drawing.Point(596, 207);
-            this.textDesName.Name = "textDesName";
-            this.textDesName.Size = new System.Drawing.Size(298, 35);
-            this.textDesName.TabIndex = 32;
-            this.textDesName.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.imglog4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.imglog4.Location = new System.Drawing.Point(1009, 38);
+            this.imglog4.Name = "imglog4";
+            this.imglog4.Size = new System.Drawing.Size(301, 334);
+            this.imglog4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imglog4.TabIndex = 2;
+            this.imglog4.TabStop = false;
+            this.imglog4.Click += new System.EventHandler(this.imglog4_Click);
             // 
-            // DesPasswordSignIn
+            // imglog2
             // 
-            this.DesPasswordSignIn.BackColor = System.Drawing.Color.White;
-            this.DesPasswordSignIn.ForeColor = System.Drawing.Color.Red;
-            this.DesPasswordSignIn.Location = new System.Drawing.Point(1616, 826);
-            this.DesPasswordSignIn.Name = "DesPasswordSignIn";
-            this.DesPasswordSignIn.Size = new System.Drawing.Size(175, 35);
-            this.DesPasswordSignIn.TabIndex = 34;
-            this.DesPasswordSignIn.Text = "รหัสผ่านไม่ถูกต้อง";
-            this.DesPasswordSignIn.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.imglog2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.imglog2.Location = new System.Drawing.Point(349, 38);
+            this.imglog2.Name = "imglog2";
+            this.imglog2.Size = new System.Drawing.Size(301, 334);
+            this.imglog2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imglog2.TabIndex = 1;
+            this.imglog2.TabStop = false;
+            this.imglog2.Click += new System.EventHandler(this.imglog2_Click);
             // 
-            // describesPassword
+            // imglog1
             // 
-            this.describesPassword.BackColor = System.Drawing.Color.White;
-            this.describesPassword.ForeColor = System.Drawing.Color.Red;
-            this.describesPassword.Location = new System.Drawing.Point(719, 377);
-            this.describesPassword.Name = "describesPassword";
-            this.describesPassword.Size = new System.Drawing.Size(175, 36);
-            this.describesPassword.TabIndex = 34;
-            this.describesPassword.Text = "รหัสผ่านไม่ถูกต้อง";
-            this.describesPassword.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.imglog1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.imglog1.Location = new System.Drawing.Point(21, 38);
+            this.imglog1.Name = "imglog1";
+            this.imglog1.Size = new System.Drawing.Size(301, 334);
+            this.imglog1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imglog1.TabIndex = 0;
+            this.imglog1.TabStop = false;
+            this.imglog1.Click += new System.EventHandler(this.imglogin1_Click);
             // 
-            // label74
+            // img3
             // 
-            this.label74.BackColor = System.Drawing.Color.White;
-            this.label74.ForeColor = System.Drawing.Color.Red;
-            this.label74.Location = new System.Drawing.Point(1624, 834);
-            this.label74.Name = "label74";
-            this.label74.Size = new System.Drawing.Size(175, 35);
-            this.label74.TabIndex = 35;
-            this.label74.Text = "รหัสผ่านไม่ถูกต้อง";
-            this.label74.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.img3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.img3.Location = new System.Drawing.Point(679, 38);
+            this.img3.Name = "img3";
+            this.img3.Size = new System.Drawing.Size(301, 334);
+            this.img3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.img3.TabIndex = 3;
+            this.img3.TabStop = false;
+            this.img3.Click += new System.EventHandler(this.img3_Click);
             // 
-            // describesUser
+            // img4
             // 
-            this.describesUser.BackColor = System.Drawing.Color.White;
-            this.describesUser.ForeColor = System.Drawing.Color.Red;
-            this.describesUser.Location = new System.Drawing.Point(719, 230);
-            this.describesUser.Name = "describesUser";
-            this.describesUser.Size = new System.Drawing.Size(175, 35);
-            this.describesUser.TabIndex = 34;
-            this.describesUser.Text = "ชื่อผู้ใช้ไม่ถูกต้อง";
-            this.describesUser.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.img4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.img4.Location = new System.Drawing.Point(1009, 38);
+            this.img4.Name = "img4";
+            this.img4.Size = new System.Drawing.Size(301, 334);
+            this.img4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.img4.TabIndex = 2;
+            this.img4.TabStop = false;
+            this.img4.Click += new System.EventHandler(this.img4_Click);
+            // 
+            // img2
+            // 
+            this.img2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.img2.Location = new System.Drawing.Point(349, 38);
+            this.img2.Name = "img2";
+            this.img2.Size = new System.Drawing.Size(301, 334);
+            this.img2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.img2.TabIndex = 1;
+            this.img2.TabStop = false;
+            this.img2.Click += new System.EventHandler(this.img2_Click);
+            // 
+            // img1
+            // 
+            this.img1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.img1.Location = new System.Drawing.Point(21, 38);
+            this.img1.Name = "img1";
+            this.img1.Size = new System.Drawing.Size(301, 334);
+            this.img1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.img1.TabIndex = 0;
+            this.img1.TabStop = false;
+            this.img1.Click += new System.EventHandler(this.img1_Click);
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Image = global::Project_Int.Properties.Resources._12_1;
+            this.pictureBox10.Location = new System.Drawing.Point(22, 29);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(150, 154);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox10.TabIndex = 9;
+            this.pictureBox10.TabStop = false;
+            this.pictureBox10.UseWaitCursor = true;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = global::Project_Int.Properties.Resources._11_11;
+            this.pictureBox9.Location = new System.Drawing.Point(22, 29);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(150, 154);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox9.TabIndex = 6;
+            this.pictureBox9.TabStop = false;
+            this.pictureBox9.UseWaitCursor = true;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = global::Project_Int.Properties.Resources._7_1;
+            this.pictureBox8.Location = new System.Drawing.Point(22, 29);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(150, 154);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox8.TabIndex = 3;
+            this.pictureBox8.TabStop = false;
+            this.pictureBox8.UseWaitCursor = true;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::Project_Int.Properties.Resources._6_1;
+            this.pictureBox5.InitialImage = null;
+            this.pictureBox5.Location = new System.Drawing.Point(22, 29);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(150, 154);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 0;
+            this.pictureBox5.TabStop = false;
+            this.pictureBox5.UseWaitCursor = true;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Location = new System.Drawing.Point(1463, 552);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(496, 599);
+            this.pictureBox7.TabIndex = 2;
+            this.pictureBox7.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Location = new System.Drawing.Point(1455, 544);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(496, 599);
+            this.pictureBox6.TabIndex = 1;
+            this.pictureBox6.TabStop = false;
+            // 
+            // detailImg
+            // 
+            this.detailImg.Location = new System.Drawing.Point(26, 108);
+            this.detailImg.Name = "detailImg";
+            this.detailImg.Size = new System.Drawing.Size(498, 534);
+            this.detailImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.detailImg.TabIndex = 0;
+            this.detailImg.TabStop = false;
+            // 
+            // eyePassSignIn
+            // 
+            this.eyePassSignIn.Image = ((System.Drawing.Image)(resources.GetObject("eyePassSignIn.Image")));
+            this.eyePassSignIn.Location = new System.Drawing.Point(830, 416);
+            this.eyePassSignIn.Name = "eyePassSignIn";
+            this.eyePassSignIn.Size = new System.Drawing.Size(63, 54);
+            this.eyePassSignIn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.eyePassSignIn.TabIndex = 16;
+            this.eyePassSignIn.TabStop = false;
+            this.eyePassSignIn.Click += new System.EventHandler(this.eyePassSignIn_Click);
+            // 
+            // eyeConfirmPass
+            // 
+            this.eyeConfirmPass.Image = ((System.Drawing.Image)(resources.GetObject("eyeConfirmPass.Image")));
+            this.eyeConfirmPass.Location = new System.Drawing.Point(841, 447);
+            this.eyeConfirmPass.Name = "eyeConfirmPass";
+            this.eyeConfirmPass.Size = new System.Drawing.Size(52, 49);
+            this.eyeConfirmPass.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.eyeConfirmPass.TabIndex = 29;
+            this.eyeConfirmPass.TabStop = false;
+            this.eyeConfirmPass.Click += new System.EventHandler(this.eyeConfirmPass_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(1677, 818);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(53, 50);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 28;
+            this.pictureBox2.TabStop = false;
+            // 
+            // eyePassSignUp
+            // 
+            this.eyePassSignUp.Image = ((System.Drawing.Image)(resources.GetObject("eyePassSignUp.Image")));
+            this.eyePassSignUp.Location = new System.Drawing.Point(841, 348);
+            this.eyePassSignUp.Name = "eyePassSignUp";
+            this.eyePassSignUp.Size = new System.Drawing.Size(53, 50);
+            this.eyePassSignUp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.eyePassSignUp.TabIndex = 27;
+            this.eyePassSignUp.TabStop = false;
+            this.eyePassSignUp.Click += new System.EventHandler(this.eyePassSignUp_Click);
+            // 
+            // label79
+            // 
+            this.label79.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(214)))), ((int)(((byte)(201)))));
+            this.label79.Location = new System.Drawing.Point(697, 0);
+            this.label79.Name = "label79";
+            this.label79.Size = new System.Drawing.Size(691, 680);
+            this.label79.TabIndex = 25;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::Project_Int.Properties.Resources.Card;
+            this.pictureBox4.Location = new System.Drawing.Point(777, 50);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(515, 268);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 19;
+            this.pictureBox4.TabStop = false;
+            // 
+            // label82
+            // 
+            this.label82.BackColor = System.Drawing.Color.Black;
+            this.label82.Font = new System.Drawing.Font("Ink Free", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label82.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(206)))), ((int)(((byte)(148)))));
+            this.label82.Location = new System.Drawing.Point(967, 265);
+            this.label82.Name = "label82";
+            this.label82.Size = new System.Drawing.Size(176, 53);
+            this.label82.TabIndex = 12;
+            this.label82.Text = "สถานภาพ โสด";
+            // 
+            // label77
+            // 
+            this.label77.BackColor = System.Drawing.Color.Black;
+            this.label77.Font = new System.Drawing.Font("Gabriola", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label77.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(189)))), ((int)(((byte)(75)))));
+            this.label77.Location = new System.Drawing.Point(1382, 779);
+            this.label77.Name = "label77";
+            this.label77.Size = new System.Drawing.Size(642, 129);
+            this.label77.TabIndex = 5;
+            this.label77.Text = "Membership Card  ";
+            this.label77.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label80
+            // 
+            this.label80.BackColor = System.Drawing.Color.Black;
+            this.label80.Font = new System.Drawing.Font("Gabriola", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label80.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(189)))), ((int)(((byte)(75)))));
+            this.label80.Location = new System.Drawing.Point(1542, 779);
+            this.label80.Name = "label80";
+            this.label80.Size = new System.Drawing.Size(322, 129);
+            this.label80.TabIndex = 7;
+            this.label80.Text = "  Membership Card  ";
+            this.label80.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label83
+            // 
+            this.label83.BackColor = System.Drawing.Color.Black;
+            this.label83.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label83.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(189)))), ((int)(((byte)(75)))));
+            this.label83.Location = new System.Drawing.Point(1578, 795);
+            this.label83.Name = "label83";
+            this.label83.Size = new System.Drawing.Size(251, 96);
+            this.label83.TabIndex = 8;
+            this.label83.Text = "ชื่อ อนัญญา แซ่แต้";
+            // 
+            // label86
+            // 
+            this.label86.BackColor = System.Drawing.Color.Black;
+            this.label86.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label86.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(189)))), ((int)(((byte)(75)))));
+            this.label86.Location = new System.Drawing.Point(1573, 819);
+            this.label86.Name = "label86";
+            this.label86.Size = new System.Drawing.Size(260, 49);
+            this.label86.TabIndex = 11;
+            this.label86.Text = "สถานภาพ โสด";
+            // 
+            // label87
+            // 
+            this.label87.BackColor = System.Drawing.Color.Black;
+            this.label87.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label87.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(189)))), ((int)(((byte)(75)))));
+            this.label87.Location = new System.Drawing.Point(1581, 827);
+            this.label87.Name = "label87";
+            this.label87.Size = new System.Drawing.Size(260, 49);
+            this.label87.TabIndex = 12;
+            this.label87.Text = "สถานภาพ โสด";
+            // 
+            // label88
+            // 
+            this.label88.BackColor = System.Drawing.Color.Black;
+            this.label88.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label88.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(189)))), ((int)(((byte)(75)))));
+            this.label88.Location = new System.Drawing.Point(1589, 835);
+            this.label88.Name = "label88";
+            this.label88.Size = new System.Drawing.Size(260, 49);
+            this.label88.TabIndex = 13;
+            this.label88.Text = "สถานภาพ โสด";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Project_Int.Properties.Resources.Card;
+            this.pictureBox1.Location = new System.Drawing.Point(777, 361);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(515, 268);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 24;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label89
+            // 
+            this.label89.BackColor = System.Drawing.Color.Black;
+            this.label89.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label89.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(189)))), ((int)(((byte)(75)))));
+            this.label89.Location = new System.Drawing.Point(1996, 1054);
+            this.label89.Name = "label89";
+            this.label89.Size = new System.Drawing.Size(260, 49);
+            this.label89.TabIndex = 14;
+            this.label89.Text = "สถานภาพ โสด";
+            // 
+            // label78
+            // 
+            this.label78.BackColor = System.Drawing.Color.Black;
+            this.label78.Font = new System.Drawing.Font("Ink Free", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label78.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(206)))), ((int)(((byte)(148)))));
+            this.label78.Location = new System.Drawing.Point(967, 576);
+            this.label78.Name = "label78";
+            this.label78.Size = new System.Drawing.Size(176, 53);
+            this.label78.TabIndex = 21;
+            this.label78.Text = "สถานภาพ โสด";
+            // 
+            // nameMemberCard
+            // 
+            this.nameMemberCard.BackColor = System.Drawing.Color.Black;
+            this.nameMemberCard.Font = new System.Drawing.Font("Ink Free", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nameMemberCard.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(200)))), ((int)(((byte)(167)))));
+            this.nameMemberCard.Location = new System.Drawing.Point(967, 147);
+            this.nameMemberCard.Name = "nameMemberCard";
+            this.nameMemberCard.Size = new System.Drawing.Size(176, 59);
+            this.nameMemberCard.TabIndex = 11;
+            this.nameMemberCard.Text = "ชื่อ 5555555555";
+            this.nameMemberCard.Click += new System.EventHandler(this.testClick);
+            // 
+            // label76
+            // 
+            this.label76.BackColor = System.Drawing.Color.Black;
+            this.label76.Font = new System.Drawing.Font("Ink Free", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label76.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(200)))), ((int)(((byte)(167)))));
+            this.label76.Location = new System.Drawing.Point(967, 458);
+            this.label76.Name = "label76";
+            this.label76.Size = new System.Drawing.Size(176, 59);
+            this.label76.TabIndex = 20;
+            this.label76.Text = "ชื่อ 5555555555";
+            // 
+            // label92
+            // 
+            this.label92.BackColor = System.Drawing.Color.Black;
+            this.label92.Font = new System.Drawing.Font("Ink Free", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label92.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(200)))), ((int)(((byte)(167)))));
+            this.label92.Location = new System.Drawing.Point(967, 189);
+            this.label92.Name = "label92";
+            this.label92.Size = new System.Drawing.Size(176, 60);
+            this.label92.TabIndex = 13;
+            this.label92.Text = "นามสกุล 555555";
+            // 
+            // label75
+            // 
+            this.label75.BackColor = System.Drawing.Color.Black;
+            this.label75.Font = new System.Drawing.Font("Ink Free", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label75.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(200)))), ((int)(((byte)(167)))));
+            this.label75.Location = new System.Drawing.Point(967, 500);
+            this.label75.Name = "label75";
+            this.label75.Size = new System.Drawing.Size(176, 60);
+            this.label75.TabIndex = 22;
+            this.label75.Text = "นามสกุล 555555";
+            // 
+            // label91
+            // 
+            this.label91.BackColor = System.Drawing.Color.Black;
+            this.label91.Font = new System.Drawing.Font("Ink Free", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label91.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(206)))), ((int)(((byte)(148)))));
+            this.label91.Location = new System.Drawing.Point(967, 226);
+            this.label91.Name = "label91";
+            this.label91.Size = new System.Drawing.Size(176, 39);
+            this.label91.TabIndex = 14;
+            this.label91.Text = "เพศ หญิง";
+            // 
+            // label73
+            // 
+            this.label73.BackColor = System.Drawing.Color.Black;
+            this.label73.Font = new System.Drawing.Font("Ink Free", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label73.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(206)))), ((int)(((byte)(148)))));
+            this.label73.Location = new System.Drawing.Point(967, 537);
+            this.label73.Name = "label73";
+            this.label73.Size = new System.Drawing.Size(176, 39);
+            this.label73.TabIndex = 23;
+            this.label73.Text = "เพศ หญิง";
+            // 
+            // memberPage
+            // 
+            this.memberPage.Controls.Add(this.textBox20);
+            this.memberPage.Controls.Add(this.label98);
+            this.memberPage.Controls.Add(this.textBox21);
+            this.memberPage.Controls.Add(this.label100);
+            this.memberPage.Controls.Add(this.textBox18);
+            this.memberPage.Controls.Add(this.label96);
+            this.memberPage.Controls.Add(this.textBox19);
+            this.memberPage.Controls.Add(this.label97);
+            this.memberPage.Controls.Add(this.textBox12);
+            this.memberPage.Controls.Add(this.label94);
+            this.memberPage.Controls.Add(this.textBox17);
+            this.memberPage.Controls.Add(this.label95);
+            this.memberPage.Controls.Add(this.textBox7);
+            this.memberPage.Controls.Add(this.label93);
+            this.memberPage.Controls.Add(this.textBox6);
+            this.memberPage.Controls.Add(this.label90);
+            this.memberPage.Controls.Add(this.textBox1);
+            this.memberPage.Controls.Add(this.label73);
+            this.memberPage.Controls.Add(this.label84);
+            this.memberPage.Controls.Add(this.label91);
+            this.memberPage.Controls.Add(this.label75);
+            this.memberPage.Controls.Add(this.label85);
+            this.memberPage.Controls.Add(this.label92);
+            this.memberPage.Controls.Add(this.label76);
+            this.memberPage.Controls.Add(this.nameMemberCard);
+            this.memberPage.Controls.Add(this.label78);
+            this.memberPage.Controls.Add(this.label89);
+            this.memberPage.Controls.Add(this.pictureBox1);
+            this.memberPage.Controls.Add(this.label88);
+            this.memberPage.Controls.Add(this.label87);
+            this.memberPage.Controls.Add(this.label86);
+            this.memberPage.Controls.Add(this.label83);
+            this.memberPage.Controls.Add(this.label80);
+            this.memberPage.Controls.Add(this.label77);
+            this.memberPage.Controls.Add(this.label82);
+            this.memberPage.Controls.Add(this.pictureBox4);
+            this.memberPage.Controls.Add(this.label79);
+            this.memberPage.Controls.Add(this.label81);
+            this.memberPage.Cursor = System.Windows.Forms.Cursors.Default;
+            this.memberPage.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.memberPage.Location = new System.Drawing.Point(4, 34);
+            this.memberPage.Name = "memberPage";
+            this.memberPage.Size = new System.Drawing.Size(3406, 1687);
+            this.memberPage.TabIndex = 7;
+            this.memberPage.Text = "สมาชิก";
+            this.memberPage.UseVisualStyleBackColor = true;
+            // 
+            // label81
+            // 
+            this.label81.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(183)))), ((int)(((byte)(159)))));
+            this.label81.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label81.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(228)))), ((int)(((byte)(212)))));
+            this.label81.Location = new System.Drawing.Point(0, 0);
+            this.label81.Name = "label81";
+            this.label81.Size = new System.Drawing.Size(728, 81);
+            this.label81.TabIndex = 17;
+            this.label81.Text = "  Flowers of Paradise";
+            this.label81.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label81.UseWaitCursor = true;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(57)))), ((int)(((byte)(108)))));
+            this.textBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.textBox1.Location = new System.Drawing.Point(211, 164);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(452, 45);
+            this.textBox1.TabIndex = 13;
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.textBox1.UseWaitCursor = true;
+            // 
+            // label84
+            // 
+            this.label84.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label84.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(149)))), ((int)(((byte)(125)))));
+            this.label84.Location = new System.Drawing.Point(21, 81);
+            this.label84.Name = "label84";
+            this.label84.Size = new System.Drawing.Size(656, 74);
+            this.label84.TabIndex = 12;
+            this.label84.Text = "ข้อมูลสมาชิก";
+            this.label84.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label84.UseWaitCursor = true;
+            // 
+            // label85
+            // 
+            this.label85.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label85.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(149)))), ((int)(((byte)(125)))));
+            this.label85.Location = new System.Drawing.Point(82, 143);
+            this.label85.Name = "label85";
+            this.label85.Size = new System.Drawing.Size(188, 86);
+            this.label85.TabIndex = 15;
+            this.label85.Text = "ชื่อ";
+            this.label85.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label85.UseWaitCursor = true;
+            // 
+            // textBox6
+            // 
+            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.textBox6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(57)))), ((int)(((byte)(108)))));
+            this.textBox6.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.textBox6.Location = new System.Drawing.Point(1526, 821);
+            this.textBox6.Multiline = true;
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(466, 45);
+            this.textBox6.TabIndex = 26;
+            this.textBox6.Text = "โปรดระบุจำนวนเงิน  ";
+            this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.textBox6.UseWaitCursor = true;
+            // 
+            // label90
+            // 
+            this.label90.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label90.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(149)))), ((int)(((byte)(125)))));
+            this.label90.Location = new System.Drawing.Point(1414, 800);
+            this.label90.Name = "label90";
+            this.label90.Size = new System.Drawing.Size(171, 86);
+            this.label90.TabIndex = 27;
+            this.label90.Text = "ชื่อ";
+            this.label90.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label90.UseWaitCursor = true;
+            // 
+            // label93
+            // 
+            this.label93.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label93.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(149)))), ((int)(((byte)(125)))));
+            this.label93.Location = new System.Drawing.Point(76, 229);
+            this.label93.Name = "label93";
+            this.label93.Size = new System.Drawing.Size(141, 89);
+            this.label93.TabIndex = 28;
+            this.label93.Text = "นามสกุล";
+            this.label93.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(211, 254);
+            this.textBox7.Multiline = true;
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(452, 45);
+            this.textBox7.TabIndex = 29;
+            // 
+            // textBox12
+            // 
+            this.textBox12.Location = new System.Drawing.Point(1545, 867);
+            this.textBox12.Multiline = true;
+            this.textBox12.Name = "textBox12";
+            this.textBox12.Size = new System.Drawing.Size(452, 45);
+            this.textBox12.TabIndex = 37;
+            // 
+            // label94
+            // 
+            this.label94.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label94.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(149)))), ((int)(((byte)(125)))));
+            this.label94.Location = new System.Drawing.Point(1410, 842);
+            this.label94.Name = "label94";
+            this.label94.Size = new System.Drawing.Size(141, 89);
+            this.label94.TabIndex = 36;
+            this.label94.Text = "นามสกุล";
+            this.label94.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // textBox17
+            // 
+            this.textBox17.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.textBox17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(57)))), ((int)(((byte)(108)))));
+            this.textBox17.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.textBox17.Location = new System.Drawing.Point(1545, 777);
+            this.textBox17.Multiline = true;
+            this.textBox17.Name = "textBox17";
+            this.textBox17.Size = new System.Drawing.Size(452, 45);
+            this.textBox17.TabIndex = 34;
+            this.textBox17.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.textBox17.UseWaitCursor = true;
+            // 
+            // label95
+            // 
+            this.label95.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label95.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(149)))), ((int)(((byte)(125)))));
+            this.label95.Location = new System.Drawing.Point(1416, 756);
+            this.label95.Name = "label95";
+            this.label95.Size = new System.Drawing.Size(188, 86);
+            this.label95.TabIndex = 35;
+            this.label95.Text = "ชื่อ";
+            this.label95.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label95.UseWaitCursor = true;
+            // 
+            // textBox18
+            // 
+            this.textBox18.Location = new System.Drawing.Point(1553, 875);
+            this.textBox18.Multiline = true;
+            this.textBox18.Name = "textBox18";
+            this.textBox18.Size = new System.Drawing.Size(452, 45);
+            this.textBox18.TabIndex = 41;
+            // 
+            // label96
+            // 
+            this.label96.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label96.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(149)))), ((int)(((byte)(125)))));
+            this.label96.Location = new System.Drawing.Point(1418, 850);
+            this.label96.Name = "label96";
+            this.label96.Size = new System.Drawing.Size(141, 89);
+            this.label96.TabIndex = 40;
+            this.label96.Text = "นามสกุล";
+            this.label96.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // textBox19
+            // 
+            this.textBox19.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.textBox19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(57)))), ((int)(((byte)(108)))));
+            this.textBox19.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.textBox19.Location = new System.Drawing.Point(1553, 785);
+            this.textBox19.Multiline = true;
+            this.textBox19.Name = "textBox19";
+            this.textBox19.Size = new System.Drawing.Size(452, 45);
+            this.textBox19.TabIndex = 38;
+            this.textBox19.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.textBox19.UseWaitCursor = true;
+            // 
+            // label97
+            // 
+            this.label97.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label97.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(149)))), ((int)(((byte)(125)))));
+            this.label97.Location = new System.Drawing.Point(1424, 764);
+            this.label97.Name = "label97";
+            this.label97.Size = new System.Drawing.Size(188, 86);
+            this.label97.TabIndex = 39;
+            this.label97.Text = "ชื่อ";
+            this.label97.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label97.UseWaitCursor = true;
+            // 
+            // textBox20
+            // 
+            this.textBox20.Location = new System.Drawing.Point(510, 566);
+            this.textBox20.Multiline = true;
+            this.textBox20.Name = "textBox20";
+            this.textBox20.Size = new System.Drawing.Size(452, 45);
+            this.textBox20.TabIndex = 49;
+            // 
+            // label98
+            // 
+            this.label98.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label98.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(149)))), ((int)(((byte)(125)))));
+            this.label98.Location = new System.Drawing.Point(375, 541);
+            this.label98.Name = "label98";
+            this.label98.Size = new System.Drawing.Size(141, 89);
+            this.label98.TabIndex = 48;
+            this.label98.Text = "นามสกุล";
+            this.label98.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // textBox21
+            // 
+            this.textBox21.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.textBox21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(57)))), ((int)(((byte)(108)))));
+            this.textBox21.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.textBox21.Location = new System.Drawing.Point(510, 476);
+            this.textBox21.Multiline = true;
+            this.textBox21.Name = "textBox21";
+            this.textBox21.Size = new System.Drawing.Size(452, 45);
+            this.textBox21.TabIndex = 43;
+            this.textBox21.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.textBox21.UseWaitCursor = true;
+            // 
+            // label100
+            // 
+            this.label100.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label100.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(149)))), ((int)(((byte)(125)))));
+            this.label100.Location = new System.Drawing.Point(381, 455);
+            this.label100.Name = "label100";
+            this.label100.Size = new System.Drawing.Size(188, 86);
+            this.label100.TabIndex = 44;
+            this.label100.Text = "ชื่อ";
+            this.label100.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label100.UseWaitCursor = true;
             // 
             // Form
             // 
@@ -2270,43 +2773,47 @@
             this.mainPage.PerformLayout();
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imglog3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imglog4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imglog2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imglog1)).EndInit();
             this.imgPage.ResumeLayout(false);
             this.imgPage.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.pricePage.ResumeLayout(false);
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.detailPage.ResumeLayout(false);
+            this.windowSignIn.ResumeLayout(false);
+            this.windowSignIn.PerformLayout();
+            this.windowSignUp.ResumeLayout(false);
+            this.windowSignUp.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imglog3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imglog4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imglog2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imglog1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.img3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.img4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.img2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.img1)).EndInit();
-            this.pricePage.ResumeLayout(false);
-            this.groupBox5.ResumeLayout(false);
-            this.groupBox5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            this.detailPage.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.detailImg)).EndInit();
-            this.windowSignIn.ResumeLayout(false);
-            this.windowSignIn.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.eyePassSignIn)).EndInit();
-            this.windowSignUp.ResumeLayout(false);
-            this.windowSignUp.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.eyeConfirmPass)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.eyePassSignUp)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.memberPage.ResumeLayout(false);
+            this.memberPage.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -2421,7 +2928,6 @@
         private System.Windows.Forms.Label label48;
         private System.Windows.Forms.TabPage windowSignIn;
         private System.Windows.Forms.TabPage loginPageV2;
-        private System.Windows.Forms.TabPage memberPage;
         private System.Windows.Forms.Label label50;
         private System.Windows.Forms.Label label47;
         private System.Windows.Forms.Label btnSignIn;
@@ -2482,6 +2988,45 @@
         private System.Windows.Forms.Label label74;
         private System.Windows.Forms.Label describesPassword;
         private System.Windows.Forms.Label DesPasswordSignIn;
+        private System.Windows.Forms.TabPage memberPage;
+        private System.Windows.Forms.Label label73;
+        private System.Windows.Forms.Label label91;
+        private System.Windows.Forms.Label label75;
+        private System.Windows.Forms.Label label92;
+        private System.Windows.Forms.Label label76;
+        private System.Windows.Forms.Label nameMemberCard;
+        private System.Windows.Forms.Label label78;
+        private System.Windows.Forms.Label label89;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label88;
+        private System.Windows.Forms.Label label87;
+        private System.Windows.Forms.Label label86;
+        private System.Windows.Forms.Label label83;
+        private System.Windows.Forms.Label label80;
+        private System.Windows.Forms.Label label77;
+        private System.Windows.Forms.Label label82;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Label label79;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label84;
+        private System.Windows.Forms.Label label85;
+        private System.Windows.Forms.Label label81;
+        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.Label label93;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.Label label90;
+        private System.Windows.Forms.TextBox textBox20;
+        private System.Windows.Forms.Label label98;
+        private System.Windows.Forms.TextBox textBox21;
+        private System.Windows.Forms.Label label100;
+        private System.Windows.Forms.TextBox textBox18;
+        private System.Windows.Forms.Label label96;
+        private System.Windows.Forms.TextBox textBox19;
+        private System.Windows.Forms.Label label97;
+        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.Label label94;
+        private System.Windows.Forms.TextBox textBox17;
+        private System.Windows.Forms.Label label95;
     }
 }
 

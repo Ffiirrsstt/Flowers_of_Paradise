@@ -558,6 +558,12 @@ namespace Project_Int
                 textDesPassword.Text = "";
             checkPassword(sender, e);
         }
+
+        private void testClick(object sender, EventArgs e)
+        {
+            MessageBox.Show(nameMemberCard.Text.Length.ToString());
+        }
+
         private void passwordConSignUp_TextChanged(object sender, EventArgs e)
         {
             checkPassword(sender, e);

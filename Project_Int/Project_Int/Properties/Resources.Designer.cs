@@ -103,6 +103,26 @@ namespace Project_Int.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _3_1 {
+            get {
+                object obj = ResourceManager.GetObject("3-1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _3_2 {
+            get {
+                object obj = ResourceManager.GetObject("3-2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _6_1 {
             get {
                 object obj = ResourceManager.GetObject("6-1", resourceCulture);
@@ -116,6 +136,16 @@ namespace Project_Int.Properties {
         internal static System.Drawing.Bitmap _7_1 {
             get {
                 object obj = ResourceManager.GetObject("7-1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Card {
+            get {
+                object obj = ResourceManager.GetObject("Card", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -80,7 +80,12 @@ namespace Project_Int
             else if (notSPStatus.Checked)
                 forstr += notSPStatus.Text;
             else
-                forstr += otherforStatus.Text;
+            {
+                if (otherStatus.Checked)
+                    forstr += funotherStatus(sender,e);
+                else
+                    forstr += otherforStatus.Text;
+            }
             return forstr;
         }
 
@@ -95,6 +100,7 @@ namespace Project_Int
 
         //บัตรสมาชิก
         //ชื่อจริงและนามสกุล
+        //จำกัดการแสดงผลอักษรบนบัตรสมาชิก
         private string funMemder(object sender, EventArgs e, string forDataOutput, string forDataInput, string forstr, int quantity, int amount)
         {
             string result = forDataOutput;
@@ -114,13 +120,23 @@ namespace Project_Int
             genderMemberCard.Text = "เพศ " + forData;
         }
 
+
         //สถานะภาพ
         private void changeStatus(object sender, EventArgs e, string forData)
         {
             statusMemberCard.Text = "สถานภาพ " + forData;
         }
+        private string funotherStatus(object sender, EventArgs e)
+        {
+            string forstr;
+            if (otherforStatus.Text != "")
+                forstr = funMemder(sender, e, "", otherforStatus.Text, "", 4, 3);
+            else
+                forstr = "กำลังรอการระบุสถานภาพ";
+            return forstr;
+        }
 
-        //สถานะภาพ
+        //บริการพิเศษ
         private string changeSV(object sender, EventArgs e)
         {
             string forstr;
@@ -409,7 +425,8 @@ namespace Project_Int
                 previewCard = false;
                 dataMemberSave(sender, e);
                 previewCard = true;
-
+                btnMemberTR.Hide();
+                btnMemberBR.Hide();
 
             }
         }
@@ -717,13 +734,19 @@ namespace Project_Int
             changeStatus(sender, e, "ไม่ระบุ");
             dataMemberSave(sender, e);
         }
+
         private void otherStatus_CheckedChanged(object sender, EventArgs e)
         {
-            if (otherforStatus.Text != "")
-                changeStatus(sender, e, otherforStatus.Text);
-            else
-                changeStatus(sender, e, "กำลังรอการระบุสถานภาพ");
+            changeStatus(sender, e, funotherStatus(sender, e));
             dataMemberSave(sender, e);
+        }
+
+        private void otherforStatus_TextChanged(object sender, EventArgs e)
+        {
+            if (otherStatus.Checked) { 
+                changeStatus(sender, e, funotherStatus(sender, e));
+                dataMemberSave(sender, e);
+            }
         }
 
         //บริการพิเศษที่ลูกค้าต้องการเพิ่มเติม
@@ -754,6 +777,8 @@ namespace Project_Int
             memderCard.Text = "Flowers of Paradise Membership Card";
             previewCard = false;
             dataMemberSave(sender, e);
+            btnMemberTL.Hide();
+            btnMemberTR.Show();
         }
 
         private void btnMemberR_Click(object sender, EventArgs e)
@@ -762,13 +787,17 @@ namespace Project_Int
             previewCard = true;
             nameFMemberCard.Text = funMemder(sender, e, nameFDataMemberCard, nameFMember.Text, "ชื่อ", 10, 9);
             nameSMemberCard.Text = funMemder(sender, e, nameSDataMemberCard, nameSMember.Text, "นามสกุล", 6, 5);
-            callchangeSV(sender, e);
+            genderMemberCard.Text = funGender(sender, e);
+            statusMemberCard.Text = funStatus(sender, e);
+            btnMemberTR.Hide();
+            btnMemberTL.Show();
         }
 
         //เซฟข้อมูลบัตรสมาชิก
         private void save_Click(object sender, EventArgs e)
         {
             funSave(sender, e);
+            dataMemberSave(sender, e);
         }
 
         //การลงทะเบียน

@@ -297,6 +297,14 @@ namespace Project_Int
         private void tabControl_Click(object sender, EventArgs e)
         {
             defultRemoveTab(sender, e);
+
+            if (Flowers.SelectedTab == Flowers.TabPages[5])
+            {
+                nameFMember.Text = "";
+                nameSMember.Text = "";
+                GenderMember.Text = "";
+                statusMember.Text = "";
+            }
         }
 
         //ปุ่มเปลี่ยนหน้าสำหรับรูปภาพ
@@ -539,6 +547,43 @@ namespace Project_Int
         {
             checkEye(sender, e, "signIn");
         }
+        private void textBox21_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox22_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label84_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private string funMemder(object sender, EventArgs e, string forDataOutput,string forDataInput,string forstr,int quantity,int amount)
+        {
+            string result= forDataOutput;
+            if (!(forDataInput == ""))
+            {
+                if (forDataInput.Length <= quantity)
+                    result = forstr+" " + forDataInput;
+                else
+                    result = forstr+" " + forDataInput.Substring(0, amount) + "...";
+            }
+            return result;
+        }
+
+        private void nameFMember_TextChanged(object sender, EventArgs e)
+        {
+            nameFPreview.Text=funMemder(sender, e, nameFMemberCard.Text, nameFMember.Text,"ชื่อ",10,9);
+        }
+
+        private void nameSMember_TextChanged(object sender, EventArgs e)
+        {
+            nameSPreview.Text = funMemder(sender, e, nameSMemberCard.Text, nameSMember.Text, "นามสกุล", 6, 5);
+        }
 
         //การลงทะเบียน
         private void user_TextChanged(object sender, EventArgs e)
@@ -552,22 +597,18 @@ namespace Project_Int
 
         private void passwordSignUp_TextChanged(object sender, EventArgs e)
         {
-            if (passwordSignUp.Text.Length<8)
+            if (passwordSignUp.Text.Length < 8)
                 textDesPassword.Text = "กรุณาสร้างรหัสผ่านอย่างน้อย 8 อักขระ";
             else
                 textDesPassword.Text = "";
             checkPassword(sender, e);
         }
 
-        private void testClick(object sender, EventArgs e)
-        {
-            MessageBox.Show(nameMemberCard.Text.Length.ToString());
-        }
-
         private void passwordConSignUp_TextChanged(object sender, EventArgs e)
         {
             checkPassword(sender, e);
         }
+
         private void signUp_Click(object sender, EventArgs e)
         {
             //เช็กว่าชื่อผู้ใช้ซ้ำไหม

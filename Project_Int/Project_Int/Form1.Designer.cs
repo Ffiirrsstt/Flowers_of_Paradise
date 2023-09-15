@@ -111,11 +111,37 @@
             this.label36 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
+            this.memberPage = new System.Windows.Forms.TabPage();
+            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.label96 = new System.Windows.Forms.Label();
+            this.textBox19 = new System.Windows.Forms.TextBox();
+            this.label97 = new System.Windows.Forms.Label();
+            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.label94 = new System.Windows.Forms.Label();
+            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.label95 = new System.Windows.Forms.Label();
+            this.nameSMember = new System.Windows.Forms.TextBox();
+            this.label93 = new System.Windows.Forms.Label();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.label90 = new System.Windows.Forms.Label();
+            this.label73 = new System.Windows.Forms.Label();
+            this.nameSPreview = new System.Windows.Forms.Label();
+            this.label85 = new System.Windows.Forms.Label();
+            this.nameFPreview = new System.Windows.Forms.Label();
+            this.label78 = new System.Windows.Forms.Label();
+            this.label89 = new System.Windows.Forms.Label();
+            this.label88 = new System.Windows.Forms.Label();
+            this.label87 = new System.Windows.Forms.Label();
+            this.label86 = new System.Windows.Forms.Label();
+            this.label83 = new System.Windows.Forms.Label();
+            this.label80 = new System.Windows.Forms.Label();
+            this.label77 = new System.Windows.Forms.Label();
+            this.label79 = new System.Windows.Forms.Label();
+            this.label81 = new System.Windows.Forms.Label();
             this.detailPage = new System.Windows.Forms.TabPage();
             this.label31 = new System.Windows.Forms.Label();
             this.detailHead = new System.Windows.Forms.Label();
@@ -179,6 +205,15 @@
             this.headSignUp = new System.Windows.Forms.Label();
             this.passwordSignUp = new System.Windows.Forms.TextBox();
             this.label67 = new System.Windows.Forms.Label();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.label84 = new System.Windows.Forms.Label();
+            this.label98 = new System.Windows.Forms.Label();
+            this.save = new System.Windows.Forms.Button();
+            this.statusMember = new System.Windows.Forms.TextBox();
+            this.GenderMember = new System.Windows.Forms.TextBox();
+            this.nameFMember = new System.Windows.Forms.TextBox();
+            this.label33 = new System.Windows.Forms.Label();
+            this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.imglog3 = new System.Windows.Forms.PictureBox();
             this.imglog4 = new System.Windows.Forms.PictureBox();
             this.imglog2 = new System.Windows.Forms.PictureBox();
@@ -191,6 +226,7 @@
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.detailImg = new System.Windows.Forms.PictureBox();
@@ -198,45 +234,12 @@
             this.eyeConfirmPass = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.eyePassSignUp = new System.Windows.Forms.PictureBox();
-            this.label79 = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.label82 = new System.Windows.Forms.Label();
-            this.label77 = new System.Windows.Forms.Label();
-            this.label80 = new System.Windows.Forms.Label();
-            this.label83 = new System.Windows.Forms.Label();
-            this.label86 = new System.Windows.Forms.Label();
-            this.label87 = new System.Windows.Forms.Label();
-            this.label88 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label89 = new System.Windows.Forms.Label();
-            this.label78 = new System.Windows.Forms.Label();
-            this.nameMemberCard = new System.Windows.Forms.Label();
-            this.label76 = new System.Windows.Forms.Label();
-            this.label92 = new System.Windows.Forms.Label();
-            this.label75 = new System.Windows.Forms.Label();
-            this.label91 = new System.Windows.Forms.Label();
-            this.label73 = new System.Windows.Forms.Label();
-            this.memberPage = new System.Windows.Forms.TabPage();
-            this.label81 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label84 = new System.Windows.Forms.Label();
-            this.label85 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label90 = new System.Windows.Forms.Label();
-            this.label93 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.label94 = new System.Windows.Forms.Label();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.label95 = new System.Windows.Forms.Label();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.label96 = new System.Windows.Forms.Label();
-            this.textBox19 = new System.Windows.Forms.TextBox();
-            this.label97 = new System.Windows.Forms.Label();
-            this.textBox20 = new System.Windows.Forms.TextBox();
-            this.label98 = new System.Windows.Forms.Label();
-            this.textBox21 = new System.Windows.Forms.TextBox();
-            this.label100 = new System.Windows.Forms.Label();
+            this.nameSMemberCard = new System.Windows.Forms.Label();
+            this.nameFMemberCard = new System.Windows.Forms.Label();
+            this.label99 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.Flowers.SuspendLayout();
             this.firstPage.SuspendLayout();
             this.mainPage.SuspendLayout();
@@ -248,9 +251,12 @@
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.memberPage.SuspendLayout();
             this.detailPage.SuspendLayout();
             this.windowSignIn.SuspendLayout();
             this.windowSignUp.SuspendLayout();
+            this.groupBox7.SuspendLayout();
+            this.groupBox8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imglog3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imglog4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imglog2)).BeginInit();
@@ -263,6 +269,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.detailImg)).BeginInit();
@@ -270,9 +277,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.eyeConfirmPass)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.eyePassSignUp)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.memberPage.SuspendLayout();
+            this.groupBox9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // Flowers
@@ -288,10 +294,10 @@
             this.Flowers.Controls.Add(this.windowSignUp);
             this.Flowers.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Flowers.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.Flowers.Location = new System.Drawing.Point(1, 6);
+            this.Flowers.Location = new System.Drawing.Point(12, 12);
             this.Flowers.Name = "Flowers";
             this.Flowers.SelectedIndex = 0;
-            this.Flowers.Size = new System.Drawing.Size(3414, 1725);
+            this.Flowers.Size = new System.Drawing.Size(1394, 713);
             this.Flowers.TabIndex = 0;
             this.Flowers.Click += new System.EventHandler(this.tabControl_Click);
             // 
@@ -308,7 +314,7 @@
             this.firstPage.Location = new System.Drawing.Point(4, 34);
             this.firstPage.Name = "firstPage";
             this.firstPage.Padding = new System.Windows.Forms.Padding(3);
-            this.firstPage.Size = new System.Drawing.Size(3406, 1687);
+            this.firstPage.Size = new System.Drawing.Size(1386, 675);
             this.firstPage.TabIndex = 0;
             this.firstPage.Text = "หน้าปก";
             // 
@@ -329,9 +335,9 @@
             // 
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(31)))), ((int)(((byte)(75)))));
-            this.label4.Location = new System.Drawing.Point(0, 378);
+            this.label4.Location = new System.Drawing.Point(8, 378);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(1386, 38);
+            this.label4.Size = new System.Drawing.Size(1372, 38);
             this.label4.TabIndex = 3;
             this.label4.Text = "ส่งมอบของขวัญที่แสนพิเศษให้คนที่คุณรักด้วยช่อดอกไม้เกรดพรีเมียม\r\n";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -384,7 +390,7 @@
             this.mainPage.Controls.Add(this.label48);
             this.mainPage.Location = new System.Drawing.Point(4, 34);
             this.mainPage.Name = "mainPage";
-            this.mainPage.Size = new System.Drawing.Size(3406, 1687);
+            this.mainPage.Size = new System.Drawing.Size(1386, 675);
             this.mainPage.TabIndex = 4;
             this.mainPage.Text = "เข้าสู่ระบบ";
             this.mainPage.UseVisualStyleBackColor = true;
@@ -554,7 +560,7 @@
             this.loginPageV2.Cursor = System.Windows.Forms.Cursors.Default;
             this.loginPageV2.Location = new System.Drawing.Point(4, 34);
             this.loginPageV2.Name = "loginPageV2";
-            this.loginPageV2.Size = new System.Drawing.Size(3406, 1687);
+            this.loginPageV2.Size = new System.Drawing.Size(1386, 675);
             this.loginPageV2.TabIndex = 8;
             this.loginPageV2.Text = "ล็อกอิน";
             this.loginPageV2.UseVisualStyleBackColor = true;
@@ -594,7 +600,7 @@
             this.imgPage.Location = new System.Drawing.Point(4, 34);
             this.imgPage.Name = "imgPage";
             this.imgPage.Padding = new System.Windows.Forms.Padding(3);
-            this.imgPage.Size = new System.Drawing.Size(3406, 1687);
+            this.imgPage.Size = new System.Drawing.Size(1386, 675);
             this.imgPage.TabIndex = 1;
             this.imgPage.Text = "รูปภาพ";
             this.imgPage.UseVisualStyleBackColor = true;
@@ -1007,7 +1013,7 @@
             this.pricePage.Location = new System.Drawing.Point(4, 34);
             this.pricePage.Name = "pricePage";
             this.pricePage.Padding = new System.Windows.Forms.Padding(10);
-            this.pricePage.Size = new System.Drawing.Size(3406, 1687);
+            this.pricePage.Size = new System.Drawing.Size(1386, 675);
             this.pricePage.TabIndex = 3;
             this.pricePage.Text = "ราคา";
             this.pricePage.UseVisualStyleBackColor = true;
@@ -1017,7 +1023,7 @@
             // 
             this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.label38.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(57)))), ((int)(((byte)(108)))));
-            this.label38.Location = new System.Drawing.Point(624, 602);
+            this.label38.Location = new System.Drawing.Point(624, 603);
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(512, 53);
             this.label38.TabIndex = 28;
@@ -1055,7 +1061,7 @@
             this.button8.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.button8.ForeColor = System.Drawing.Color.White;
-            this.button8.Location = new System.Drawing.Point(1142, 602);
+            this.button8.Location = new System.Drawing.Point(1142, 603);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(216, 56);
             this.button8.TabIndex = 24;
@@ -1312,18 +1318,6 @@
             this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label34.UseWaitCursor = true;
             // 
-            // label33
-            // 
-            this.label33.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(168)))), ((int)(((byte)(208)))));
-            this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label33.Location = new System.Drawing.Point(0, 0);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(1387, 81);
-            this.label33.TabIndex = 11;
-            this.label33.Text = "  Flowers of Paradise";
-            this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label33.UseWaitCursor = true;
-            // 
             // label30
             // 
             this.label30.BackColor = System.Drawing.Color.Transparent;
@@ -1379,6 +1373,330 @@
             this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.label25.UseWaitCursor = true;
             // 
+            // memberPage
+            // 
+            this.memberPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(91)))), ((int)(((byte)(150)))));
+            this.memberPage.Controls.Add(this.groupBox9);
+            this.memberPage.Controls.Add(this.groupBox8);
+            this.memberPage.Controls.Add(this.groupBox7);
+            this.memberPage.Controls.Add(this.textBox18);
+            this.memberPage.Controls.Add(this.label96);
+            this.memberPage.Controls.Add(this.textBox19);
+            this.memberPage.Controls.Add(this.label97);
+            this.memberPage.Controls.Add(this.textBox12);
+            this.memberPage.Controls.Add(this.label94);
+            this.memberPage.Controls.Add(this.textBox17);
+            this.memberPage.Controls.Add(this.label95);
+            this.memberPage.Controls.Add(this.textBox6);
+            this.memberPage.Controls.Add(this.label90);
+            this.memberPage.Controls.Add(this.label89);
+            this.memberPage.Controls.Add(this.label88);
+            this.memberPage.Controls.Add(this.label87);
+            this.memberPage.Controls.Add(this.label86);
+            this.memberPage.Controls.Add(this.label83);
+            this.memberPage.Controls.Add(this.label80);
+            this.memberPage.Controls.Add(this.label77);
+            this.memberPage.Controls.Add(this.label79);
+            this.memberPage.Controls.Add(this.label81);
+            this.memberPage.Cursor = System.Windows.Forms.Cursors.Default;
+            this.memberPage.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.memberPage.Location = new System.Drawing.Point(4, 34);
+            this.memberPage.Name = "memberPage";
+            this.memberPage.Size = new System.Drawing.Size(1386, 675);
+            this.memberPage.TabIndex = 7;
+            this.memberPage.Text = "สมาชิก";
+            // 
+            // textBox18
+            // 
+            this.textBox18.Location = new System.Drawing.Point(1553, 875);
+            this.textBox18.Multiline = true;
+            this.textBox18.Name = "textBox18";
+            this.textBox18.Size = new System.Drawing.Size(452, 45);
+            this.textBox18.TabIndex = 41;
+            // 
+            // label96
+            // 
+            this.label96.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label96.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(149)))), ((int)(((byte)(125)))));
+            this.label96.Location = new System.Drawing.Point(1418, 850);
+            this.label96.Name = "label96";
+            this.label96.Size = new System.Drawing.Size(141, 89);
+            this.label96.TabIndex = 40;
+            this.label96.Text = "นามสกุล";
+            this.label96.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // textBox19
+            // 
+            this.textBox19.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.textBox19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(57)))), ((int)(((byte)(108)))));
+            this.textBox19.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.textBox19.Location = new System.Drawing.Point(1553, 785);
+            this.textBox19.Multiline = true;
+            this.textBox19.Name = "textBox19";
+            this.textBox19.Size = new System.Drawing.Size(452, 45);
+            this.textBox19.TabIndex = 38;
+            this.textBox19.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.textBox19.UseWaitCursor = true;
+            // 
+            // label97
+            // 
+            this.label97.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label97.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(149)))), ((int)(((byte)(125)))));
+            this.label97.Location = new System.Drawing.Point(1424, 764);
+            this.label97.Name = "label97";
+            this.label97.Size = new System.Drawing.Size(188, 86);
+            this.label97.TabIndex = 39;
+            this.label97.Text = "ชื่อ";
+            this.label97.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label97.UseWaitCursor = true;
+            // 
+            // textBox12
+            // 
+            this.textBox12.Location = new System.Drawing.Point(1545, 867);
+            this.textBox12.Multiline = true;
+            this.textBox12.Name = "textBox12";
+            this.textBox12.Size = new System.Drawing.Size(452, 45);
+            this.textBox12.TabIndex = 37;
+            // 
+            // label94
+            // 
+            this.label94.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label94.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(149)))), ((int)(((byte)(125)))));
+            this.label94.Location = new System.Drawing.Point(1410, 842);
+            this.label94.Name = "label94";
+            this.label94.Size = new System.Drawing.Size(141, 89);
+            this.label94.TabIndex = 36;
+            this.label94.Text = "นามสกุล";
+            this.label94.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // textBox17
+            // 
+            this.textBox17.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.textBox17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(57)))), ((int)(((byte)(108)))));
+            this.textBox17.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.textBox17.Location = new System.Drawing.Point(1545, 777);
+            this.textBox17.Multiline = true;
+            this.textBox17.Name = "textBox17";
+            this.textBox17.Size = new System.Drawing.Size(452, 45);
+            this.textBox17.TabIndex = 34;
+            this.textBox17.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.textBox17.UseWaitCursor = true;
+            // 
+            // label95
+            // 
+            this.label95.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label95.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(149)))), ((int)(((byte)(125)))));
+            this.label95.Location = new System.Drawing.Point(1416, 756);
+            this.label95.Name = "label95";
+            this.label95.Size = new System.Drawing.Size(188, 86);
+            this.label95.TabIndex = 35;
+            this.label95.Text = "ชื่อ";
+            this.label95.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label95.UseWaitCursor = true;
+            // 
+            // nameSMember
+            // 
+            this.nameSMember.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(91)))), ((int)(((byte)(150)))));
+            this.nameSMember.Location = new System.Drawing.Point(175, 172);
+            this.nameSMember.Multiline = true;
+            this.nameSMember.Name = "nameSMember";
+            this.nameSMember.Size = new System.Drawing.Size(421, 56);
+            this.nameSMember.TabIndex = 29;
+            this.nameSMember.TextChanged += new System.EventHandler(this.nameSMember_TextChanged);
+            // 
+            // label93
+            // 
+            this.label93.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label93.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(27)))), ((int)(((byte)(108)))));
+            this.label93.Location = new System.Drawing.Point(46, 172);
+            this.label93.Name = "label93";
+            this.label93.Size = new System.Drawing.Size(129, 56);
+            this.label93.TabIndex = 28;
+            this.label93.Text = "นามสกุล";
+            this.label93.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // textBox6
+            // 
+            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.textBox6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(57)))), ((int)(((byte)(108)))));
+            this.textBox6.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.textBox6.Location = new System.Drawing.Point(1526, 821);
+            this.textBox6.Multiline = true;
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(466, 45);
+            this.textBox6.TabIndex = 26;
+            this.textBox6.Text = "โปรดระบุจำนวนเงิน  ";
+            this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.textBox6.UseWaitCursor = true;
+            // 
+            // label90
+            // 
+            this.label90.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label90.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(149)))), ((int)(((byte)(125)))));
+            this.label90.Location = new System.Drawing.Point(1414, 800);
+            this.label90.Name = "label90";
+            this.label90.Size = new System.Drawing.Size(171, 86);
+            this.label90.TabIndex = 27;
+            this.label90.Text = "ชื่อ";
+            this.label90.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label90.UseWaitCursor = true;
+            // 
+            // label73
+            // 
+            this.label73.BackColor = System.Drawing.Color.Black;
+            this.label73.Font = new System.Drawing.Font("Ink Free", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label73.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(206)))), ((int)(((byte)(148)))));
+            this.label73.Location = new System.Drawing.Point(248, 212);
+            this.label73.Name = "label73";
+            this.label73.Size = new System.Drawing.Size(176, 39);
+            this.label73.TabIndex = 23;
+            this.label73.Text = "เพศ หญิง";
+            // 
+            // nameSPreview
+            // 
+            this.nameSPreview.BackColor = System.Drawing.Color.Black;
+            this.nameSPreview.Font = new System.Drawing.Font("Ink Free", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nameSPreview.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(200)))), ((int)(((byte)(167)))));
+            this.nameSPreview.Location = new System.Drawing.Point(248, 175);
+            this.nameSPreview.Name = "nameSPreview";
+            this.nameSPreview.Size = new System.Drawing.Size(176, 37);
+            this.nameSPreview.TabIndex = 22;
+            this.nameSPreview.Text = "นามสกุล 555555";
+            // 
+            // label85
+            // 
+            this.label85.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label85.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(27)))), ((int)(((byte)(108)))));
+            this.label85.Location = new System.Drawing.Point(46, 76);
+            this.label85.Name = "label85";
+            this.label85.Size = new System.Drawing.Size(129, 56);
+            this.label85.TabIndex = 15;
+            this.label85.Text = "ชื่อ";
+            this.label85.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label85.UseWaitCursor = true;
+            // 
+            // nameFPreview
+            // 
+            this.nameFPreview.BackColor = System.Drawing.Color.Black;
+            this.nameFPreview.Font = new System.Drawing.Font("Ink Free", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nameFPreview.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(200)))), ((int)(((byte)(167)))));
+            this.nameFPreview.Location = new System.Drawing.Point(248, 133);
+            this.nameFPreview.Name = "nameFPreview";
+            this.nameFPreview.Size = new System.Drawing.Size(176, 42);
+            this.nameFPreview.TabIndex = 20;
+            this.nameFPreview.Text = "ชื่อ 5555555555";
+            // 
+            // label78
+            // 
+            this.label78.BackColor = System.Drawing.Color.Black;
+            this.label78.Font = new System.Drawing.Font("Ink Free", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label78.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(206)))), ((int)(((byte)(148)))));
+            this.label78.Location = new System.Drawing.Point(248, 251);
+            this.label78.Name = "label78";
+            this.label78.Size = new System.Drawing.Size(176, 46);
+            this.label78.TabIndex = 21;
+            this.label78.Text = "สถานภาพ โสด";
+            // 
+            // label89
+            // 
+            this.label89.BackColor = System.Drawing.Color.Black;
+            this.label89.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label89.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(189)))), ((int)(((byte)(75)))));
+            this.label89.Location = new System.Drawing.Point(1996, 1054);
+            this.label89.Name = "label89";
+            this.label89.Size = new System.Drawing.Size(260, 49);
+            this.label89.TabIndex = 14;
+            this.label89.Text = "สถานภาพ โสด";
+            // 
+            // label88
+            // 
+            this.label88.BackColor = System.Drawing.Color.Black;
+            this.label88.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label88.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(189)))), ((int)(((byte)(75)))));
+            this.label88.Location = new System.Drawing.Point(1589, 835);
+            this.label88.Name = "label88";
+            this.label88.Size = new System.Drawing.Size(260, 49);
+            this.label88.TabIndex = 13;
+            this.label88.Text = "สถานภาพ โสด";
+            // 
+            // label87
+            // 
+            this.label87.BackColor = System.Drawing.Color.Black;
+            this.label87.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label87.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(189)))), ((int)(((byte)(75)))));
+            this.label87.Location = new System.Drawing.Point(1581, 827);
+            this.label87.Name = "label87";
+            this.label87.Size = new System.Drawing.Size(260, 49);
+            this.label87.TabIndex = 12;
+            this.label87.Text = "สถานภาพ โสด";
+            // 
+            // label86
+            // 
+            this.label86.BackColor = System.Drawing.Color.Black;
+            this.label86.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label86.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(189)))), ((int)(((byte)(75)))));
+            this.label86.Location = new System.Drawing.Point(1573, 819);
+            this.label86.Name = "label86";
+            this.label86.Size = new System.Drawing.Size(260, 49);
+            this.label86.TabIndex = 11;
+            this.label86.Text = "สถานภาพ โสด";
+            // 
+            // label83
+            // 
+            this.label83.BackColor = System.Drawing.Color.Black;
+            this.label83.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label83.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(189)))), ((int)(((byte)(75)))));
+            this.label83.Location = new System.Drawing.Point(1578, 795);
+            this.label83.Name = "label83";
+            this.label83.Size = new System.Drawing.Size(251, 96);
+            this.label83.TabIndex = 8;
+            this.label83.Text = "ชื่อ อนัญญา แซ่แต้";
+            // 
+            // label80
+            // 
+            this.label80.BackColor = System.Drawing.Color.Black;
+            this.label80.Font = new System.Drawing.Font("Gabriola", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label80.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(189)))), ((int)(((byte)(75)))));
+            this.label80.Location = new System.Drawing.Point(1542, 779);
+            this.label80.Name = "label80";
+            this.label80.Size = new System.Drawing.Size(322, 129);
+            this.label80.TabIndex = 7;
+            this.label80.Text = "  Membership Card  ";
+            this.label80.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label77
+            // 
+            this.label77.BackColor = System.Drawing.Color.Black;
+            this.label77.Font = new System.Drawing.Font("Gabriola", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label77.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(189)))), ((int)(((byte)(75)))));
+            this.label77.Location = new System.Drawing.Point(1382, 779);
+            this.label77.Name = "label77";
+            this.label77.Size = new System.Drawing.Size(642, 129);
+            this.label77.TabIndex = 5;
+            this.label77.Text = "Membership Card  ";
+            this.label77.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label79
+            // 
+            this.label79.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(214)))), ((int)(((byte)(201)))));
+            this.label79.Location = new System.Drawing.Point(697, 0);
+            this.label79.Name = "label79";
+            this.label79.Size = new System.Drawing.Size(679, 680);
+            this.label79.TabIndex = 25;
+            // 
+            // label81
+            // 
+            this.label81.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(168)))), ((int)(((byte)(208)))));
+            this.label81.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label81.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(31)))), ((int)(((byte)(75)))));
+            this.label81.Location = new System.Drawing.Point(0, 0);
+            this.label81.Name = "label81";
+            this.label81.Size = new System.Drawing.Size(728, 81);
+            this.label81.TabIndex = 17;
+            this.label81.Text = "  Flowers of Paradise";
+            this.label81.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label81.UseWaitCursor = true;
+            // 
             // detailPage
             // 
             this.detailPage.Controls.Add(this.label31);
@@ -1399,7 +1717,7 @@
             this.detailPage.Location = new System.Drawing.Point(4, 34);
             this.detailPage.Name = "detailPage";
             this.detailPage.Padding = new System.Windows.Forms.Padding(3);
-            this.detailPage.Size = new System.Drawing.Size(3406, 1687);
+            this.detailPage.Size = new System.Drawing.Size(1386, 675);
             this.detailPage.TabIndex = 2;
             this.detailPage.Text = "รายละเอียดสินค้า";
             this.detailPage.UseVisualStyleBackColor = true;
@@ -1419,7 +1737,7 @@
             // 
             this.detailHead.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.detailHead.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(57)))), ((int)(((byte)(108)))));
-            this.detailHead.Location = new System.Drawing.Point(548, 196);
+            this.detailHead.Location = new System.Drawing.Point(548, 197);
             this.detailHead.Name = "detailHead";
             this.detailHead.Size = new System.Drawing.Size(815, 60);
             this.detailHead.TabIndex = 12;
@@ -1438,7 +1756,7 @@
             // detail
             // 
             this.detail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(57)))), ((int)(((byte)(108)))));
-            this.detail.Location = new System.Drawing.Point(553, 327);
+            this.detail.Location = new System.Drawing.Point(553, 328);
             this.detail.Name = "detail";
             this.detail.Size = new System.Drawing.Size(810, 188);
             this.detail.TabIndex = 10;
@@ -1449,7 +1767,7 @@
             // 
             this.subHead.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.subHead.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(57)))), ((int)(((byte)(108)))));
-            this.subHead.Location = new System.Drawing.Point(553, 256);
+            this.subHead.Location = new System.Drawing.Point(553, 257);
             this.subHead.Name = "subHead";
             this.subHead.Size = new System.Drawing.Size(810, 71);
             this.subHead.TabIndex = 9;
@@ -1460,7 +1778,7 @@
             // 
             this.button7.BackColor = System.Drawing.Color.Transparent;
             this.button7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(57)))), ((int)(((byte)(108)))));
-            this.button7.Location = new System.Drawing.Point(988, 543);
+            this.button7.Location = new System.Drawing.Point(988, 544);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(375, 99);
             this.button7.TabIndex = 7;
@@ -1480,7 +1798,7 @@
             // 
             this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(57)))), ((int)(((byte)(108)))));
             this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(553, 543);
+            this.button5.Location = new System.Drawing.Point(553, 544);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(376, 99);
             this.button5.TabIndex = 5;
@@ -1491,7 +1809,7 @@
             // 
             this.price.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.price.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(57)))), ((int)(((byte)(108)))));
-            this.price.Location = new System.Drawing.Point(553, 148);
+            this.price.Location = new System.Drawing.Point(553, 149);
             this.price.Name = "price";
             this.price.Size = new System.Drawing.Size(810, 48);
             this.price.TabIndex = 4;
@@ -1502,7 +1820,7 @@
             // 
             this.head.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.head.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(57)))), ((int)(((byte)(108)))));
-            this.head.Location = new System.Drawing.Point(553, 108);
+            this.head.Location = new System.Drawing.Point(553, 109);
             this.head.Name = "head";
             this.head.Size = new System.Drawing.Size(810, 40);
             this.head.TabIndex = 3;
@@ -1536,7 +1854,7 @@
             this.windowSignIn.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.windowSignIn.Location = new System.Drawing.Point(4, 34);
             this.windowSignIn.Name = "windowSignIn";
-            this.windowSignIn.Size = new System.Drawing.Size(3406, 1687);
+            this.windowSignIn.Size = new System.Drawing.Size(1386, 675);
             this.windowSignIn.TabIndex = 5;
             this.windowSignIn.Text = "หน้าต่างเข้าสู่ระบบ";
             // 
@@ -1782,7 +2100,7 @@
             this.windowSignUp.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.windowSignUp.Location = new System.Drawing.Point(4, 34);
             this.windowSignUp.Name = "windowSignUp";
-            this.windowSignUp.Size = new System.Drawing.Size(3406, 1687);
+            this.windowSignUp.Size = new System.Drawing.Size(1386, 675);
             this.windowSignUp.TabIndex = 9;
             this.windowSignUp.Text = "หน้าต่างลงทะเบียน";
             // 
@@ -2082,6 +2400,121 @@
             this.label67.Size = new System.Drawing.Size(523, 525);
             this.label67.TabIndex = 0;
             // 
+            // groupBox7
+            // 
+            this.groupBox7.BackColor = System.Drawing.Color.White;
+            this.groupBox7.Controls.Add(this.nameFMember);
+            this.groupBox7.Controls.Add(this.GenderMember);
+            this.groupBox7.Controls.Add(this.statusMember);
+            this.groupBox7.Controls.Add(this.save);
+            this.groupBox7.Controls.Add(this.label84);
+            this.groupBox7.Controls.Add(this.label98);
+            this.groupBox7.Controls.Add(this.nameSMember);
+            this.groupBox7.Controls.Add(this.label93);
+            this.groupBox7.Controls.Add(this.label85);
+            this.groupBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(31)))), ((int)(((byte)(75)))));
+            this.groupBox7.Location = new System.Drawing.Point(18, 109);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Size = new System.Drawing.Size(660, 535);
+            this.groupBox7.TabIndex = 42;
+            this.groupBox7.TabStop = false;
+            this.groupBox7.Text = "ข้อมูลสมาชิก";
+            // 
+            // label84
+            // 
+            this.label84.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label84.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(27)))), ((int)(((byte)(108)))));
+            this.label84.Location = new System.Drawing.Point(46, 371);
+            this.label84.Name = "label84";
+            this.label84.Size = new System.Drawing.Size(129, 56);
+            this.label84.TabIndex = 32;
+            this.label84.Text = "สถานภาพ";
+            this.label84.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label84.Click += new System.EventHandler(this.label84_Click);
+            // 
+            // label98
+            // 
+            this.label98.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label98.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(27)))), ((int)(((byte)(108)))));
+            this.label98.Location = new System.Drawing.Point(46, 270);
+            this.label98.Name = "label98";
+            this.label98.Size = new System.Drawing.Size(129, 56);
+            this.label98.TabIndex = 31;
+            this.label98.Text = "เพศ";
+            this.label98.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label98.UseWaitCursor = true;
+            // 
+            // save
+            // 
+            this.save.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(31)))), ((int)(((byte)(75)))));
+            this.save.ForeColor = System.Drawing.Color.White;
+            this.save.Location = new System.Drawing.Point(383, 449);
+            this.save.Name = "save";
+            this.save.Size = new System.Drawing.Size(213, 64);
+            this.save.TabIndex = 35;
+            this.save.Text = "บันทึก";
+            this.save.UseVisualStyleBackColor = false;
+            // 
+            // statusMember
+            // 
+            this.statusMember.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(91)))), ((int)(((byte)(150)))));
+            this.statusMember.Location = new System.Drawing.Point(175, 371);
+            this.statusMember.Multiline = true;
+            this.statusMember.Name = "statusMember";
+            this.statusMember.Size = new System.Drawing.Size(421, 56);
+            this.statusMember.TabIndex = 36;
+            this.statusMember.TextChanged += new System.EventHandler(this.textBox22_TextChanged);
+            // 
+            // GenderMember
+            // 
+            this.GenderMember.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(91)))), ((int)(((byte)(150)))));
+            this.GenderMember.Location = new System.Drawing.Point(175, 270);
+            this.GenderMember.Multiline = true;
+            this.GenderMember.Name = "GenderMember";
+            this.GenderMember.Size = new System.Drawing.Size(421, 56);
+            this.GenderMember.TabIndex = 37;
+            // 
+            // nameFMember
+            // 
+            this.nameFMember.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(91)))), ((int)(((byte)(150)))));
+            this.nameFMember.Location = new System.Drawing.Point(175, 76);
+            this.nameFMember.Multiline = true;
+            this.nameFMember.Name = "nameFMember";
+            this.nameFMember.Size = new System.Drawing.Size(421, 56);
+            this.nameFMember.TabIndex = 38;
+            this.nameFMember.Text = "5555";
+            this.nameFMember.TextChanged += new System.EventHandler(this.nameFMember_TextChanged);
+            // 
+            // label33
+            // 
+            this.label33.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(168)))), ((int)(((byte)(208)))));
+            this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label33.Location = new System.Drawing.Point(0, 0);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(1387, 81);
+            this.label33.TabIndex = 11;
+            this.label33.Text = "  Flowers of Paradise";
+            this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label33.UseWaitCursor = true;
+            // 
+            // groupBox8
+            // 
+            this.groupBox8.BackColor = System.Drawing.Color.White;
+            this.groupBox8.Controls.Add(this.label73);
+            this.groupBox8.Controls.Add(this.nameSPreview);
+            this.groupBox8.Controls.Add(this.nameFPreview);
+            this.groupBox8.Controls.Add(this.label78);
+            this.groupBox8.Controls.Add(this.pictureBox1);
+            this.groupBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(146)))), ((int)(((byte)(96)))));
+            this.groupBox8.Location = new System.Drawing.Point(720, 340);
+            this.groupBox8.Name = "groupBox8";
+            this.groupBox8.Size = new System.Drawing.Size(632, 328);
+            this.groupBox8.TabIndex = 43;
+            this.groupBox8.TabStop = false;
+            this.groupBox8.Text = "Preview";
+            // 
             // imglog3
             // 
             this.imglog3.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -2215,6 +2648,16 @@
             this.pictureBox5.TabStop = false;
             this.pictureBox5.UseWaitCursor = true;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Project_Int.Properties.Resources.Card;
+            this.pictureBox1.Location = new System.Drawing.Point(58, 32);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(515, 268);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 24;
+            this.pictureBox1.TabStop = false;
+            // 
             // pictureBox7
             // 
             this.pictureBox7.Location = new System.Drawing.Point(1463, 552);
@@ -2233,7 +2676,7 @@
             // 
             // detailImg
             // 
-            this.detailImg.Location = new System.Drawing.Point(26, 108);
+            this.detailImg.Location = new System.Drawing.Point(26, 109);
             this.detailImg.Name = "detailImg";
             this.detailImg.Size = new System.Drawing.Size(498, 534);
             this.detailImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -2283,484 +2726,83 @@
             this.eyePassSignUp.TabStop = false;
             this.eyePassSignUp.Click += new System.EventHandler(this.eyePassSignUp_Click);
             // 
-            // label79
+            // groupBox9
             // 
-            this.label79.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(214)))), ((int)(((byte)(201)))));
-            this.label79.Location = new System.Drawing.Point(697, 0);
-            this.label79.Name = "label79";
-            this.label79.Size = new System.Drawing.Size(691, 680);
-            this.label79.TabIndex = 25;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::Project_Int.Properties.Resources.Card;
-            this.pictureBox4.Location = new System.Drawing.Point(777, 50);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(515, 268);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 19;
-            this.pictureBox4.TabStop = false;
+            this.groupBox9.BackColor = System.Drawing.Color.White;
+            this.groupBox9.Controls.Add(this.label82);
+            this.groupBox9.Controls.Add(this.nameSMemberCard);
+            this.groupBox9.Controls.Add(this.nameFMemberCard);
+            this.groupBox9.Controls.Add(this.label99);
+            this.groupBox9.Controls.Add(this.pictureBox3);
+            this.groupBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(146)))), ((int)(((byte)(96)))));
+            this.groupBox9.Location = new System.Drawing.Point(720, 6);
+            this.groupBox9.Name = "groupBox9";
+            this.groupBox9.Size = new System.Drawing.Size(632, 328);
+            this.groupBox9.TabIndex = 44;
+            this.groupBox9.TabStop = false;
+            this.groupBox9.Text = "Flowers of Paradise Membership Card";
             // 
             // label82
             // 
             this.label82.BackColor = System.Drawing.Color.Black;
             this.label82.Font = new System.Drawing.Font("Ink Free", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label82.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(206)))), ((int)(((byte)(148)))));
-            this.label82.Location = new System.Drawing.Point(967, 265);
+            this.label82.Location = new System.Drawing.Point(248, 205);
             this.label82.Name = "label82";
-            this.label82.Size = new System.Drawing.Size(176, 53);
-            this.label82.TabIndex = 12;
-            this.label82.Text = "สถานภาพ โสด";
-            // 
-            // label77
-            // 
-            this.label77.BackColor = System.Drawing.Color.Black;
-            this.label77.Font = new System.Drawing.Font("Gabriola", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label77.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(189)))), ((int)(((byte)(75)))));
-            this.label77.Location = new System.Drawing.Point(1382, 779);
-            this.label77.Name = "label77";
-            this.label77.Size = new System.Drawing.Size(642, 129);
-            this.label77.TabIndex = 5;
-            this.label77.Text = "Membership Card  ";
-            this.label77.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label80
-            // 
-            this.label80.BackColor = System.Drawing.Color.Black;
-            this.label80.Font = new System.Drawing.Font("Gabriola", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label80.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(189)))), ((int)(((byte)(75)))));
-            this.label80.Location = new System.Drawing.Point(1542, 779);
-            this.label80.Name = "label80";
-            this.label80.Size = new System.Drawing.Size(322, 129);
-            this.label80.TabIndex = 7;
-            this.label80.Text = "  Membership Card  ";
-            this.label80.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label83
-            // 
-            this.label83.BackColor = System.Drawing.Color.Black;
-            this.label83.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label83.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(189)))), ((int)(((byte)(75)))));
-            this.label83.Location = new System.Drawing.Point(1578, 795);
-            this.label83.Name = "label83";
-            this.label83.Size = new System.Drawing.Size(251, 96);
-            this.label83.TabIndex = 8;
-            this.label83.Text = "ชื่อ อนัญญา แซ่แต้";
-            // 
-            // label86
-            // 
-            this.label86.BackColor = System.Drawing.Color.Black;
-            this.label86.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label86.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(189)))), ((int)(((byte)(75)))));
-            this.label86.Location = new System.Drawing.Point(1573, 819);
-            this.label86.Name = "label86";
-            this.label86.Size = new System.Drawing.Size(260, 49);
-            this.label86.TabIndex = 11;
-            this.label86.Text = "สถานภาพ โสด";
-            // 
-            // label87
-            // 
-            this.label87.BackColor = System.Drawing.Color.Black;
-            this.label87.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label87.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(189)))), ((int)(((byte)(75)))));
-            this.label87.Location = new System.Drawing.Point(1581, 827);
-            this.label87.Name = "label87";
-            this.label87.Size = new System.Drawing.Size(260, 49);
-            this.label87.TabIndex = 12;
-            this.label87.Text = "สถานภาพ โสด";
-            // 
-            // label88
-            // 
-            this.label88.BackColor = System.Drawing.Color.Black;
-            this.label88.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label88.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(189)))), ((int)(((byte)(75)))));
-            this.label88.Location = new System.Drawing.Point(1589, 835);
-            this.label88.Name = "label88";
-            this.label88.Size = new System.Drawing.Size(260, 49);
-            this.label88.TabIndex = 13;
-            this.label88.Text = "สถานภาพ โสด";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Project_Int.Properties.Resources.Card;
-            this.pictureBox1.Location = new System.Drawing.Point(777, 361);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(515, 268);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 24;
-            this.pictureBox1.TabStop = false;
-            // 
-            // label89
-            // 
-            this.label89.BackColor = System.Drawing.Color.Black;
-            this.label89.Font = new System.Drawing.Font("Ink Free", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label89.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(189)))), ((int)(((byte)(75)))));
-            this.label89.Location = new System.Drawing.Point(1996, 1054);
-            this.label89.Name = "label89";
-            this.label89.Size = new System.Drawing.Size(260, 49);
-            this.label89.TabIndex = 14;
-            this.label89.Text = "สถานภาพ โสด";
-            // 
-            // label78
-            // 
-            this.label78.BackColor = System.Drawing.Color.Black;
-            this.label78.Font = new System.Drawing.Font("Ink Free", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label78.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(206)))), ((int)(((byte)(148)))));
-            this.label78.Location = new System.Drawing.Point(967, 576);
-            this.label78.Name = "label78";
-            this.label78.Size = new System.Drawing.Size(176, 53);
-            this.label78.TabIndex = 21;
-            this.label78.Text = "สถานภาพ โสด";
-            // 
-            // nameMemberCard
-            // 
-            this.nameMemberCard.BackColor = System.Drawing.Color.Black;
-            this.nameMemberCard.Font = new System.Drawing.Font("Ink Free", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nameMemberCard.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(200)))), ((int)(((byte)(167)))));
-            this.nameMemberCard.Location = new System.Drawing.Point(967, 147);
-            this.nameMemberCard.Name = "nameMemberCard";
-            this.nameMemberCard.Size = new System.Drawing.Size(176, 59);
-            this.nameMemberCard.TabIndex = 11;
-            this.nameMemberCard.Text = "ชื่อ 5555555555";
-            this.nameMemberCard.Click += new System.EventHandler(this.testClick);
-            // 
-            // label76
-            // 
-            this.label76.BackColor = System.Drawing.Color.Black;
-            this.label76.Font = new System.Drawing.Font("Ink Free", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label76.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(200)))), ((int)(((byte)(167)))));
-            this.label76.Location = new System.Drawing.Point(967, 458);
-            this.label76.Name = "label76";
-            this.label76.Size = new System.Drawing.Size(176, 59);
-            this.label76.TabIndex = 20;
-            this.label76.Text = "ชื่อ 5555555555";
-            // 
-            // label92
-            // 
-            this.label92.BackColor = System.Drawing.Color.Black;
-            this.label92.Font = new System.Drawing.Font("Ink Free", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label92.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(200)))), ((int)(((byte)(167)))));
-            this.label92.Location = new System.Drawing.Point(967, 189);
-            this.label92.Name = "label92";
-            this.label92.Size = new System.Drawing.Size(176, 60);
-            this.label92.TabIndex = 13;
-            this.label92.Text = "นามสกุล 555555";
-            // 
-            // label75
-            // 
-            this.label75.BackColor = System.Drawing.Color.Black;
-            this.label75.Font = new System.Drawing.Font("Ink Free", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label75.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(200)))), ((int)(((byte)(167)))));
-            this.label75.Location = new System.Drawing.Point(967, 500);
-            this.label75.Name = "label75";
-            this.label75.Size = new System.Drawing.Size(176, 60);
-            this.label75.TabIndex = 22;
-            this.label75.Text = "นามสกุล 555555";
-            // 
-            // label91
-            // 
-            this.label91.BackColor = System.Drawing.Color.Black;
-            this.label91.Font = new System.Drawing.Font("Ink Free", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label91.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(206)))), ((int)(((byte)(148)))));
-            this.label91.Location = new System.Drawing.Point(967, 226);
-            this.label91.Name = "label91";
-            this.label91.Size = new System.Drawing.Size(176, 39);
-            this.label91.TabIndex = 14;
-            this.label91.Text = "เพศ หญิง";
-            // 
-            // label73
-            // 
-            this.label73.BackColor = System.Drawing.Color.Black;
-            this.label73.Font = new System.Drawing.Font("Ink Free", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label73.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(206)))), ((int)(((byte)(148)))));
-            this.label73.Location = new System.Drawing.Point(967, 537);
-            this.label73.Name = "label73";
-            this.label73.Size = new System.Drawing.Size(176, 39);
-            this.label73.TabIndex = 23;
-            this.label73.Text = "เพศ หญิง";
-            // 
-            // memberPage
-            // 
-            this.memberPage.Controls.Add(this.textBox20);
-            this.memberPage.Controls.Add(this.label98);
-            this.memberPage.Controls.Add(this.textBox21);
-            this.memberPage.Controls.Add(this.label100);
-            this.memberPage.Controls.Add(this.textBox18);
-            this.memberPage.Controls.Add(this.label96);
-            this.memberPage.Controls.Add(this.textBox19);
-            this.memberPage.Controls.Add(this.label97);
-            this.memberPage.Controls.Add(this.textBox12);
-            this.memberPage.Controls.Add(this.label94);
-            this.memberPage.Controls.Add(this.textBox17);
-            this.memberPage.Controls.Add(this.label95);
-            this.memberPage.Controls.Add(this.textBox7);
-            this.memberPage.Controls.Add(this.label93);
-            this.memberPage.Controls.Add(this.textBox6);
-            this.memberPage.Controls.Add(this.label90);
-            this.memberPage.Controls.Add(this.textBox1);
-            this.memberPage.Controls.Add(this.label73);
-            this.memberPage.Controls.Add(this.label84);
-            this.memberPage.Controls.Add(this.label91);
-            this.memberPage.Controls.Add(this.label75);
-            this.memberPage.Controls.Add(this.label85);
-            this.memberPage.Controls.Add(this.label92);
-            this.memberPage.Controls.Add(this.label76);
-            this.memberPage.Controls.Add(this.nameMemberCard);
-            this.memberPage.Controls.Add(this.label78);
-            this.memberPage.Controls.Add(this.label89);
-            this.memberPage.Controls.Add(this.pictureBox1);
-            this.memberPage.Controls.Add(this.label88);
-            this.memberPage.Controls.Add(this.label87);
-            this.memberPage.Controls.Add(this.label86);
-            this.memberPage.Controls.Add(this.label83);
-            this.memberPage.Controls.Add(this.label80);
-            this.memberPage.Controls.Add(this.label77);
-            this.memberPage.Controls.Add(this.label82);
-            this.memberPage.Controls.Add(this.pictureBox4);
-            this.memberPage.Controls.Add(this.label79);
-            this.memberPage.Controls.Add(this.label81);
-            this.memberPage.Cursor = System.Windows.Forms.Cursors.Default;
-            this.memberPage.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.memberPage.Location = new System.Drawing.Point(4, 34);
-            this.memberPage.Name = "memberPage";
-            this.memberPage.Size = new System.Drawing.Size(3406, 1687);
-            this.memberPage.TabIndex = 7;
-            this.memberPage.Text = "สมาชิก";
-            this.memberPage.UseVisualStyleBackColor = true;
-            // 
-            // label81
-            // 
-            this.label81.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(183)))), ((int)(((byte)(159)))));
-            this.label81.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label81.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(228)))), ((int)(((byte)(212)))));
-            this.label81.Location = new System.Drawing.Point(0, 0);
-            this.label81.Name = "label81";
-            this.label81.Size = new System.Drawing.Size(728, 81);
-            this.label81.TabIndex = 17;
-            this.label81.Text = "  Flowers of Paradise";
-            this.label81.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label81.UseWaitCursor = true;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(57)))), ((int)(((byte)(108)))));
-            this.textBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.textBox1.Location = new System.Drawing.Point(211, 164);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(452, 45);
-            this.textBox1.TabIndex = 13;
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.textBox1.UseWaitCursor = true;
-            // 
-            // label84
-            // 
-            this.label84.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label84.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(149)))), ((int)(((byte)(125)))));
-            this.label84.Location = new System.Drawing.Point(21, 81);
-            this.label84.Name = "label84";
-            this.label84.Size = new System.Drawing.Size(656, 74);
-            this.label84.TabIndex = 12;
-            this.label84.Text = "ข้อมูลสมาชิก";
-            this.label84.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label84.UseWaitCursor = true;
-            // 
-            // label85
-            // 
-            this.label85.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label85.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(149)))), ((int)(((byte)(125)))));
-            this.label85.Location = new System.Drawing.Point(82, 143);
-            this.label85.Name = "label85";
-            this.label85.Size = new System.Drawing.Size(188, 86);
-            this.label85.TabIndex = 15;
-            this.label85.Text = "ชื่อ";
-            this.label85.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label85.UseWaitCursor = true;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.textBox6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(57)))), ((int)(((byte)(108)))));
-            this.textBox6.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.textBox6.Location = new System.Drawing.Point(1526, 821);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(466, 45);
-            this.textBox6.TabIndex = 26;
-            this.textBox6.Text = "โปรดระบุจำนวนเงิน  ";
-            this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.textBox6.UseWaitCursor = true;
-            // 
-            // label90
-            // 
-            this.label90.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label90.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(149)))), ((int)(((byte)(125)))));
-            this.label90.Location = new System.Drawing.Point(1414, 800);
-            this.label90.Name = "label90";
-            this.label90.Size = new System.Drawing.Size(171, 86);
-            this.label90.TabIndex = 27;
-            this.label90.Text = "ชื่อ";
-            this.label90.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label90.UseWaitCursor = true;
-            // 
-            // label93
-            // 
-            this.label93.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label93.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(149)))), ((int)(((byte)(125)))));
-            this.label93.Location = new System.Drawing.Point(76, 229);
-            this.label93.Name = "label93";
-            this.label93.Size = new System.Drawing.Size(141, 89);
-            this.label93.TabIndex = 28;
-            this.label93.Text = "นามสกุล";
-            this.label93.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(211, 254);
-            this.textBox7.Multiline = true;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(452, 45);
-            this.textBox7.TabIndex = 29;
-            // 
-            // textBox12
-            // 
-            this.textBox12.Location = new System.Drawing.Point(1545, 867);
-            this.textBox12.Multiline = true;
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(452, 45);
-            this.textBox12.TabIndex = 37;
-            // 
-            // label94
-            // 
-            this.label94.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label94.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(149)))), ((int)(((byte)(125)))));
-            this.label94.Location = new System.Drawing.Point(1410, 842);
-            this.label94.Name = "label94";
-            this.label94.Size = new System.Drawing.Size(141, 89);
-            this.label94.TabIndex = 36;
-            this.label94.Text = "นามสกุล";
-            this.label94.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // textBox17
-            // 
-            this.textBox17.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.textBox17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(57)))), ((int)(((byte)(108)))));
-            this.textBox17.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.textBox17.Location = new System.Drawing.Point(1545, 777);
-            this.textBox17.Multiline = true;
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(452, 45);
-            this.textBox17.TabIndex = 34;
-            this.textBox17.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.textBox17.UseWaitCursor = true;
-            // 
-            // label95
-            // 
-            this.label95.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label95.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(149)))), ((int)(((byte)(125)))));
-            this.label95.Location = new System.Drawing.Point(1416, 756);
-            this.label95.Name = "label95";
-            this.label95.Size = new System.Drawing.Size(188, 86);
-            this.label95.TabIndex = 35;
-            this.label95.Text = "ชื่อ";
-            this.label95.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label95.UseWaitCursor = true;
-            // 
-            // textBox18
-            // 
-            this.textBox18.Location = new System.Drawing.Point(1553, 875);
-            this.textBox18.Multiline = true;
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(452, 45);
-            this.textBox18.TabIndex = 41;
-            // 
-            // label96
-            // 
-            this.label96.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label96.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(149)))), ((int)(((byte)(125)))));
-            this.label96.Location = new System.Drawing.Point(1418, 850);
-            this.label96.Name = "label96";
-            this.label96.Size = new System.Drawing.Size(141, 89);
-            this.label96.TabIndex = 40;
-            this.label96.Text = "นามสกุล";
-            this.label96.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // textBox19
-            // 
-            this.textBox19.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.textBox19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(57)))), ((int)(((byte)(108)))));
-            this.textBox19.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.textBox19.Location = new System.Drawing.Point(1553, 785);
-            this.textBox19.Multiline = true;
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(452, 45);
-            this.textBox19.TabIndex = 38;
-            this.textBox19.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.textBox19.UseWaitCursor = true;
-            // 
-            // label97
-            // 
-            this.label97.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label97.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(149)))), ((int)(((byte)(125)))));
-            this.label97.Location = new System.Drawing.Point(1424, 764);
-            this.label97.Name = "label97";
-            this.label97.Size = new System.Drawing.Size(188, 86);
-            this.label97.TabIndex = 39;
-            this.label97.Text = "ชื่อ";
-            this.label97.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label97.UseWaitCursor = true;
-            // 
-            // textBox20
-            // 
-            this.textBox20.Location = new System.Drawing.Point(510, 566);
-            this.textBox20.Multiline = true;
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(452, 45);
-            this.textBox20.TabIndex = 49;
-            // 
-            // label98
-            // 
-            this.label98.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label98.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(149)))), ((int)(((byte)(125)))));
-            this.label98.Location = new System.Drawing.Point(375, 541);
-            this.label98.Name = "label98";
-            this.label98.Size = new System.Drawing.Size(141, 89);
-            this.label98.TabIndex = 48;
-            this.label98.Text = "นามสกุล";
-            this.label98.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // textBox21
-            // 
-            this.textBox21.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.textBox21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(57)))), ((int)(((byte)(108)))));
-            this.textBox21.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.textBox21.Location = new System.Drawing.Point(510, 476);
-            this.textBox21.Multiline = true;
-            this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(452, 45);
-            this.textBox21.TabIndex = 43;
-            this.textBox21.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.textBox21.UseWaitCursor = true;
-            // 
-            // label100
-            // 
-            this.label100.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label100.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(167)))), ((int)(((byte)(149)))), ((int)(((byte)(125)))));
-            this.label100.Location = new System.Drawing.Point(381, 455);
-            this.label100.Name = "label100";
-            this.label100.Size = new System.Drawing.Size(188, 86);
-            this.label100.TabIndex = 44;
-            this.label100.Text = "ชื่อ";
-            this.label100.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label100.UseWaitCursor = true;
+            this.label82.Size = new System.Drawing.Size(176, 39);
+            this.label82.TabIndex = 23;
+            this.label82.Text = "เพศ หญิง";
+            // 
+            // nameSMemberCard
+            // 
+            this.nameSMemberCard.BackColor = System.Drawing.Color.Black;
+            this.nameSMemberCard.Font = new System.Drawing.Font("Ink Free", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nameSMemberCard.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(200)))), ((int)(((byte)(167)))));
+            this.nameSMemberCard.Location = new System.Drawing.Point(248, 168);
+            this.nameSMemberCard.Name = "nameSMemberCard";
+            this.nameSMemberCard.Size = new System.Drawing.Size(176, 37);
+            this.nameSMemberCard.TabIndex = 22;
+            this.nameSMemberCard.Text = "นามสกุล 555555";
+            // 
+            // nameFMemberCard
+            // 
+            this.nameFMemberCard.BackColor = System.Drawing.Color.Black;
+            this.nameFMemberCard.Font = new System.Drawing.Font("Ink Free", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nameFMemberCard.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(200)))), ((int)(((byte)(167)))));
+            this.nameFMemberCard.Location = new System.Drawing.Point(248, 126);
+            this.nameFMemberCard.Name = "nameFMemberCard";
+            this.nameFMemberCard.Size = new System.Drawing.Size(176, 42);
+            this.nameFMemberCard.TabIndex = 20;
+            this.nameFMemberCard.Text = "ชื่อ 5555555555";
+            // 
+            // label99
+            // 
+            this.label99.BackColor = System.Drawing.Color.Black;
+            this.label99.Font = new System.Drawing.Font("Ink Free", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label99.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(206)))), ((int)(((byte)(148)))));
+            this.label99.Location = new System.Drawing.Point(248, 244);
+            this.label99.Name = "label99";
+            this.label99.Size = new System.Drawing.Size(176, 46);
+            this.label99.TabIndex = 21;
+            this.label99.Text = "สถานภาพ โสด";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::Project_Int.Properties.Resources.Card;
+            this.pictureBox3.Location = new System.Drawing.Point(58, 32);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(515, 268);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 24;
+            this.pictureBox3.TabStop = false;
             // 
             // Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(168)))), ((int)(((byte)(208)))));
-            this.ClientSize = new System.Drawing.Size(1376, 714);
+            this.ClientSize = new System.Drawing.Size(1401, 721);
             this.Controls.Add(this.Flowers);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form";
@@ -2786,11 +2828,16 @@
             this.groupBox3.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.memberPage.ResumeLayout(false);
+            this.memberPage.PerformLayout();
             this.detailPage.ResumeLayout(false);
             this.windowSignIn.ResumeLayout(false);
             this.windowSignIn.PerformLayout();
             this.windowSignUp.ResumeLayout(false);
             this.windowSignUp.PerformLayout();
+            this.groupBox7.ResumeLayout(false);
+            this.groupBox7.PerformLayout();
+            this.groupBox8.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.imglog3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imglog4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imglog2)).EndInit();
@@ -2803,6 +2850,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.detailImg)).EndInit();
@@ -2810,10 +2858,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.eyeConfirmPass)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.eyePassSignUp)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.memberPage.ResumeLayout(false);
-            this.memberPage.PerformLayout();
+            this.groupBox9.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2884,7 +2930,6 @@
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label numTotalPrice;
@@ -2990,11 +3035,8 @@
         private System.Windows.Forms.Label DesPasswordSignIn;
         private System.Windows.Forms.TabPage memberPage;
         private System.Windows.Forms.Label label73;
-        private System.Windows.Forms.Label label91;
-        private System.Windows.Forms.Label label75;
-        private System.Windows.Forms.Label label92;
-        private System.Windows.Forms.Label label76;
-        private System.Windows.Forms.Label nameMemberCard;
+        private System.Windows.Forms.Label nameSPreview;
+        private System.Windows.Forms.Label nameFPreview;
         private System.Windows.Forms.Label label78;
         private System.Windows.Forms.Label label89;
         private System.Windows.Forms.PictureBox pictureBox1;
@@ -3004,21 +3046,13 @@
         private System.Windows.Forms.Label label83;
         private System.Windows.Forms.Label label80;
         private System.Windows.Forms.Label label77;
-        private System.Windows.Forms.Label label82;
-        private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label79;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label84;
         private System.Windows.Forms.Label label85;
         private System.Windows.Forms.Label label81;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox nameSMember;
         private System.Windows.Forms.Label label93;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label90;
-        private System.Windows.Forms.TextBox textBox20;
-        private System.Windows.Forms.Label label98;
-        private System.Windows.Forms.TextBox textBox21;
-        private System.Windows.Forms.Label label100;
         private System.Windows.Forms.TextBox textBox18;
         private System.Windows.Forms.Label label96;
         private System.Windows.Forms.TextBox textBox19;
@@ -3027,6 +3061,21 @@
         private System.Windows.Forms.Label label94;
         private System.Windows.Forms.TextBox textBox17;
         private System.Windows.Forms.Label label95;
+        private System.Windows.Forms.GroupBox groupBox7;
+        private System.Windows.Forms.Button save;
+        private System.Windows.Forms.Label label84;
+        private System.Windows.Forms.Label label98;
+        private System.Windows.Forms.TextBox nameFMember;
+        private System.Windows.Forms.TextBox GenderMember;
+        private System.Windows.Forms.TextBox statusMember;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.GroupBox groupBox8;
+        private System.Windows.Forms.GroupBox groupBox9;
+        private System.Windows.Forms.Label label82;
+        private System.Windows.Forms.Label nameSMemberCard;
+        private System.Windows.Forms.Label nameFMemberCard;
+        private System.Windows.Forms.Label label99;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }
 

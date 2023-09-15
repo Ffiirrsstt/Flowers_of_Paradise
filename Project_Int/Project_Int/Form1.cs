@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace Project_Int
 {
@@ -302,8 +303,6 @@ namespace Project_Int
             {
                 nameFMember.Text = "";
                 nameSMember.Text = "";
-                GenderMember.Text = "";
-                statusMember.Text = "";
             }
         }
 
@@ -547,21 +546,11 @@ namespace Project_Int
         {
             checkEye(sender, e, "signIn");
         }
-        private void textBox21_TextChanged(object sender, EventArgs e)
-        {
 
-        }
+        //บัตรสมาชิก
 
-        private void textBox22_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label84_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        string nameFDataMemberCard="ชื่อ ", nameSDataMemberCard = "นามสกุล ";
+        //ชื่อจริงและนามสกุล
         private string funMemder(object sender, EventArgs e, string forDataOutput,string forDataInput,string forstr,int quantity,int amount)
         {
             string result= forDataOutput;
@@ -575,14 +564,84 @@ namespace Project_Int
             return result;
         }
 
-        private void nameFMember_TextChanged(object sender, EventArgs e)
+        //เพศ
+        private void changeGender(object sender, EventArgs e,string forData)
         {
-            nameFPreview.Text=funMemder(sender, e, nameFMemberCard.Text, nameFMember.Text,"ชื่อ",10,9);
+            genderMemberCard.Text = "เพศ " + forData;
         }
 
+        //สถานะภาพ
+        private void changeStatus(object sender, EventArgs e, string forData)
+        {
+            statusMemberCard.Text = "สถานภาพ " + forData;
+        }
+        //ชื่อจริง
+        private void nameFMember_TextChanged(object sender, EventArgs e)
+        {
+            nameFMemberCard.Text=funMemder(sender, e, nameFDataMemberCard, nameFMember.Text,"ชื่อ",10,9);
+        }
+
+        //นามสกุล
         private void nameSMember_TextChanged(object sender, EventArgs e)
         {
-            nameSPreview.Text = funMemder(sender, e, nameSMemberCard.Text, nameSMember.Text, "นามสกุล", 6, 5);
+            nameSMemberCard.Text = funMemder(sender, e, nameSDataMemberCard, nameSMember.Text, "นามสกุล", 6, 5);
+        }
+
+        //เพศ
+        private void female_Changed(object sender, EventArgs e)
+        {
+            changeGender(sender, e,"หญิง");
+        }
+
+        private void male_CheckedChanged(object sender, EventArgs e)
+        {
+            changeGender(sender, e, "ชาย");
+        }
+
+        private void lgbt_CheckedChanged(object sender, EventArgs e)
+        {
+            changeGender(sender, e, "LGBT");
+        }
+
+        private void notSPGender_CheckedChanged(object sender, EventArgs e)
+        {
+            changeGender(sender, e, "ไม่ระบุ");
+        }
+
+
+        private void single_CheckedChanged(object sender, EventArgs e)
+        {
+            changeStatus(sender, e, "โสด");
+        }
+
+        private void marry_CheckedChanged(object sender, EventArgs e)
+        {
+            changeStatus(sender, e, "แต่งงาน");
+        }
+
+        private void notSPStatus_CheckedChanged(object sender, EventArgs e)
+        {
+            changeStatus(sender, e, "ไม่ระบุ");
+        }
+        private void otherStatus_CheckedChanged(object sender, EventArgs e)
+        {
+            if (otherforStatus.Text != "")
+                changeStatus(sender, e, otherforStatus.Text);
+            else
+                changeStatus(sender, e, "กำลังรอการระบุสถานภาพ");
+        }
+
+
+        //โซนบัตรสมาชิกที่บันทึกข้อมูลแล้วกับบัตรในรูปแบบ Preview
+        private void btnMemberL_Click(object sender, EventArgs e)
+        {
+            memderCart.Text = "Flowers of Paradise Membership Card";
+            //Preview
+        }
+
+        //เซฟข้อมูลบัตรสมาชิก
+        private void save_Click(object sender, EventArgs e)
+        {
         }
 
         //การลงทะเบียน

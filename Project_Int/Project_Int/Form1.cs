@@ -39,11 +39,84 @@ namespace Project_Int
         };
 
         List<List<string>> dataSignUp = new List<List<string>>();
-        Boolean userRepeat, passwordConfirmOk, previewCard;
-        int CountPage, indexselect, countEyePassSignUp, countEyePassConSignUp, countEyePassSignIn;
-        int indexGender=3, indexStatus=2, indexSV;
         string nameFDataMemberCard = "ชื่อ ", nameSDataMemberCard = "นามสกุล ", genderDataMemberCard = "เพศ ไม่ระบุ", statusDataMemberCard = "สถานภาพ ไม่ระบุ", SVDataMemberCard = "";
+        Boolean userRepeat, passwordConfirmOk, previewCard;
+        Boolean imgforMember = false;
+        Boolean[] boolSV = {false, false, false};
         double numberCal;
+        int CountPage, indexselect, countEyePassSignUp, countEyePassConSignUp, countEyePassSignIn;
+        int indexGender=3, indexStatus=2;
+
+        //จัดการรูปในหน้าสมาชิกตัวที่ทำการบันทึกแล้วว่าจะแสดงรูปหรือไม่แสดง (ถ้าระบบยังไม่เคยทำการบันทึกจะไม่แสดงรูป ถ้าระบบเคยทำการบันทึกแล้วจะทำการแสดงรูปภาพ)
+        //จากโจทย์เป็นการตั้งรูปไว้แล้ว แล้วเอารูปสีดำมาวางทับปิด จึงออกคำสั่งกับรูปสีดำให้ซ่อนหรือแสดงเพื่อให้เห็นรูปภาพ
+        private void imgMemberforBool(object sender, EventArgs e)
+        {
+            if (imgforMember)
+                imgMember.Hide();
+            else
+                imgMember.Show();
+        }
+
+        //การติ๊ก checkbox และ radio
+        private void indexforMember(object sender, EventArgs e)
+        {
+            //gender
+            if (female.Checked)
+                indexGender = 0;
+            else if (male.Checked)
+                indexGender = 1;
+            else if (lgbt.Checked)
+                indexGender = 2;
+            else
+                indexGender = 3;
+
+            //status
+            if (single.Checked)
+                indexStatus = 0;
+            else if (marry.Checked)
+                indexStatus = 1;
+            else if (notSPStatus.Checked)
+                indexStatus = 2;
+            else
+                indexStatus = 3;
+
+            //Service
+            if (card.Checked)
+                boolSV[0] = true;
+            if (consult.Checked)
+                boolSV[1] = true;
+            if (otherSV.Checked)
+                boolSV[2] = true;
+        }
+        private void checkRadio(object sender, EventArgs e)
+        {
+            //เพศ
+            if (indexGender == 0)
+                female.Checked = true;
+            else if (indexGender == 1)
+                male.Checked = true;
+            else if (indexGender == 2)
+                lgbt.Checked = true;
+            else
+                notSPGender.Checked = true;
+
+            //status
+            if (indexStatus == 0)
+                single.Checked = true;
+            else if (indexStatus == 1)
+                marry.Checked = true;
+            else if (indexStatus == 2)
+                notSPStatus.Checked = true;
+            else
+                otherStatus.Checked = true;
+        }
+
+        private void funcheckbox(object sender, EventArgs e)
+        {
+            card.Checked = boolSV[0];
+            consult.Checked = boolSV[1];
+            otherSV.Checked = boolSV[2];
+        }
 
         //การแสดงผลบัตรสมาชิกในรูปแบบที่แสดงผลของข้อมูลที่ถูกบันทึกเอาไว้แล้ว
         private void dataMemberSave(object sender, EventArgs e)
@@ -404,6 +477,23 @@ namespace Project_Int
             Flowers.SelectedTab = Flowers.TabPages[6];
         }
 
+        //การตั้งค่าเริ่มต้นเมื่อเปิดแท็ปหน้าสมาชิก
+        private void settingPreview(object sender, EventArgs e)
+        {
+            //data
+            previewCard = false;
+            dataMemberSave(sender, e);
+            previewCard = true;
+
+            //botton
+            memderCard.Text = "Preview";
+            memberCardSV.Text = "Preview";
+            btnMemberTR.Hide();
+            btnMemberTL.Show();
+            btnMemberBR.Hide();
+            btnMemberBL.Show();
+        }
+
         public Form()
 
         {
@@ -417,28 +507,6 @@ namespace Project_Int
             headSignUp.Text = "ลงทะเบียนสมาชิกเพื่อใช้บริการ\nFlowers of Paradise ID";
         }
 
-        private void checkRadio(object sender, EventArgs e)
-        {
-            //เพศ
-            if (indexGender == 0)
-                female.Checked = true;
-            else if (indexGender == 1)
-                male.Checked = true;
-            else if (indexGender == 2)
-                lgbt.Checked = true;
-            else
-                notSPGender.Checked = true;
-
-            //status
-            if (indexStatus ==0)
-                single.Checked = true;
-            else if (indexStatus ==1)
-                marry.Checked = true;
-            else if (indexStatus ==2)
-                notSPStatus.Checked = true;
-            else
-                otherStatus.Checked = true;
-        }
         private void tabControl_Click(object sender, EventArgs e)
         {
             defultRemoveTab(sender, e);
@@ -447,12 +515,12 @@ namespace Project_Int
             {
                 nameFMember.Clear();
                 nameSMember.Clear();
-                previewCard = false;
-                dataMemberSave(sender, e);
-                previewCard = true;
-                btnMemberTR.Hide();
-                btnMemberBR.Hide();
                 checkRadio(sender, e);
+                funcheckbox(sender, e);
+                settingPreview(sender, e);
+                imgMember.Hide(); //เริ่มที่ซ่อนรูปสีดำที่ทับรูปของเรา เนื่องจากสิ่งที่ถูกแสดงคือหน้า preview
+                                  //หมายเหตุ : ถ้าเปลี่ยนไปหน้าสำหรับข้อมูลที่ถูกบันทึกจึงจะเปลี่ยนแปลงตามข้อมูลที่ว่าเคยมีการทำการบันทึกข้อมูลหรือไม่
+
             }
         }
 
@@ -800,6 +868,7 @@ namespace Project_Int
             dataMemberSave(sender, e);
             btnMemberTL.Hide();
             btnMemberTR.Show();
+            imgMemberforBool(sender, e);
         }
 
         private void btnMemberR_Click(object sender, EventArgs e)
@@ -812,36 +881,7 @@ namespace Project_Int
             statusMemberCard.Text = funStatus(sender, e);
             btnMemberTR.Hide();
             btnMemberTL.Show();
-        }
-        private void indexforMember(object sender, EventArgs e)
-        {
-            //gender
-            if (female.Checked)
-                indexGender = 0;
-            else if (male.Checked)
-                indexGender = 1;
-            else if (lgbt.Checked)
-                indexGender = 2;
-            else
-                indexGender = 3;
-
-            //status
-            if (single.Checked)
-                indexStatus = 0;
-            else if (marry.Checked)
-                indexStatus = 1;
-            else if (notSPStatus.Checked)
-                indexStatus = 2;
-            else
-                indexStatus = 3;
-
-            //Service
-            if (card.Checked)
-                indexSV[0] = true;
-            if (consult.Checked)
-                indexSV[1] = true;
-            if (otherSV.Checked)
-                indexSV[2] = true;
+            imgMember.Hide();
         }
 
         //เซฟข้อมูลบัตรสมาชิก
@@ -850,6 +890,9 @@ namespace Project_Int
             funSave(sender, e);
             dataMemberSave(sender, e);
             indexforMember(sender, e);
+            MessageBox.Show("บันทึกข้อมูลสำเร็จ!");
+            imgforMember = true;
+            imgMember.Hide();
         }
 
         //การลงทะเบียน

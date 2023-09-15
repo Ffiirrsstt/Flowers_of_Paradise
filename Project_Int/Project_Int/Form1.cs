@@ -39,8 +39,10 @@ namespace Project_Int
         };
 
         List<List<string>> dataSignUp = new List<List<string>>();
-        Boolean userRepeat, passwordConfirmOk;
+        Boolean userRepeat, passwordConfirmOk, previewCard;
         int CountPage, indexselect, countEyePassSignUp, countEyePassConSignUp, countEyePassSignIn;
+        int indexGender=3, indexStatus=2, indexSV;
+        string nameFDataMemberCard = "ชื่อ ", nameSDataMemberCard = "นามสกุล ", genderDataMemberCard = "เพศ ไม่ระบุ", statusDataMemberCard = "สถานภาพ ไม่ระบุ", SVDataMemberCard = "";
         double numberCal;
 
         //การแสดงผลบัตรสมาชิกในรูปแบบที่แสดงผลของข้อมูลที่ถูกบันทึกเอาไว้แล้ว
@@ -414,6 +416,29 @@ namespace Project_Int
             loadImg(sender, e);//ถ้าไม่ได้มีต้องการให้หน้าของสินค้าเริ่มต้นที่สินค้าชิ้นแรก แต่ถ้าต้องการให้เริ่มที่สินค้าชิ้นแรกให้ใส่ที่ tab แทน
             headSignUp.Text = "ลงทะเบียนสมาชิกเพื่อใช้บริการ\nFlowers of Paradise ID";
         }
+
+        private void checkRadio(object sender, EventArgs e)
+        {
+            //เพศ
+            if (indexGender == 0)
+                female.Checked = true;
+            else if (indexGender == 1)
+                male.Checked = true;
+            else if (indexGender == 2)
+                lgbt.Checked = true;
+            else
+                notSPGender.Checked = true;
+
+            //status
+            if (indexStatus ==0)
+                single.Checked = true;
+            else if (indexStatus ==1)
+                marry.Checked = true;
+            else if (indexStatus ==2)
+                notSPStatus.Checked = true;
+            else
+                otherStatus.Checked = true;
+        }
         private void tabControl_Click(object sender, EventArgs e)
         {
             defultRemoveTab(sender, e);
@@ -427,7 +452,7 @@ namespace Project_Int
                 previewCard = true;
                 btnMemberTR.Hide();
                 btnMemberBR.Hide();
-
+                checkRadio(sender, e);
             }
         }
 
@@ -673,10 +698,6 @@ namespace Project_Int
         }
 
         //บัตรสมาชิก
-
-        string nameFDataMemberCard= "ชื่อ ", nameSDataMemberCard="นามสกุล ", genderDataMemberCard= "เพศ ไม่ระบุ", statusDataMemberCard= "สถานภาพ ไม่ระบุ", SVDataMemberCard="";
-        Boolean previewCard;
-
         //ชื่อจริง
         private void nameFMember_TextChanged(object sender, EventArgs e)
         {
@@ -792,12 +813,43 @@ namespace Project_Int
             btnMemberTR.Hide();
             btnMemberTL.Show();
         }
+        private void indexforMember(object sender, EventArgs e)
+        {
+            //gender
+            if (female.Checked)
+                indexGender = 0;
+            else if (male.Checked)
+                indexGender = 1;
+            else if (lgbt.Checked)
+                indexGender = 2;
+            else
+                indexGender = 3;
+
+            //status
+            if (single.Checked)
+                indexStatus = 0;
+            else if (marry.Checked)
+                indexStatus = 1;
+            else if (notSPStatus.Checked)
+                indexStatus = 2;
+            else
+                indexStatus = 3;
+
+            //Service
+            if (card.Checked)
+                indexSV[0] = true;
+            if (consult.Checked)
+                indexSV[1] = true;
+            if (otherSV.Checked)
+                indexSV[2] = true;
+        }
 
         //เซฟข้อมูลบัตรสมาชิก
         private void save_Click(object sender, EventArgs e)
         {
             funSave(sender, e);
             dataMemberSave(sender, e);
+            indexforMember(sender, e);
         }
 
         //การลงทะเบียน

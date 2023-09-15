@@ -254,6 +254,8 @@
             this.card = new System.Windows.Forms.CheckBox();
             this.otherSV = new System.Windows.Forms.CheckBox();
             this.consult = new System.Windows.Forms.CheckBox();
+            this.button12 = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
             this.Flowers.SuspendLayout();
             this.firstPage.SuspendLayout();
             this.mainPage.SuspendLayout();
@@ -1585,7 +1587,7 @@
             this.memderCard.Size = new System.Drawing.Size(632, 328);
             this.memderCard.TabIndex = 44;
             this.memderCard.TabStop = false;
-            this.memderCard.Text = "Flowers of Paradise Membership Card";
+            this.memderCard.Text = "Preview";
             // 
             // genderMemberCard
             // 
@@ -1596,7 +1598,7 @@
             this.genderMemberCard.Name = "genderMemberCard";
             this.genderMemberCard.Size = new System.Drawing.Size(176, 39);
             this.genderMemberCard.TabIndex = 23;
-            this.genderMemberCard.Text = "เพศ หญิง";
+            this.genderMemberCard.Text = "เพศ ไม่ระบุ";
             // 
             // nameSMemberCard
             // 
@@ -1607,7 +1609,7 @@
             this.nameSMemberCard.Name = "nameSMemberCard";
             this.nameSMemberCard.Size = new System.Drawing.Size(176, 37);
             this.nameSMemberCard.TabIndex = 22;
-            this.nameSMemberCard.Text = "นามสกุล 555555";
+            this.nameSMemberCard.Text = "นามสกุล ";
             // 
             // nameFMemberCard
             // 
@@ -1618,7 +1620,7 @@
             this.nameFMemberCard.Name = "nameFMemberCard";
             this.nameFMemberCard.Size = new System.Drawing.Size(176, 42);
             this.nameFMemberCard.TabIndex = 20;
-            this.nameFMemberCard.Text = "ชื่อ 5555555555";
+            this.nameFMemberCard.Text = "ชื่อ ";
             // 
             // statusMemberCard
             // 
@@ -1629,7 +1631,7 @@
             this.statusMemberCard.Name = "statusMemberCard";
             this.statusMemberCard.Size = new System.Drawing.Size(176, 46);
             this.statusMemberCard.TabIndex = 21;
-            this.statusMemberCard.Text = "สถานภาพ โสด";
+            this.statusMemberCard.Text = "สถานภาพ ไม่ระบุ";
             // 
             // pictureBox3
             // 
@@ -1644,6 +1646,8 @@
             // groupBox8
             // 
             this.groupBox8.BackColor = System.Drawing.Color.White;
+            this.groupBox8.Controls.Add(this.button13);
+            this.groupBox8.Controls.Add(this.button12);
             this.groupBox8.Controls.Add(this.service);
             this.groupBox8.Controls.Add(this.pictureBox1);
             this.groupBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -2807,6 +2811,7 @@
             this.button11.TabIndex = 37;
             this.button11.Text = ">";
             this.button11.UseVisualStyleBackColor = false;
+            this.button11.Click += new System.EventHandler(this.btnMemberR_Click);
             // 
             // service
             // 
@@ -2821,6 +2826,7 @@
             // notSPGender
             // 
             this.notSPGender.AutoSize = true;
+            this.notSPGender.Checked = true;
             this.notSPGender.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.notSPGender.Location = new System.Drawing.Point(155, 62);
             this.notSPGender.Name = "notSPGender";
@@ -2873,6 +2879,7 @@
             // notSPStatus
             // 
             this.notSPStatus.AutoSize = true;
+            this.notSPStatus.Checked = true;
             this.notSPStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.notSPStatus.Location = new System.Drawing.Point(10, 63);
             this.notSPStatus.Name = "notSPStatus";
@@ -2982,6 +2989,26 @@
             this.consult.Text = "บริการการปรึกษา";
             this.consult.UseVisualStyleBackColor = true;
             this.consult.CheckedChanged += new System.EventHandler(this.consult_CheckedChanged);
+            // 
+            // button12
+            // 
+            this.button12.BackColor = System.Drawing.Color.Transparent;
+            this.button12.Location = new System.Drawing.Point(579, 61);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(46, 214);
+            this.button12.TabIndex = 38;
+            this.button12.Text = ">";
+            this.button12.UseVisualStyleBackColor = false;
+            // 
+            // button13
+            // 
+            this.button13.BackColor = System.Drawing.Color.Transparent;
+            this.button13.Location = new System.Drawing.Point(7, 61);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(46, 214);
+            this.button13.TabIndex = 38;
+            this.button13.Text = "<";
+            this.button13.UseVisualStyleBackColor = false;
             // 
             // Form
             // 
@@ -3282,6 +3309,8 @@
         private System.Windows.Forms.CheckBox consult;
         private System.Windows.Forms.CheckBox otherSV;
         private System.Windows.Forms.CheckBox card;
+        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Button button12;
     }
 }
 

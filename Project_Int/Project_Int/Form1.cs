@@ -16,7 +16,7 @@ namespace Project_Int
     public partial class Form : System.Windows.Forms.Form
     {
 
-        string[][] forimg = { 
+        string[][] forimg = {
             new[] { "2-1.jpg", "3-1.jpg", "6-1.jpg", "7-1.jpg" },
             new[] {  "9-1.jpeg", "10-1.jpeg", "11-1.jpeg", "12-1.jpeg" },
         };
@@ -25,13 +25,13 @@ namespace Project_Int
             new[] {  "The Marilyng", "Imagine", "Lava Passion", "Grace Kelly" }
         };
         string[][][] fordetail = {
-            new[] { 
+            new[] {
                 new[] { "Here Comes the Sun", "การผสมผสานอย่างลงตัวระหว่างดอกทานตะวันและกุหลาบสีส้ม", "ไล่ท้องฟ้าอันอึมครึมออกและต้อนรับแสงแดดอันสดใสด้วยช่อดอกไม้อันสะดุดตาและมีชีวิตชีวาช่อนี้ ดอกทานตะวันสีจะช่วยเยียวยาวันอันมืดมน ช่อดอกช่อนี้ถูกโรยหน้าด้วยดอกกุหลาบสีส้มซึ่งแสดงมีความหมายของคุณค่าของชีวิตและการสนับสนุนค้ำจุน เหมือนกับเพลงจาก The Beatles ช่อดอกไม้ Here Comes the Sun นั้นมีความสดใส คลาสสิกอยู่ในตัว เช่นเดียวกับทำนองเพลง ดอกทานตะวันสีทองนั้นมีชีวิตชีวา สดใสและสร้างรอยยิ้มให้กับทุกคน โดยดอกขนาดใหญ่ของทานจะวันจะหันไปเข้าหาแสงอาทิตย์เสมอ เพราะฉะนั้นคุณต้องวางดอกทานตะวันไว้ในห้องหรือสถานที่ที่มีแสดงแดดเพียงพอ" },
                 new[] { "La Vie En Rose", "ช่อดอกกุหลาบสีชมพูสุดคลาสสิค", "ไม่จําเป็นต้องเอ่ยคำพูดอื่นใดเวลาที่คุณมอบช่อกุหลาบสีชมพูอันโดดเด่นและสวยงามช่อนี้ ไม่ว่าคุณจะชอบเพลงต้นฉบับของ Edith Piaf หรือเวอร์ชั่นฮิตยอดนิยมของ Louis Armstrong เพลงสุดคลาสสิคนี้ไม่เคยทำให้ต้องผิดหวัง La Vie En Rose คือช่อดอกไม้ที่เหมาะสมอย่างยิ่งสําหรับโอกาสสุดโรแมนติก เช่นเดียวกับเพลง La Vie En Rose เปรียบดั่งช่อดอกไม้ที่จะสร้างความทรงจำอันมีค่าให้กับคนพิเศษของคุณอย่างไม่มีวันลืม" },
                 new[] { "คิดถึงคำนึงหา (ออลเวยส์ออนมายไมนด์)", "การผสมผสานที่งดงามและละเอียดอ่อนของสีขาว สีม่วงและดอกกุหลาบสีพีช", "“ออลเวยส์ออนมายไมนด์” เป็นการจัดวางในรูปทรงสไปรัล (ทรงเกลียว) ที่งดงามโดยการนำเสนอกุหลาบสีขาวและสีพีช เติมแต่งด้วยดอกกุหลาบพวงและใบยูคาลิปตัส เป็นการจัดวางที่นำเสนอความสง่างามและโรแมนติกทำให้เหมาะสมกับโอกาสโรแมนติกต่างๆ หรือสามารถเป็นของขวัญวันแม่ ของขวัญแทนความคิดถึง หรือแทนคำขอบคุณก็เป็นได้" },
                 new[] { "Love Out Loud รัก ดังๆ!", "มาร่วมฉลองเดือนแห่งการโอบกอดทุกตัวตนกับ “Love Out Loud”", "สดใส และฟุ้งไปด้วยสีสันแห่งความรัก ช่อดอกไม้พิเศษนี้รังสรรค์จากแนวความคิดของการเฉลิมฉลองให้กับความหลากหลาย การยอมรับในทุกเฉดสีของผู้คนในสังคม มาพร้อมกับสีสันที่สดใสแรงกล้า สื่อถึงการแสดงออกของความรักในทุกรูปแบบ มาเป็นส่วนหนึ่งของความหลากหลาย มาสร้างความเปิดกว้างและความรักที่ไร้ขีดจำกัดไปกับเรา" },
             },
-            new[] { 
+            new[] {
                 new[] { "Like a Virgin", "The perfect mix of time By combining white from Miranda and English roses. Decorate with white anemone flowers", "Like a Virgin is a bouquet that conveys luxury and modernity. Designed based on the lyrics to the song “Like a Virgin” sung by Madonna, which was a hit in the 80s.\r\n\r\nThis bouquet is designed to bring out the outstanding identity of Urban Flower Used in a spiral pattern (spiral shape), attracting attention and eye-catching with imported premium-grade white flowers such as Miranda roses and anemone flowers. Like a “like a virgin” union of branches, this layout is modern and can be used for almost any occasion. especially as an anniversary gift" },
                 new[] { "อิเมจิน (จินตนาการ)", "การประสานกันอย่างโดดเด่นด้วยสีแดง\nจากดอกกุหลาบเอกวาดอร์และสีขาวอมเหลืองจากลิลลี่", "‘You may say I’m a dreamer But I’m not the only one’(คุณบอกว่าฉันเป็นคนเพ้อฝัน แต่ฉันไม่ได้เป็นแบบนี้คนเดียว) บทความข้างต้นเป็นส่วนหนึ่งในเนื้อร้องของบทเพลงที่มีชื่อว่า “อิเมจิน”ขับร้องเเละมีความเป็นอมตะมาจนถึงปัญจุบัน ช่อดอกไม้ช่อนี้ได้หยิบยืมความหมายของเนื้อเพลงมานำเสนอผ่านการจัดวางเเบบสไปรัล(ทรงเกลียว)ที่เต็มไปด้วยความงดงามที่สื่อถึงการเคลื่อนไหลทางความคิดเเละจินตนาการของมนุษย์ โดดเด่นไปด้วยสีเเดงเเละทีขาวอมเหลือง ซึ่งใช้วัตถุดิบนำเข้าเกรดพรีเมียมอย่างดอกกุหลาบเอกวาดอร์เเละลิลลี่ที่ดูหรูหรา ดอกไม้ช่อนี้เปรียบเสมือนคนช่างฝันไม่เพียงดูสง่า อีกทั่งยังมีความน่าหลงไหล เมาะสำหรับใช้เป็นของขวัญในหลากหลายโอกาส โดยเฉพาะสิ่งเเทนใจในวันครบรอบ" },
                 new[] { "ลาวาแพชชั่น", "การรวมตัวที่เราร้อนระหว่างดอกกุหลาบเอกวาดอร์ ดอกเรนันคูลัส และดอกทานตะวัน", "“ลาวาแพชชั่น” เป็นการออกแบบโดยการนำเอาสีโทนร้อนของดอกไม้มาผสมผสานกัน นำเสนอความร้อนแรงที่น่าหลงใหล ช่อดอกไม้นี้จัดวางด้วยลักษณะรูปเเบบทรงสไปรัล (ทรงเกลียว) สร้างความโดดเด่นด้วยดอกกุหลาบสีแดง ประกอบกับดอกเรนันคูลัสสีแดงและสีส้ม เสริมด้วยดอกคาลล่าลิลลี่สีแดง ดอกไม้ช่อนี้จึงเต็มไปด้วยเร่าร้อนเเละสุดโรเเมนติก เหมาะสำหรับการเฉลิมฉลองและวันเกิด" },
@@ -42,6 +42,56 @@ namespace Project_Int
         Boolean userRepeat, passwordConfirmOk;
         int CountPage, indexselect, countEyePassSignUp, countEyePassConSignUp, countEyePassSignIn;
         double numberCal;
+
+        //การแสดงผลบัตรสมาชิกในรูปแบบที่แสดงผลของข้อมูลที่ถูกบันทึกเอาไว้แล้ว
+        private void dataMemberSave(object sender, EventArgs e)
+        {
+            if (!previewCard)
+            {
+                nameFMemberCard.Text = nameFDataMemberCard;
+                nameSMemberCard.Text = nameSDataMemberCard;
+                genderMemberCard.Text = genderDataMemberCard;
+                statusMemberCard.Text = statusDataMemberCard;
+            }
+        }
+
+        //save
+        private string funGender(object sender, EventArgs e)
+        {
+            string forstr = "เพศ ";
+            if (female.Checked)
+                forstr += female.Text;
+            else if (male.Checked)
+                forstr += male.Text;
+            else if (lgbt.Checked)
+                forstr += lgbt.Text;
+            else
+                forstr += notSPGender.Text;
+            return forstr;
+        }
+
+        private string funStatus(object sender, EventArgs e)
+        {
+            string forstr = "สถานภาพ ";
+            if (single.Checked)
+                forstr += single.Text;
+            else if (marry.Checked)
+                forstr += marry.Text;
+            else if (notSPStatus.Checked)
+                forstr += notSPStatus.Text;
+            else
+                forstr += otherforStatus.Text;
+            return forstr;
+        }
+
+        private void funSave(object sender, EventArgs e)
+        {
+            nameFDataMemberCard = funMemder(sender, e, nameFDataMemberCard, nameFMember.Text, "ชื่อ", 10, 9);
+            nameSDataMemberCard = funMemder(sender, e, nameSDataMemberCard, nameSMember.Text, "นามสกุล", 6, 5);
+            genderDataMemberCard = funGender(sender, e);
+            statusDataMemberCard = funStatus(sender, e);
+            SVDataMemberCard = changeSV(sender, e);
+        }
 
         //บัตรสมาชิก
         //ชื่อจริงและนามสกุล
@@ -71,21 +121,30 @@ namespace Project_Int
         }
 
         //สถานะภาพ
-        private void changeSV(object sender, EventArgs e)
+        private string changeSV(object sender, EventArgs e)
         {
+            string forstr;
             if (card.Checked || consult.Checked || otherSV.Checked)
             {
-                service.Text = "ความต้องการบริการพิเศษ";
+                forstr = "ความต้องการบริการพิเศษ";
                 if (card.Checked)
-                    service.Text += "\n- " + card.Text;
+                    forstr += "\n- " + card.Text;
                 if (consult.Checked)
-                    service.Text += "\n- " + consult.Text;
+                    forstr += "\n- " + consult.Text;
                 if (otherSV.Checked)
-                    service.Text += "\n-"+funMemder(sender, e, " กำลังรอการระบุความต้องการบริการพิเศษที่ลูกค้าต้องการเพิ่มเติม..."
-                        ,otherforSV.Text, "", 40, 39);
+                    forstr += "\n-" + funMemder(sender, e, " กำลังรอการระบุความต้องการบริการพิเศษที่ลูกค้าต้องการเพิ่มเติม..."
+                        , otherforSV.Text, "", 40, 39);
             }
-            else service.Text = "";
+            else forstr = "";
+            return forstr;
         }
+
+        private void callchangeSV(object sender, EventArgs e)
+        {
+            service.Text = changeSV(sender, e);
+        }
+
+
 
         //การเรียกหน้าต่างล็อกอินและหน้าต่างลงทะเบียน
         private void callWindowIn(object sender, EventArgs e)
@@ -105,7 +164,7 @@ namespace Project_Int
             userRepeat = false;
             foreach (List<string> checkUser in dataSignUp)
             {
-                if (checkUser[0]==newUser.Text)
+                if (checkUser[0] == newUser.Text)
                 {
                     userRepeat = true;
                     break;
@@ -345,8 +404,13 @@ namespace Project_Int
 
             if (Flowers.SelectedTab == Flowers.TabPages[5])
             {
-                nameFMember.Text = "";
-                nameSMember.Text = "";
+                nameFMember.Clear();
+                nameSMember.Clear();
+                previewCard = false;
+                dataMemberSave(sender, e);
+                previewCard = true;
+
+
             }
         }
 
@@ -430,24 +494,24 @@ namespace Project_Int
                 double lastTotal;
                 if (discount.Checked)
                 {
-                double discountNumber = total * 0.1;
-                vat = (total - discountNumber) * 0.07;
-                lastTotal = total - discountNumber + vat;
-                MessageBox.Show("ราคารวม\t\t\t:\t" + total.ToString()
-                + "\tบาท\nส่วนลดจากทางร้าน 10%\t:\t" + discountNumber.ToString()
-                + "\tบาท\nVat 7%\t\t\t:\t" + vat.ToString()
-                + "\tบาท\nยอดชำระรวมทั้งสิ้น\t\t:\t" + lastTotal.ToString()+ "\tบาท");
+                    double discountNumber = total * 0.1;
+                    vat = (total - discountNumber) * 0.07;
+                    lastTotal = total - discountNumber + vat;
+                    MessageBox.Show("ราคารวม\t\t\t:\t" + total.ToString()
+                    + "\tบาท\nส่วนลดจากทางร้าน 10%\t:\t" + discountNumber.ToString()
+                    + "\tบาท\nVat 7%\t\t\t:\t" + vat.ToString()
+                    + "\tบาท\nยอดชำระรวมทั้งสิ้น\t\t:\t" + lastTotal.ToString() + "\tบาท");
                 }
                 else
                 {
-                vat = total * 0.07;
-                lastTotal = total + vat;
-                MessageBox.Show("ราคารวม\t\t\t:\t" + total.ToString()
-                + "\tบาท\nVat 7%\t\t\t:\t" + vat.ToString()
-                + "\tบาท\nยอดชำระรวมทั้งสิ้น\t\t:\t" + lastTotal.ToString() + "\tบาท");
+                    vat = total * 0.07;
+                    lastTotal = total + vat;
+                    MessageBox.Show("ราคารวม\t\t\t:\t" + total.ToString()
+                    + "\tบาท\nVat 7%\t\t\t:\t" + vat.ToString()
+                    + "\tบาท\nยอดชำระรวมทั้งสิ้น\t\t:\t" + lastTotal.ToString() + "\tบาท");
                 }
             }
-        
+
         }
         private void discount_CheckedChanged(object sender, EventArgs e)
         {
@@ -573,13 +637,13 @@ namespace Project_Int
 
         private void btnSignUp_Click(object sender, EventArgs e)
         {
-            callWindowUp(sender, e);    
+            callWindowUp(sender, e);
         }
 
         //การเรียกใช้การซ่อนพาสเวิร์ด
         private void eyePassSignUp_Click(object sender, EventArgs e)
         {
-            checkEye(sender, e,"signUp");
+            checkEye(sender, e, "signUp");
         }
 
         private void eyeConfirmPass_Click(object sender, EventArgs e)
@@ -593,55 +657,65 @@ namespace Project_Int
 
         //บัตรสมาชิก
 
-        string nameFDataMemberCard="ชื่อ ", nameSDataMemberCard = "นามสกุล ";
-        
+        string nameFDataMemberCard= "ชื่อ ", nameSDataMemberCard="นามสกุล ", genderDataMemberCard= "เพศ ไม่ระบุ", statusDataMemberCard= "สถานภาพ ไม่ระบุ", SVDataMemberCard="";
+        Boolean previewCard;
+
         //ชื่อจริง
         private void nameFMember_TextChanged(object sender, EventArgs e)
         {
             nameFMemberCard.Text=funMemder(sender, e, nameFDataMemberCard, nameFMember.Text,"ชื่อ",10,9);
+            dataMemberSave(sender, e);
         }
 
         //นามสกุล
         private void nameSMember_TextChanged(object sender, EventArgs e)
         {
             nameSMemberCard.Text = funMemder(sender, e, nameSDataMemberCard, nameSMember.Text, "นามสกุล", 6, 5);
+            dataMemberSave(sender, e);
         }
 
         //เพศ
         private void female_Changed(object sender, EventArgs e)
         {
             changeGender(sender, e,"หญิง");
+            dataMemberSave(sender, e);
         }
 
         private void male_CheckedChanged(object sender, EventArgs e)
         {
             changeGender(sender, e, "ชาย");
+            dataMemberSave(sender, e);
         }
 
         private void lgbt_CheckedChanged(object sender, EventArgs e)
         {
             changeGender(sender, e, "LGBT");
+            dataMemberSave(sender, e);
         }
 
         private void notSPGender_CheckedChanged(object sender, EventArgs e)
         {
             changeGender(sender, e, "ไม่ระบุ");
+            dataMemberSave(sender, e);
         }
 
         //สถานภาพ
         private void single_CheckedChanged(object sender, EventArgs e)
         {
             changeStatus(sender, e, "โสด");
+            dataMemberSave(sender, e);
         }
 
         private void marry_CheckedChanged(object sender, EventArgs e)
         {
             changeStatus(sender, e, "แต่งงาน");
+            dataMemberSave(sender, e);
         }
 
         private void notSPStatus_CheckedChanged(object sender, EventArgs e)
         {
             changeStatus(sender, e, "ไม่ระบุ");
+            dataMemberSave(sender, e);
         }
         private void otherStatus_CheckedChanged(object sender, EventArgs e)
         {
@@ -649,39 +723,52 @@ namespace Project_Int
                 changeStatus(sender, e, otherforStatus.Text);
             else
                 changeStatus(sender, e, "กำลังรอการระบุสถานภาพ");
+            dataMemberSave(sender, e);
         }
 
         //บริการพิเศษที่ลูกค้าต้องการเพิ่มเติม
         private void card_CheckedChanged(object sender, EventArgs e)
         {
-            changeSV(sender, e);
+            callchangeSV(sender, e);
         }
 
         private void consult_CheckedChanged(object sender, EventArgs e)
         {
-            changeSV(sender, e);
+            callchangeSV(sender, e);
         }
 
         private void otherSV_CheckedChanged(object sender, EventArgs e)
         {
-            changeSV(sender, e);
+            callchangeSV(sender, e);
         }
 
         private void otherforSV_TextChanged(object sender, EventArgs e)
         {
-            changeSV(sender, e);
+            callchangeSV(sender, e);
         }
 
         //โซนบัตรสมาชิกที่บันทึกข้อมูลแล้วกับบัตรในรูปแบบ Preview
+
         private void btnMemberL_Click(object sender, EventArgs e)
         {
             memderCard.Text = "Flowers of Paradise Membership Card";
-            //Preview
+            previewCard = false;
+            dataMemberSave(sender, e);
+        }
+
+        private void btnMemberR_Click(object sender, EventArgs e)
+        {
+            memderCard.Text = "Preview";
+            previewCard = true;
+            nameFMemberCard.Text = funMemder(sender, e, nameFDataMemberCard, nameFMember.Text, "ชื่อ", 10, 9);
+            nameSMemberCard.Text = funMemder(sender, e, nameSDataMemberCard, nameSMember.Text, "นามสกุล", 6, 5);
+            callchangeSV(sender, e);
         }
 
         //เซฟข้อมูลบัตรสมาชิก
         private void save_Click(object sender, EventArgs e)
         {
+            funSave(sender, e);
         }
 
         //การลงทะเบียน

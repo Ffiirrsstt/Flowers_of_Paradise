@@ -129,7 +129,7 @@
             this.label28 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.memberPage = new System.Windows.Forms.TabPage();
-            this.memderCart = new System.Windows.Forms.GroupBox();
+            this.memderCard = new System.Windows.Forms.GroupBox();
             this.genderMemberCard = new System.Windows.Forms.Label();
             this.nameSMemberCard = new System.Windows.Forms.Label();
             this.nameFMemberCard = new System.Windows.Forms.Label();
@@ -239,7 +239,7 @@
             this.male = new System.Windows.Forms.RadioButton();
             this.button10 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
-            this.contact = new System.Windows.Forms.Label();
+            this.service = new System.Windows.Forms.Label();
             this.notSPGender = new System.Windows.Forms.RadioButton();
             this.lgbt = new System.Windows.Forms.RadioButton();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
@@ -248,12 +248,12 @@
             this.marry = new System.Windows.Forms.RadioButton();
             this.single = new System.Windows.Forms.RadioButton();
             this.groupBox12 = new System.Windows.Forms.GroupBox();
-            this.otherService = new System.Windows.Forms.RadioButton();
-            this.consult = new System.Windows.Forms.RadioButton();
-            this.card = new System.Windows.Forms.RadioButton();
             this.label73 = new System.Windows.Forms.Label();
             this.otherforStatus = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.otherforSV = new System.Windows.Forms.TextBox();
+            this.card = new System.Windows.Forms.CheckBox();
+            this.otherSV = new System.Windows.Forms.CheckBox();
+            this.consult = new System.Windows.Forms.CheckBox();
             this.Flowers.SuspendLayout();
             this.firstPage.SuspendLayout();
             this.mainPage.SuspendLayout();
@@ -278,7 +278,7 @@
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.memberPage.SuspendLayout();
-            this.memderCart.SuspendLayout();
+            this.memderCard.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.groupBox8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -1538,7 +1538,7 @@
             // memberPage
             // 
             this.memberPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(91)))), ((int)(((byte)(150)))));
-            this.memberPage.Controls.Add(this.memderCart);
+            this.memberPage.Controls.Add(this.memderCard);
             this.memberPage.Controls.Add(this.groupBox8);
             this.memberPage.Controls.Add(this.groupBox7);
             this.memberPage.Controls.Add(this.textBox18);
@@ -1568,24 +1568,24 @@
             this.memberPage.TabIndex = 7;
             this.memberPage.Text = "สมาชิก";
             // 
-            // memderCart
+            // memderCard
             // 
-            this.memderCart.BackColor = System.Drawing.Color.White;
-            this.memderCart.Controls.Add(this.button11);
-            this.memderCart.Controls.Add(this.button10);
-            this.memderCart.Controls.Add(this.genderMemberCard);
-            this.memderCart.Controls.Add(this.nameSMemberCard);
-            this.memderCart.Controls.Add(this.nameFMemberCard);
-            this.memderCart.Controls.Add(this.statusMemberCard);
-            this.memderCart.Controls.Add(this.pictureBox3);
-            this.memderCart.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.memderCart.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(146)))), ((int)(((byte)(96)))));
-            this.memderCart.Location = new System.Drawing.Point(720, 6);
-            this.memderCart.Name = "memderCart";
-            this.memderCart.Size = new System.Drawing.Size(632, 328);
-            this.memderCart.TabIndex = 44;
-            this.memderCart.TabStop = false;
-            this.memderCart.Text = "Flowers of Paradise Membership Card";
+            this.memderCard.BackColor = System.Drawing.Color.White;
+            this.memderCard.Controls.Add(this.button11);
+            this.memderCard.Controls.Add(this.button10);
+            this.memderCard.Controls.Add(this.genderMemberCard);
+            this.memderCard.Controls.Add(this.nameSMemberCard);
+            this.memderCard.Controls.Add(this.nameFMemberCard);
+            this.memderCard.Controls.Add(this.statusMemberCard);
+            this.memderCard.Controls.Add(this.pictureBox3);
+            this.memderCard.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.memderCard.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(146)))), ((int)(((byte)(96)))));
+            this.memderCard.Location = new System.Drawing.Point(720, 6);
+            this.memderCard.Name = "memderCard";
+            this.memderCard.Size = new System.Drawing.Size(632, 328);
+            this.memderCard.TabIndex = 44;
+            this.memderCard.TabStop = false;
+            this.memderCard.Text = "Flowers of Paradise Membership Card";
             // 
             // genderMemberCard
             // 
@@ -1644,7 +1644,7 @@
             // groupBox8
             // 
             this.groupBox8.BackColor = System.Drawing.Color.White;
-            this.groupBox8.Controls.Add(this.contact);
+            this.groupBox8.Controls.Add(this.service);
             this.groupBox8.Controls.Add(this.pictureBox1);
             this.groupBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(146)))), ((int)(((byte)(96)))));
@@ -2808,15 +2808,15 @@
             this.button11.Text = ">";
             this.button11.UseVisualStyleBackColor = false;
             // 
-            // contact
+            // service
             // 
-            this.contact.BackColor = System.Drawing.Color.Black;
-            this.contact.Font = new System.Drawing.Font("Ink Free", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.contact.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(200)))), ((int)(((byte)(167)))));
-            this.contact.Location = new System.Drawing.Point(58, 107);
-            this.contact.Name = "contact";
-            this.contact.Size = new System.Drawing.Size(366, 193);
-            this.contact.TabIndex = 20;
+            this.service.BackColor = System.Drawing.Color.Black;
+            this.service.Font = new System.Drawing.Font("Ink Free", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.service.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(200)))), ((int)(((byte)(167)))));
+            this.service.Location = new System.Drawing.Point(58, 107);
+            this.service.Name = "service";
+            this.service.Size = new System.Drawing.Size(288, 193);
+            this.service.TabIndex = 20;
             // 
             // notSPGender
             // 
@@ -2911,51 +2911,15 @@
             // 
             // groupBox12
             // 
-            this.groupBox12.Controls.Add(this.textBox7);
-            this.groupBox12.Controls.Add(this.otherService);
             this.groupBox12.Controls.Add(this.consult);
+            this.groupBox12.Controls.Add(this.otherSV);
             this.groupBox12.Controls.Add(this.card);
+            this.groupBox12.Controls.Add(this.otherforSV);
             this.groupBox12.Location = new System.Drawing.Point(210, 358);
             this.groupBox12.Name = "groupBox12";
             this.groupBox12.Size = new System.Drawing.Size(421, 104);
             this.groupBox12.TabIndex = 43;
             this.groupBox12.TabStop = false;
-            // 
-            // otherService
-            // 
-            this.otherService.AutoSize = true;
-            this.otherService.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.otherService.Location = new System.Drawing.Point(10, 62);
-            this.otherService.Name = "otherService";
-            this.otherService.Size = new System.Drawing.Size(83, 33);
-            this.otherService.TabIndex = 2;
-            this.otherService.TabStop = true;
-            this.otherService.Text = "อื่น ๆ";
-            this.otherService.UseVisualStyleBackColor = true;
-            // 
-            // consult
-            // 
-            this.consult.AutoSize = true;
-            this.consult.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.consult.Location = new System.Drawing.Point(155, 20);
-            this.consult.Name = "consult";
-            this.consult.Size = new System.Drawing.Size(199, 33);
-            this.consult.TabIndex = 1;
-            this.consult.TabStop = true;
-            this.consult.Text = "บริการการปรึกษา";
-            this.consult.UseVisualStyleBackColor = true;
-            // 
-            // card
-            // 
-            this.card.AutoSize = true;
-            this.card.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.card.Location = new System.Drawing.Point(10, 20);
-            this.card.Name = "card";
-            this.card.Size = new System.Drawing.Size(83, 33);
-            this.card.TabIndex = 0;
-            this.card.TabStop = true;
-            this.card.Text = "การ์ด";
-            this.card.UseVisualStyleBackColor = true;
             // 
             // label73
             // 
@@ -2975,12 +2939,49 @@
             this.otherforStatus.Size = new System.Drawing.Size(169, 38);
             this.otherforStatus.TabIndex = 4;
             // 
-            // textBox7
+            // otherforSV
             // 
-            this.textBox7.Location = new System.Drawing.Point(96, 59);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(316, 38);
-            this.textBox7.TabIndex = 3;
+            this.otherforSV.Location = new System.Drawing.Point(96, 59);
+            this.otherforSV.Name = "otherforSV";
+            this.otherforSV.Size = new System.Drawing.Size(316, 38);
+            this.otherforSV.TabIndex = 3;
+            this.otherforSV.TextChanged += new System.EventHandler(this.otherforSV_TextChanged);
+            // 
+            // card
+            // 
+            this.card.AutoSize = true;
+            this.card.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.card.Location = new System.Drawing.Point(10, 20);
+            this.card.Name = "card";
+            this.card.Size = new System.Drawing.Size(84, 33);
+            this.card.TabIndex = 4;
+            this.card.Text = "การ์ด";
+            this.card.UseVisualStyleBackColor = true;
+            this.card.CheckedChanged += new System.EventHandler(this.card_CheckedChanged);
+            // 
+            // otherSV
+            // 
+            this.otherSV.AutoSize = true;
+            this.otherSV.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.otherSV.Location = new System.Drawing.Point(10, 59);
+            this.otherSV.Name = "otherSV";
+            this.otherSV.Size = new System.Drawing.Size(84, 33);
+            this.otherSV.TabIndex = 5;
+            this.otherSV.Text = "อื่น ๆ";
+            this.otherSV.UseVisualStyleBackColor = true;
+            this.otherSV.CheckedChanged += new System.EventHandler(this.otherSV_CheckedChanged);
+            // 
+            // consult
+            // 
+            this.consult.AutoSize = true;
+            this.consult.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.consult.Location = new System.Drawing.Point(155, 20);
+            this.consult.Name = "consult";
+            this.consult.Size = new System.Drawing.Size(200, 33);
+            this.consult.TabIndex = 6;
+            this.consult.Text = "บริการการปรึกษา";
+            this.consult.UseVisualStyleBackColor = true;
+            this.consult.CheckedChanged += new System.EventHandler(this.consult_CheckedChanged);
             // 
             // Form
             // 
@@ -3027,7 +3028,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.memberPage.ResumeLayout(false);
             this.memberPage.PerformLayout();
-            this.memderCart.ResumeLayout(false);
+            this.memderCard.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.groupBox8.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -3255,7 +3256,7 @@
         private System.Windows.Forms.TextBox nameFMember;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.GroupBox groupBox8;
-        private System.Windows.Forms.GroupBox memderCart;
+        private System.Windows.Forms.GroupBox memderCard;
         private System.Windows.Forms.Label genderMemberCard;
         private System.Windows.Forms.Label nameSMemberCard;
         private System.Windows.Forms.Label nameFMemberCard;
@@ -3266,7 +3267,7 @@
         private System.Windows.Forms.RadioButton female;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Label contact;
+        private System.Windows.Forms.Label service;
         private System.Windows.Forms.GroupBox groupBox11;
         private System.Windows.Forms.RadioButton otherStatus;
         private System.Windows.Forms.RadioButton notSPStatus;
@@ -3275,12 +3276,12 @@
         private System.Windows.Forms.RadioButton notSPGender;
         private System.Windows.Forms.RadioButton lgbt;
         private System.Windows.Forms.GroupBox groupBox12;
-        private System.Windows.Forms.RadioButton otherService;
-        private System.Windows.Forms.RadioButton consult;
-        private System.Windows.Forms.RadioButton card;
         private System.Windows.Forms.Label label73;
         private System.Windows.Forms.TextBox otherforStatus;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox otherforSV;
+        private System.Windows.Forms.CheckBox consult;
+        private System.Windows.Forms.CheckBox otherSV;
+        private System.Windows.Forms.CheckBox card;
     }
 }
 

@@ -43,6 +43,50 @@ namespace Project_Int
         int CountPage, indexselect, countEyePassSignUp, countEyePassConSignUp, countEyePassSignIn;
         double numberCal;
 
+        //บัตรสมาชิก
+        //ชื่อจริงและนามสกุล
+        private string funMemder(object sender, EventArgs e, string forDataOutput, string forDataInput, string forstr, int quantity, int amount)
+        {
+            string result = forDataOutput;
+            if (!(forDataInput == ""))
+            {
+                if (forDataInput.Length <= quantity)
+                    result = forstr + " " + forDataInput;
+                else
+                    result = forstr + " " + forDataInput.Substring(0, amount) + "...";
+            }
+            return result;
+        }
+
+        //เพศ
+        private void changeGender(object sender, EventArgs e, string forData)
+        {
+            genderMemberCard.Text = "เพศ " + forData;
+        }
+
+        //สถานะภาพ
+        private void changeStatus(object sender, EventArgs e, string forData)
+        {
+            statusMemberCard.Text = "สถานภาพ " + forData;
+        }
+
+        //สถานะภาพ
+        private void changeSV(object sender, EventArgs e)
+        {
+            if (card.Checked || consult.Checked || otherSV.Checked)
+            {
+                service.Text = "ความต้องการบริการพิเศษ";
+                if (card.Checked)
+                    service.Text += "\n- " + card.Text;
+                if (consult.Checked)
+                    service.Text += "\n- " + consult.Text;
+                if (otherSV.Checked)
+                    service.Text += "\n-"+funMemder(sender, e, " กำลังรอการระบุความต้องการบริการพิเศษที่ลูกค้าต้องการเพิ่มเติม..."
+                        ,otherforSV.Text, "", 40, 39);
+            }
+            else service.Text = "";
+        }
+
         //การเรียกหน้าต่างล็อกอินและหน้าต่างลงทะเบียน
         private void callWindowIn(object sender, EventArgs e)
         {
@@ -550,31 +594,7 @@ namespace Project_Int
         //บัตรสมาชิก
 
         string nameFDataMemberCard="ชื่อ ", nameSDataMemberCard = "นามสกุล ";
-        //ชื่อจริงและนามสกุล
-        private string funMemder(object sender, EventArgs e, string forDataOutput,string forDataInput,string forstr,int quantity,int amount)
-        {
-            string result= forDataOutput;
-            if (!(forDataInput == ""))
-            {
-                if (forDataInput.Length <= quantity)
-                    result = forstr+" " + forDataInput;
-                else
-                    result = forstr+" " + forDataInput.Substring(0, amount) + "...";
-            }
-            return result;
-        }
-
-        //เพศ
-        private void changeGender(object sender, EventArgs e,string forData)
-        {
-            genderMemberCard.Text = "เพศ " + forData;
-        }
-
-        //สถานะภาพ
-        private void changeStatus(object sender, EventArgs e, string forData)
-        {
-            statusMemberCard.Text = "สถานภาพ " + forData;
-        }
+        
         //ชื่อจริง
         private void nameFMember_TextChanged(object sender, EventArgs e)
         {
@@ -608,7 +628,7 @@ namespace Project_Int
             changeGender(sender, e, "ไม่ระบุ");
         }
 
-
+        //สถานภาพ
         private void single_CheckedChanged(object sender, EventArgs e)
         {
             changeStatus(sender, e, "โสด");
@@ -631,11 +651,31 @@ namespace Project_Int
                 changeStatus(sender, e, "กำลังรอการระบุสถานภาพ");
         }
 
+        //บริการพิเศษที่ลูกค้าต้องการเพิ่มเติม
+        private void card_CheckedChanged(object sender, EventArgs e)
+        {
+            changeSV(sender, e);
+        }
+
+        private void consult_CheckedChanged(object sender, EventArgs e)
+        {
+            changeSV(sender, e);
+        }
+
+        private void otherSV_CheckedChanged(object sender, EventArgs e)
+        {
+            changeSV(sender, e);
+        }
+
+        private void otherforSV_TextChanged(object sender, EventArgs e)
+        {
+            changeSV(sender, e);
+        }
 
         //โซนบัตรสมาชิกที่บันทึกข้อมูลแล้วกับบัตรในรูปแบบ Preview
         private void btnMemberL_Click(object sender, EventArgs e)
         {
-            memderCart.Text = "Flowers of Paradise Membership Card";
+            memderCard.Text = "Flowers of Paradise Membership Card";
             //Preview
         }
 

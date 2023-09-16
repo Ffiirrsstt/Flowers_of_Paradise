@@ -76,10 +76,16 @@ namespace Project_Int
             //Service
             if (card.Checked)
                 boolSV[0] = true;
+            else
+                boolSV[0] = false;
             if (consult.Checked)
                 boolSV[1] = true;
+            else
+                boolSV[1] = false;
             if (otherSV.Checked)
                 boolSV[2] = true;
+            else
+                boolSV[2] = false;
         }
         private void checkRadio(object sender, EventArgs e)
         {
@@ -547,6 +553,15 @@ namespace Project_Int
             headSignUp.Text = "ลงทะเบียนสมาชิกเพื่อใช้บริการ\nFlowers of Paradise ID";
         }
 
+        //เคลียร์ที่พิมพ์ถ้าไม่ได้ติ๊กเลือกอื่น ๆ
+        private void otherClear(object sender, EventArgs e)
+        {
+            if(!otherStatus.Checked)
+                otherforStatus.Clear();
+            if (!otherSV.Checked)
+                otherforSV.Clear();
+        }
+
         private void tabControl_Click(object sender, EventArgs e)
         {
             defultRemoveTab(sender, e);
@@ -562,6 +577,7 @@ namespace Project_Int
                                   //หมายเหตุ : ถ้าเปลี่ยนไปหน้าสำหรับข้อมูลที่ถูกบันทึกจึงจะเปลี่ยนแปลงตามข้อมูลที่ว่าเคยมีการทำการบันทึกข้อมูลหรือไม่
                 imgForFile = boolfileWaitImg;
                 manageImg(sender, e);
+                otherClear(sender, e);
             }
         }
 

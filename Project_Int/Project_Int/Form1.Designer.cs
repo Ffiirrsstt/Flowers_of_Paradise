@@ -52,6 +52,10 @@
             this.nameflowerlog4 = new System.Windows.Forms.Label();
             this.nameflowerlog2 = new System.Windows.Forms.Label();
             this.nameflowerlog3 = new System.Windows.Forms.Label();
+            this.imglog3 = new System.Windows.Forms.PictureBox();
+            this.imglog4 = new System.Windows.Forms.PictureBox();
+            this.imglog2 = new System.Windows.Forms.PictureBox();
+            this.imglog1 = new System.Windows.Forms.PictureBox();
             this.label48 = new System.Windows.Forms.Label();
             this.loginPageV2 = new System.Windows.Forms.TabPage();
             this.imgPage = new System.Windows.Forms.TabPage();
@@ -71,6 +75,10 @@
             this.nameflower4 = new System.Windows.Forms.Label();
             this.nameflower2 = new System.Windows.Forms.Label();
             this.nameflower3 = new System.Windows.Forms.Label();
+            this.img3 = new System.Windows.Forms.PictureBox();
+            this.img4 = new System.Windows.Forms.PictureBox();
+            this.img2 = new System.Windows.Forms.PictureBox();
+            this.img1 = new System.Windows.Forms.PictureBox();
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
@@ -94,17 +102,21 @@
             this.button8 = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.numberCal4 = new System.Windows.Forms.TextBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.label45 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.numberCal3 = new System.Windows.Forms.TextBox();
             this.label40 = new System.Windows.Forms.Label();
             this.label44 = new System.Windows.Forms.Label();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.numberCal2 = new System.Windows.Forms.TextBox();
             this.label43 = new System.Windows.Forms.Label();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.numberCal1 = new System.Windows.Forms.TextBox();
             this.label42 = new System.Windows.Forms.Label();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label39 = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
             this.numTotalPrice = new System.Windows.Forms.Label();
@@ -117,18 +129,25 @@
             this.label28 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.memberPage = new System.Windows.Forms.TabPage();
-            this.memderCard = new System.Windows.Forms.GroupBox();
+            this.memberCard = new System.Windows.Forms.GroupBox();
+            this.imgMember = new System.Windows.Forms.PictureBox();
             this.btnMemberTR = new System.Windows.Forms.Button();
             this.btnMemberTL = new System.Windows.Forms.Button();
             this.genderMemberCard = new System.Windows.Forms.Label();
             this.nameSMemberCard = new System.Windows.Forms.Label();
             this.nameFMemberCard = new System.Windows.Forms.Label();
             this.statusMemberCard = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.memberCardSV = new System.Windows.Forms.GroupBox();
             this.btnMemberBL = new System.Windows.Forms.Button();
             this.btnMemberBR = new System.Windows.Forms.Button();
             this.service = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.dropFileImg = new System.Windows.Forms.Button();
+            this.btnDeleteImg = new System.Windows.Forms.Label();
+            this.fileImg = new System.Windows.Forms.Label();
+            this.label75 = new System.Windows.Forms.Label();
             this.save = new System.Windows.Forms.Button();
             this.groupBox12 = new System.Windows.Forms.GroupBox();
             this.consult = new System.Windows.Forms.CheckBox();
@@ -183,6 +202,9 @@
             this.button5 = new System.Windows.Forms.Button();
             this.price = new System.Windows.Forms.Label();
             this.head = new System.Windows.Forms.Label();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.detailImg = new System.Windows.Forms.PictureBox();
             this.windowSignIn = new System.Windows.Forms.TabPage();
             this.describesUser = new System.Windows.Forms.Label();
             this.label74 = new System.Windows.Forms.Label();
@@ -204,6 +226,7 @@
             this.user = new System.Windows.Forms.TextBox();
             this.label51 = new System.Windows.Forms.Label();
             this.label46 = new System.Windows.Forms.Label();
+            this.eyePassSignIn = new System.Windows.Forms.PictureBox();
             this.windowSignUp = new System.Windows.Forms.TabPage();
             this.textDesName = new System.Windows.Forms.Label();
             this.textDesConfirm = new System.Windows.Forms.Label();
@@ -235,71 +258,52 @@
             this.headSignUp = new System.Windows.Forms.Label();
             this.passwordSignUp = new System.Windows.Forms.TextBox();
             this.label67 = new System.Windows.Forms.Label();
-            this.imglog3 = new System.Windows.Forms.PictureBox();
-            this.imglog4 = new System.Windows.Forms.PictureBox();
-            this.imglog2 = new System.Windows.Forms.PictureBox();
-            this.imglog1 = new System.Windows.Forms.PictureBox();
-            this.img3 = new System.Windows.Forms.PictureBox();
-            this.img4 = new System.Windows.Forms.PictureBox();
-            this.img2 = new System.Windows.Forms.PictureBox();
-            this.img1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.detailImg = new System.Windows.Forms.PictureBox();
-            this.eyePassSignIn = new System.Windows.Forms.PictureBox();
             this.eyeConfirmPass = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.eyePassSignUp = new System.Windows.Forms.PictureBox();
-            this.imgMember = new System.Windows.Forms.PictureBox();
             this.Flowers.SuspendLayout();
             this.firstPage.SuspendLayout();
             this.mainPage.SuspendLayout();
             this.groupBox6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imglog3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imglog4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imglog2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imglog1)).BeginInit();
             this.imgPage.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.img3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.img4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.img2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.img1)).BeginInit();
             this.pricePage.SuspendLayout();
             this.groupBox5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.memberPage.SuspendLayout();
-            this.memderCard.SuspendLayout();
+            this.memberCard.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imgMember)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.memberCardSV.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox7.SuspendLayout();
             this.groupBox12.SuspendLayout();
             this.groupBox11.SuspendLayout();
             this.groupBox10.SuspendLayout();
             this.detailPage.SuspendLayout();
-            this.windowSignIn.SuspendLayout();
-            this.windowSignUp.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imglog3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imglog4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imglog2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imglog1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.img3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.img4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.img2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.img1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.detailImg)).BeginInit();
+            this.windowSignIn.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.eyePassSignIn)).BeginInit();
+            this.windowSignUp.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.eyeConfirmPass)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.eyePassSignUp)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgMember)).BeginInit();
             this.SuspendLayout();
             // 
             // Flowers
@@ -564,6 +568,50 @@
             this.nameflowerlog3.Text = "La Vie En Rose";
             this.nameflowerlog3.Click += new System.EventHandler(this.nameflowerlog3_Click);
             // 
+            // imglog3
+            // 
+            this.imglog3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.imglog3.Location = new System.Drawing.Point(679, 38);
+            this.imglog3.Name = "imglog3";
+            this.imglog3.Size = new System.Drawing.Size(301, 334);
+            this.imglog3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imglog3.TabIndex = 3;
+            this.imglog3.TabStop = false;
+            this.imglog3.Click += new System.EventHandler(this.imglog3_Click);
+            // 
+            // imglog4
+            // 
+            this.imglog4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.imglog4.Location = new System.Drawing.Point(1009, 38);
+            this.imglog4.Name = "imglog4";
+            this.imglog4.Size = new System.Drawing.Size(301, 334);
+            this.imglog4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imglog4.TabIndex = 2;
+            this.imglog4.TabStop = false;
+            this.imglog4.Click += new System.EventHandler(this.imglog4_Click);
+            // 
+            // imglog2
+            // 
+            this.imglog2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.imglog2.Location = new System.Drawing.Point(349, 38);
+            this.imglog2.Name = "imglog2";
+            this.imglog2.Size = new System.Drawing.Size(301, 334);
+            this.imglog2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imglog2.TabIndex = 1;
+            this.imglog2.TabStop = false;
+            this.imglog2.Click += new System.EventHandler(this.imglog2_Click);
+            // 
+            // imglog1
+            // 
+            this.imglog1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.imglog1.Location = new System.Drawing.Point(21, 38);
+            this.imglog1.Name = "imglog1";
+            this.imglog1.Size = new System.Drawing.Size(301, 334);
+            this.imglog1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imglog1.TabIndex = 0;
+            this.imglog1.TabStop = false;
+            this.imglog1.Click += new System.EventHandler(this.imglogin1_Click);
+            // 
             // label48
             // 
             this.label48.BackColor = System.Drawing.Color.Transparent;
@@ -803,6 +851,50 @@
             this.nameflower3.TabIndex = 5;
             this.nameflower3.Text = "La Vie En Rose";
             this.nameflower3.Click += new System.EventHandler(this.nameflower3_Click);
+            // 
+            // img3
+            // 
+            this.img3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.img3.Location = new System.Drawing.Point(679, 38);
+            this.img3.Name = "img3";
+            this.img3.Size = new System.Drawing.Size(301, 334);
+            this.img3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.img3.TabIndex = 3;
+            this.img3.TabStop = false;
+            this.img3.Click += new System.EventHandler(this.img3_Click);
+            // 
+            // img4
+            // 
+            this.img4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.img4.Location = new System.Drawing.Point(1009, 38);
+            this.img4.Name = "img4";
+            this.img4.Size = new System.Drawing.Size(301, 334);
+            this.img4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.img4.TabIndex = 2;
+            this.img4.TabStop = false;
+            this.img4.Click += new System.EventHandler(this.img4_Click);
+            // 
+            // img2
+            // 
+            this.img2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.img2.Location = new System.Drawing.Point(349, 38);
+            this.img2.Name = "img2";
+            this.img2.Size = new System.Drawing.Size(301, 334);
+            this.img2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.img2.TabIndex = 1;
+            this.img2.TabStop = false;
+            this.img2.Click += new System.EventHandler(this.img2_Click);
+            // 
+            // img1
+            // 
+            this.img1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.img1.Location = new System.Drawing.Point(21, 38);
+            this.img1.Name = "img1";
+            this.img1.Size = new System.Drawing.Size(301, 334);
+            this.img1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.img1.TabIndex = 0;
+            this.img1.TabStop = false;
+            this.img1.Click += new System.EventHandler(this.img1_Click);
             // 
             // label20
             // 
@@ -1120,6 +1212,17 @@
             this.numberCal4.Click += new System.EventHandler(this.numberCal4_Click);
             this.numberCal4.TextChanged += new System.EventHandler(this.numberCal4_TextChanged);
             // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Image = global::Project_Int.Properties.Resources._12_1;
+            this.pictureBox10.Location = new System.Drawing.Point(22, 29);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(150, 154);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox10.TabIndex = 9;
+            this.pictureBox10.TabStop = false;
+            this.pictureBox10.UseWaitCursor = true;
+            // 
             // label45
             // 
             this.label45.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
@@ -1184,6 +1287,17 @@
             this.label44.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label44.UseWaitCursor = true;
             // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = global::Project_Int.Properties.Resources._11_11;
+            this.pictureBox9.Location = new System.Drawing.Point(22, 29);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(150, 154);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox9.TabIndex = 6;
+            this.pictureBox9.TabStop = false;
+            this.pictureBox9.UseWaitCursor = true;
+            // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.numberCal2);
@@ -1225,6 +1339,17 @@
             this.label43.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label43.UseWaitCursor = true;
             // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = global::Project_Int.Properties.Resources._7_1;
+            this.pictureBox8.Location = new System.Drawing.Point(22, 29);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(150, 154);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox8.TabIndex = 3;
+            this.pictureBox8.TabStop = false;
+            this.pictureBox8.UseWaitCursor = true;
+            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.numberCal1);
@@ -1265,6 +1390,18 @@
             this.label42.Text = "Always on my Mind";
             this.label42.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label42.UseWaitCursor = true;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::Project_Int.Properties.Resources._6_1;
+            this.pictureBox5.InitialImage = null;
+            this.pictureBox5.Location = new System.Drawing.Point(22, 29);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(150, 154);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 0;
+            this.pictureBox5.TabStop = false;
+            this.pictureBox5.UseWaitCursor = true;
             // 
             // label39
             // 
@@ -1409,7 +1546,7 @@
             // memberPage
             // 
             this.memberPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(91)))), ((int)(((byte)(150)))));
-            this.memberPage.Controls.Add(this.memderCard);
+            this.memberPage.Controls.Add(this.memberCard);
             this.memberPage.Controls.Add(this.memberCardSV);
             this.memberPage.Controls.Add(this.groupBox7);
             this.memberPage.Controls.Add(this.textBox18);
@@ -1439,25 +1576,36 @@
             this.memberPage.TabIndex = 7;
             this.memberPage.Text = "สมาชิก";
             // 
-            // memderCard
+            // memberCard
             // 
-            this.memderCard.BackColor = System.Drawing.Color.White;
-            this.memderCard.Controls.Add(this.imgMember);
-            this.memderCard.Controls.Add(this.btnMemberTR);
-            this.memderCard.Controls.Add(this.btnMemberTL);
-            this.memderCard.Controls.Add(this.genderMemberCard);
-            this.memderCard.Controls.Add(this.nameSMemberCard);
-            this.memderCard.Controls.Add(this.nameFMemberCard);
-            this.memderCard.Controls.Add(this.statusMemberCard);
-            this.memderCard.Controls.Add(this.pictureBox3);
-            this.memderCard.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.memderCard.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(146)))), ((int)(((byte)(96)))));
-            this.memderCard.Location = new System.Drawing.Point(720, 6);
-            this.memderCard.Name = "memderCard";
-            this.memderCard.Size = new System.Drawing.Size(632, 328);
-            this.memderCard.TabIndex = 44;
-            this.memderCard.TabStop = false;
-            this.memderCard.Text = "Preview";
+            this.memberCard.BackColor = System.Drawing.Color.White;
+            this.memberCard.Controls.Add(this.imgMember);
+            this.memberCard.Controls.Add(this.btnMemberTR);
+            this.memberCard.Controls.Add(this.btnMemberTL);
+            this.memberCard.Controls.Add(this.genderMemberCard);
+            this.memberCard.Controls.Add(this.nameSMemberCard);
+            this.memberCard.Controls.Add(this.nameFMemberCard);
+            this.memberCard.Controls.Add(this.statusMemberCard);
+            this.memberCard.Controls.Add(this.pictureBox3);
+            this.memberCard.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.memberCard.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(146)))), ((int)(((byte)(96)))));
+            this.memberCard.Location = new System.Drawing.Point(720, 6);
+            this.memberCard.Name = "memberCard";
+            this.memberCard.Size = new System.Drawing.Size(632, 328);
+            this.memberCard.TabIndex = 44;
+            this.memberCard.TabStop = false;
+            this.memberCard.Text = "Preview";
+            // 
+            // imgMember
+            // 
+            this.imgMember.BackColor = System.Drawing.Color.Black;
+            this.imgMember.Image = global::Project_Int.Properties.Resources.logo1;
+            this.imgMember.Location = new System.Drawing.Point(58, 103);
+            this.imgMember.Name = "imgMember";
+            this.imgMember.Size = new System.Drawing.Size(193, 197);
+            this.imgMember.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgMember.TabIndex = 38;
+            this.imgMember.TabStop = false;
             // 
             // btnMemberTR
             // 
@@ -1525,6 +1673,16 @@
             this.statusMemberCard.TabIndex = 21;
             this.statusMemberCard.Text = "สถานภาพ ไม่ระบุ";
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::Project_Int.Properties.Resources.Card;
+            this.pictureBox3.Location = new System.Drawing.Point(58, 32);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(515, 268);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 24;
+            this.pictureBox3.TabStop = false;
+            // 
             // memberCardSV
             // 
             this.memberCardSV.BackColor = System.Drawing.Color.White;
@@ -1550,6 +1708,7 @@
             this.btnMemberBL.TabIndex = 38;
             this.btnMemberBL.Text = "<";
             this.btnMemberBL.UseVisualStyleBackColor = false;
+            this.btnMemberBL.Click += new System.EventHandler(this.btnMemberBL_Click);
             // 
             // btnMemberBR
             // 
@@ -1560,6 +1719,7 @@
             this.btnMemberBR.TabIndex = 38;
             this.btnMemberBR.Text = ">";
             this.btnMemberBR.UseVisualStyleBackColor = false;
+            this.btnMemberBR.Click += new System.EventHandler(this.btnMemberBR_Click);
             // 
             // service
             // 
@@ -1571,9 +1731,23 @@
             this.service.Size = new System.Drawing.Size(288, 193);
             this.service.TabIndex = 20;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Project_Int.Properties.Resources.Card;
+            this.pictureBox1.Location = new System.Drawing.Point(58, 32);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(515, 268);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 24;
+            this.pictureBox1.TabStop = false;
+            // 
             // groupBox7
             // 
             this.groupBox7.BackColor = System.Drawing.Color.White;
+            this.groupBox7.Controls.Add(this.dropFileImg);
+            this.groupBox7.Controls.Add(this.btnDeleteImg);
+            this.groupBox7.Controls.Add(this.fileImg);
+            this.groupBox7.Controls.Add(this.label75);
             this.groupBox7.Controls.Add(this.save);
             this.groupBox7.Controls.Add(this.groupBox12);
             this.groupBox7.Controls.Add(this.label73);
@@ -1594,6 +1768,51 @@
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "ข้อมูลสมาชิก";
             // 
+            // dropFileImg
+            // 
+            this.dropFileImg.Location = new System.Drawing.Point(144, 474);
+            this.dropFileImg.Name = "dropFileImg";
+            this.dropFileImg.Size = new System.Drawing.Size(227, 46);
+            this.dropFileImg.TabIndex = 47;
+            this.dropFileImg.Text = "คลิกเพื่อใส่รูปภาพ";
+            this.dropFileImg.UseVisualStyleBackColor = true;
+            this.dropFileImg.Click += new System.EventHandler(this.pictureOnCard);
+            // 
+            // btnDeleteImg
+            // 
+            this.btnDeleteImg.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.btnDeleteImg.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(189)))), ((int)(((byte)(189)))));
+            this.btnDeleteImg.Location = new System.Drawing.Point(332, 466);
+            this.btnDeleteImg.Name = "btnDeleteImg";
+            this.btnDeleteImg.Size = new System.Drawing.Size(60, 62);
+            this.btnDeleteImg.TabIndex = 46;
+            this.btnDeleteImg.Text = "X";
+            this.btnDeleteImg.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnDeleteImg.UseWaitCursor = true;
+            this.btnDeleteImg.Click += new System.EventHandler(this.deleteImg);
+            // 
+            // fileImg
+            // 
+            this.fileImg.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fileImg.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(189)))), ((int)(((byte)(189)))));
+            this.fileImg.Location = new System.Drawing.Point(140, 466);
+            this.fileImg.Name = "fileImg";
+            this.fileImg.Size = new System.Drawing.Size(186, 62);
+            this.fileImg.TabIndex = 45;
+            this.fileImg.Text = "ไฟล์ (My profile picture)";
+            this.fileImg.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label75
+            // 
+            this.label75.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label75.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(27)))), ((int)(((byte)(108)))));
+            this.label75.Location = new System.Drawing.Point(28, 458);
+            this.label75.Name = "label75";
+            this.label75.Size = new System.Drawing.Size(185, 77);
+            this.label75.TabIndex = 44;
+            this.label75.Text = "รูปภาพ :";
+            this.label75.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // save
             // 
             this.save.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(31)))), ((int)(((byte)(75)))));
@@ -1613,9 +1832,9 @@
             this.groupBox12.Controls.Add(this.otherSV);
             this.groupBox12.Controls.Add(this.card);
             this.groupBox12.Controls.Add(this.otherforSV);
-            this.groupBox12.Location = new System.Drawing.Point(210, 358);
+            this.groupBox12.Location = new System.Drawing.Point(220, 358);
             this.groupBox12.Name = "groupBox12";
-            this.groupBox12.Size = new System.Drawing.Size(421, 104);
+            this.groupBox12.Size = new System.Drawing.Size(411, 104);
             this.groupBox12.TabIndex = 43;
             this.groupBox12.TabStop = false;
             // 
@@ -1681,9 +1900,9 @@
             this.groupBox11.Controls.Add(this.notSPStatus);
             this.groupBox11.Controls.Add(this.marry);
             this.groupBox11.Controls.Add(this.single);
-            this.groupBox11.Location = new System.Drawing.Point(210, 252);
+            this.groupBox11.Location = new System.Drawing.Point(219, 252);
             this.groupBox11.Name = "groupBox11";
-            this.groupBox11.Size = new System.Drawing.Size(421, 100);
+            this.groupBox11.Size = new System.Drawing.Size(412, 100);
             this.groupBox11.TabIndex = 40;
             this.groupBox11.TabStop = false;
             // 
@@ -1754,9 +1973,9 @@
             this.groupBox10.Controls.Add(this.lgbt);
             this.groupBox10.Controls.Add(this.male);
             this.groupBox10.Controls.Add(this.female);
-            this.groupBox10.Location = new System.Drawing.Point(210, 146);
+            this.groupBox10.Location = new System.Drawing.Point(219, 146);
             this.groupBox10.Name = "groupBox10";
-            this.groupBox10.Size = new System.Drawing.Size(421, 100);
+            this.groupBox10.Size = new System.Drawing.Size(412, 100);
             this.groupBox10.TabIndex = 39;
             this.groupBox10.TabStop = false;
             // 
@@ -1816,9 +2035,9 @@
             // nameFMember
             // 
             this.nameFMember.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(91)))), ((int)(((byte)(150)))));
-            this.nameFMember.Location = new System.Drawing.Point(210, 49);
+            this.nameFMember.Location = new System.Drawing.Point(219, 49);
             this.nameFMember.Name = "nameFMember";
-            this.nameFMember.Size = new System.Drawing.Size(421, 38);
+            this.nameFMember.Size = new System.Drawing.Size(412, 38);
             this.nameFMember.TabIndex = 38;
             this.nameFMember.TextChanged += new System.EventHandler(this.nameFMember_TextChanged);
             // 
@@ -1848,9 +2067,9 @@
             // nameSMember
             // 
             this.nameSMember.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(91)))), ((int)(((byte)(150)))));
-            this.nameSMember.Location = new System.Drawing.Point(210, 105);
+            this.nameSMember.Location = new System.Drawing.Point(219, 105);
             this.nameSMember.Name = "nameSMember";
-            this.nameSMember.Size = new System.Drawing.Size(421, 38);
+            this.nameSMember.Size = new System.Drawing.Size(412, 38);
             this.nameSMember.TabIndex = 29;
             this.nameSMember.TextChanged += new System.EventHandler(this.nameSMember_TextChanged);
             // 
@@ -2221,6 +2440,31 @@
             this.head.Text = "Burning Love";
             this.head.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Location = new System.Drawing.Point(1463, 552);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(496, 599);
+            this.pictureBox7.TabIndex = 2;
+            this.pictureBox7.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Location = new System.Drawing.Point(1455, 544);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(496, 599);
+            this.pictureBox6.TabIndex = 1;
+            this.pictureBox6.TabStop = false;
+            // 
+            // detailImg
+            // 
+            this.detailImg.Location = new System.Drawing.Point(26, 109);
+            this.detailImg.Name = "detailImg";
+            this.detailImg.Size = new System.Drawing.Size(498, 534);
+            this.detailImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.detailImg.TabIndex = 0;
+            this.detailImg.TabStop = false;
+            // 
             // windowSignIn
             // 
             this.windowSignIn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(168)))), ((int)(((byte)(208)))));
@@ -2454,6 +2698,17 @@
             this.label46.Name = "label46";
             this.label46.Size = new System.Drawing.Size(523, 525);
             this.label46.TabIndex = 0;
+            // 
+            // eyePassSignIn
+            // 
+            this.eyePassSignIn.Image = ((System.Drawing.Image)(resources.GetObject("eyePassSignIn.Image")));
+            this.eyePassSignIn.Location = new System.Drawing.Point(830, 416);
+            this.eyePassSignIn.Name = "eyePassSignIn";
+            this.eyePassSignIn.Size = new System.Drawing.Size(63, 54);
+            this.eyePassSignIn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.eyePassSignIn.TabIndex = 16;
+            this.eyePassSignIn.TabStop = false;
+            this.eyePassSignIn.Click += new System.EventHandler(this.eyePassSignIn_Click);
             // 
             // windowSignUp
             // 
@@ -2794,195 +3049,6 @@
             this.label67.Size = new System.Drawing.Size(523, 525);
             this.label67.TabIndex = 0;
             // 
-            // imglog3
-            // 
-            this.imglog3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.imglog3.Location = new System.Drawing.Point(679, 38);
-            this.imglog3.Name = "imglog3";
-            this.imglog3.Size = new System.Drawing.Size(301, 334);
-            this.imglog3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imglog3.TabIndex = 3;
-            this.imglog3.TabStop = false;
-            this.imglog3.Click += new System.EventHandler(this.imglog3_Click);
-            // 
-            // imglog4
-            // 
-            this.imglog4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.imglog4.Location = new System.Drawing.Point(1009, 38);
-            this.imglog4.Name = "imglog4";
-            this.imglog4.Size = new System.Drawing.Size(301, 334);
-            this.imglog4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imglog4.TabIndex = 2;
-            this.imglog4.TabStop = false;
-            this.imglog4.Click += new System.EventHandler(this.imglog4_Click);
-            // 
-            // imglog2
-            // 
-            this.imglog2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.imglog2.Location = new System.Drawing.Point(349, 38);
-            this.imglog2.Name = "imglog2";
-            this.imglog2.Size = new System.Drawing.Size(301, 334);
-            this.imglog2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imglog2.TabIndex = 1;
-            this.imglog2.TabStop = false;
-            this.imglog2.Click += new System.EventHandler(this.imglog2_Click);
-            // 
-            // imglog1
-            // 
-            this.imglog1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.imglog1.Location = new System.Drawing.Point(21, 38);
-            this.imglog1.Name = "imglog1";
-            this.imglog1.Size = new System.Drawing.Size(301, 334);
-            this.imglog1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imglog1.TabIndex = 0;
-            this.imglog1.TabStop = false;
-            this.imglog1.Click += new System.EventHandler(this.imglogin1_Click);
-            // 
-            // img3
-            // 
-            this.img3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.img3.Location = new System.Drawing.Point(679, 38);
-            this.img3.Name = "img3";
-            this.img3.Size = new System.Drawing.Size(301, 334);
-            this.img3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.img3.TabIndex = 3;
-            this.img3.TabStop = false;
-            this.img3.Click += new System.EventHandler(this.img3_Click);
-            // 
-            // img4
-            // 
-            this.img4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.img4.Location = new System.Drawing.Point(1009, 38);
-            this.img4.Name = "img4";
-            this.img4.Size = new System.Drawing.Size(301, 334);
-            this.img4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.img4.TabIndex = 2;
-            this.img4.TabStop = false;
-            this.img4.Click += new System.EventHandler(this.img4_Click);
-            // 
-            // img2
-            // 
-            this.img2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.img2.Location = new System.Drawing.Point(349, 38);
-            this.img2.Name = "img2";
-            this.img2.Size = new System.Drawing.Size(301, 334);
-            this.img2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.img2.TabIndex = 1;
-            this.img2.TabStop = false;
-            this.img2.Click += new System.EventHandler(this.img2_Click);
-            // 
-            // img1
-            // 
-            this.img1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.img1.Location = new System.Drawing.Point(21, 38);
-            this.img1.Name = "img1";
-            this.img1.Size = new System.Drawing.Size(301, 334);
-            this.img1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.img1.TabIndex = 0;
-            this.img1.TabStop = false;
-            this.img1.Click += new System.EventHandler(this.img1_Click);
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.Image = global::Project_Int.Properties.Resources._12_1;
-            this.pictureBox10.Location = new System.Drawing.Point(22, 29);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(150, 154);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox10.TabIndex = 9;
-            this.pictureBox10.TabStop = false;
-            this.pictureBox10.UseWaitCursor = true;
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Image = global::Project_Int.Properties.Resources._11_11;
-            this.pictureBox9.Location = new System.Drawing.Point(22, 29);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(150, 154);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox9.TabIndex = 6;
-            this.pictureBox9.TabStop = false;
-            this.pictureBox9.UseWaitCursor = true;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Image = global::Project_Int.Properties.Resources._7_1;
-            this.pictureBox8.Location = new System.Drawing.Point(22, 29);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(150, 154);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox8.TabIndex = 3;
-            this.pictureBox8.TabStop = false;
-            this.pictureBox8.UseWaitCursor = true;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::Project_Int.Properties.Resources._6_1;
-            this.pictureBox5.InitialImage = null;
-            this.pictureBox5.Location = new System.Drawing.Point(22, 29);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(150, 154);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 0;
-            this.pictureBox5.TabStop = false;
-            this.pictureBox5.UseWaitCursor = true;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::Project_Int.Properties.Resources.Card;
-            this.pictureBox3.Location = new System.Drawing.Point(58, 32);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(515, 268);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 24;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Project_Int.Properties.Resources.Card;
-            this.pictureBox1.Location = new System.Drawing.Point(58, 32);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(515, 268);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 24;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Location = new System.Drawing.Point(1463, 552);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(496, 599);
-            this.pictureBox7.TabIndex = 2;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Location = new System.Drawing.Point(1455, 544);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(496, 599);
-            this.pictureBox6.TabIndex = 1;
-            this.pictureBox6.TabStop = false;
-            // 
-            // detailImg
-            // 
-            this.detailImg.Location = new System.Drawing.Point(26, 109);
-            this.detailImg.Name = "detailImg";
-            this.detailImg.Size = new System.Drawing.Size(498, 534);
-            this.detailImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.detailImg.TabIndex = 0;
-            this.detailImg.TabStop = false;
-            // 
-            // eyePassSignIn
-            // 
-            this.eyePassSignIn.Image = ((System.Drawing.Image)(resources.GetObject("eyePassSignIn.Image")));
-            this.eyePassSignIn.Location = new System.Drawing.Point(830, 416);
-            this.eyePassSignIn.Name = "eyePassSignIn";
-            this.eyePassSignIn.Size = new System.Drawing.Size(63, 54);
-            this.eyePassSignIn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.eyePassSignIn.TabIndex = 16;
-            this.eyePassSignIn.TabStop = false;
-            this.eyePassSignIn.Click += new System.EventHandler(this.eyePassSignIn_Click);
-            // 
             // eyeConfirmPass
             // 
             this.eyeConfirmPass.Image = ((System.Drawing.Image)(resources.GetObject("eyeConfirmPass.Image")));
@@ -3015,23 +3081,12 @@
             this.eyePassSignUp.TabStop = false;
             this.eyePassSignUp.Click += new System.EventHandler(this.eyePassSignUp_Click);
             // 
-            // imgMember
-            // 
-            this.imgMember.BackColor = System.Drawing.Color.Black;
-            this.imgMember.Image = global::Project_Int.Properties.Resources.logo1;
-            this.imgMember.Location = new System.Drawing.Point(58, 103);
-            this.imgMember.Name = "imgMember";
-            this.imgMember.Size = new System.Drawing.Size(193, 197);
-            this.imgMember.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imgMember.TabIndex = 38;
-            this.imgMember.TabStop = false;
-            // 
             // Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(168)))), ((int)(((byte)(208)))));
-            this.ClientSize = new System.Drawing.Size(1401, 721);
+            this.ClientSize = new System.Drawing.Size(1397, 726);
             this.Controls.Add(this.Flowers);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form";
@@ -3044,23 +3099,38 @@
             this.mainPage.PerformLayout();
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imglog3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imglog4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imglog2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imglog1)).EndInit();
             this.imgPage.ResumeLayout(false);
             this.imgPage.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.img3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.img4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.img2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.img1)).EndInit();
             this.pricePage.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.memberPage.ResumeLayout(false);
             this.memberPage.PerformLayout();
-            this.memderCard.ResumeLayout(false);
+            this.memberCard.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.imgMember)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.memberCardSV.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
             this.groupBox12.ResumeLayout(false);
@@ -3070,32 +3140,17 @@
             this.groupBox10.ResumeLayout(false);
             this.groupBox10.PerformLayout();
             this.detailPage.ResumeLayout(false);
-            this.windowSignIn.ResumeLayout(false);
-            this.windowSignIn.PerformLayout();
-            this.windowSignUp.ResumeLayout(false);
-            this.windowSignUp.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imglog3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imglog4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imglog2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imglog1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.img3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.img4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.img2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.img1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.detailImg)).EndInit();
+            this.windowSignIn.ResumeLayout(false);
+            this.windowSignIn.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.eyePassSignIn)).EndInit();
+            this.windowSignUp.ResumeLayout(false);
+            this.windowSignUp.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.eyeConfirmPass)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.eyePassSignUp)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgMember)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -3300,7 +3355,7 @@
         private System.Windows.Forms.TextBox nameFMember;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.GroupBox memberCardSV;
-        private System.Windows.Forms.GroupBox memderCard;
+        private System.Windows.Forms.GroupBox memberCard;
         private System.Windows.Forms.Label genderMemberCard;
         private System.Windows.Forms.Label nameSMemberCard;
         private System.Windows.Forms.Label nameFMemberCard;
@@ -3329,6 +3384,10 @@
         private System.Windows.Forms.Button btnMemberBL;
         private System.Windows.Forms.Button btnMemberBR;
         private System.Windows.Forms.PictureBox imgMember;
+        private System.Windows.Forms.Label btnDeleteImg;
+        private System.Windows.Forms.Label fileImg;
+        private System.Windows.Forms.Label label75;
+        private System.Windows.Forms.Button dropFileImg;
     }
 }
 

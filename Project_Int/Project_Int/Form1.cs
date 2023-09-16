@@ -40,8 +40,8 @@ namespace Project_Int
 
         List<List<string>> dataSignUp = new List<List<string>>();
         string nameFDataMemberCard = "ชื่อ ", nameSDataMemberCard = "นามสกุล ", genderDataMemberCard = "เพศ ไม่ระบุ", statusDataMemberCard = "สถานภาพ ไม่ระบุ", SVDataMemberCard = "";
-        Boolean userRepeat, passwordConfirmOk, previewCard;
-        Boolean imgforMember = false;
+        Boolean userRepeat, passwordConfirmOk, previewCard, previewCardSV, imgForFile;
+        Boolean boolfileWaitImg = false;
         Boolean[] boolSV = {false, false, false};
         double numberCal;
         int CountPage, indexselect, countEyePassSignUp, countEyePassConSignUp, countEyePassSignIn;
@@ -49,13 +49,6 @@ namespace Project_Int
 
         //จัดการรูปในหน้าสมาชิกตัวที่ทำการบันทึกแล้วว่าจะแสดงรูปหรือไม่แสดง (ถ้าระบบยังไม่เคยทำการบันทึกจะไม่แสดงรูป ถ้าระบบเคยทำการบันทึกแล้วจะทำการแสดงรูปภาพ)
         //จากโจทย์เป็นการตั้งรูปไว้แล้ว แล้วเอารูปสีดำมาวางทับปิด จึงออกคำสั่งกับรูปสีดำให้ซ่อนหรือแสดงเพื่อให้เห็นรูปภาพ
-        private void imgMemberforBool(object sender, EventArgs e)
-        {
-            if (imgforMember)
-                imgMember.Hide();
-            else
-                imgMember.Show();
-        }
 
         //การติ๊ก checkbox และ radio
         private void indexforMember(object sender, EventArgs e)
@@ -119,6 +112,14 @@ namespace Project_Int
         }
 
         //การแสดงผลบัตรสมาชิกในรูปแบบที่แสดงผลของข้อมูลที่ถูกบันทึกเอาไว้แล้ว
+
+        private void dataMemberSaveSV(object sender, EventArgs e)
+        {
+            if (!previewCardSV)
+            {
+                service.Text = SVDataMemberCard;
+            }
+        }
         private void dataMemberSave(object sender, EventArgs e)
         {
             if (!previewCard)
@@ -481,17 +482,56 @@ namespace Project_Int
         private void settingPreview(object sender, EventArgs e)
         {
             //data
+            //top
             previewCard = false;
             dataMemberSave(sender, e);
             previewCard = true;
+            //bottom
+            previewCardSV = false;
+            dataMemberSaveSV(sender, e);
+            previewCardSV = true;
 
             //botton
-            memderCard.Text = "Preview";
+            memberCard.Text = "Preview";
             memberCardSV.Text = "Preview";
             btnMemberTR.Hide();
             btnMemberTL.Show();
             btnMemberBR.Hide();
             btnMemberBL.Show();
+        }
+
+        //การจัดการใส่รูปภาพหรือเอารุปภาพออกบนหน้าบัตรสมาชิก
+        private void manageImg(object sender, EventArgs e)
+        {
+            if (imgForFile)
+            {
+                imgMember.Hide();
+                btnDeleteImg.Show();
+                fileImg.Show();
+                dropFileImg.Hide();
+            }
+            else
+            {
+                imgMember.Show();
+                btnDeleteImg.Hide();
+                fileImg.Hide();
+                dropFileImg.Show();
+            }
+        }
+        private void funHideShowBtnImg(object sender, EventArgs e)
+        {
+            if (imgForFile)
+            {
+                btnDeleteImg.Show();
+                fileImg.Show();
+                dropFileImg.Hide();
+            }
+            else
+            {
+                btnDeleteImg.Hide();
+                fileImg.Hide();
+                dropFileImg.Show();
+            }
         }
 
         public Form()
@@ -520,7 +560,8 @@ namespace Project_Int
                 settingPreview(sender, e);
                 imgMember.Hide(); //เริ่มที่ซ่อนรูปสีดำที่ทับรูปของเรา เนื่องจากสิ่งที่ถูกแสดงคือหน้า preview
                                   //หมายเหตุ : ถ้าเปลี่ยนไปหน้าสำหรับข้อมูลที่ถูกบันทึกจึงจะเปลี่ยนแปลงตามข้อมูลที่ว่าเคยมีการทำการบันทึกข้อมูลหรือไม่
-
+                imgForFile = boolfileWaitImg;
+                manageImg(sender, e);
             }
         }
 
@@ -842,38 +883,65 @@ namespace Project_Int
         private void card_CheckedChanged(object sender, EventArgs e)
         {
             callchangeSV(sender, e);
+            dataMemberSaveSV(sender, e);
         }
 
         private void consult_CheckedChanged(object sender, EventArgs e)
         {
             callchangeSV(sender, e);
+            dataMemberSaveSV(sender, e);
         }
 
         private void otherSV_CheckedChanged(object sender, EventArgs e)
         {
             callchangeSV(sender, e);
+            dataMemberSaveSV(sender, e);
         }
 
         private void otherforSV_TextChanged(object sender, EventArgs e)
         {
             callchangeSV(sender, e);
+            dataMemberSaveSV(sender, e);
+        }
+
+        //การจัดการใส่รูปภาพหรือเอารุปภาพออกบนหน้าบัตรสมาชิก
+        private void deleteImg(object sender, EventArgs e)
+        {
+            imgForFile = false;
+            if (previewCard)
+                manageImg(sender, e);
+            else
+                funHideShowBtnImg(sender, e);
+        }
+
+        private void pictureOnCard(object sender, EventArgs e)
+        {
+            imgForFile = true;
+            if(previewCard)
+                manageImg(sender, e);
+            else
+                funHideShowBtnImg(sender, e);
         }
 
         //โซนบัตรสมาชิกที่บันทึกข้อมูลแล้วกับบัตรในรูปแบบ Preview
 
         private void btnMemberL_Click(object sender, EventArgs e)
         {
-            memderCard.Text = "Flowers of Paradise Membership Card";
+            memberCard.Text = "Flowers of Paradise Membership Card";
             previewCard = false;
             dataMemberSave(sender, e);
             btnMemberTL.Hide();
             btnMemberTR.Show();
-            imgMemberforBool(sender, e);
+
+            if (boolfileWaitImg)
+                imgMember.Hide();
+            else
+                imgMember.Show();
         }
 
         private void btnMemberR_Click(object sender, EventArgs e)
         {
-            memderCard.Text = "Preview";
+            memberCard.Text = "Preview";
             previewCard = true;
             nameFMemberCard.Text = funMemder(sender, e, nameFDataMemberCard, nameFMember.Text, "ชื่อ", 10, 9);
             nameSMemberCard.Text = funMemder(sender, e, nameSDataMemberCard, nameSMember.Text, "นามสกุล", 6, 5);
@@ -881,7 +949,25 @@ namespace Project_Int
             statusMemberCard.Text = funStatus(sender, e);
             btnMemberTR.Hide();
             btnMemberTL.Show();
-            imgMember.Hide();
+            manageImg(sender, e);
+        }
+
+        private void btnMemberBL_Click(object sender, EventArgs e)
+        {
+            memberCardSV.Text = "Flowers of Paradise Membership Card";
+            previewCardSV = false;
+            dataMemberSaveSV(sender, e);
+            btnMemberBL.Hide();
+            btnMemberBR.Show();
+        }
+
+        private void btnMemberBR_Click(object sender, EventArgs e)
+        {
+            memberCardSV.Text = "Preview";
+            previewCardSV = true;
+            service.Text = changeSV(sender, e);
+            btnMemberBR.Hide();
+            btnMemberBL.Show();
         }
 
         //เซฟข้อมูลบัตรสมาชิก
@@ -889,10 +975,11 @@ namespace Project_Int
         {
             funSave(sender, e);
             dataMemberSave(sender, e);
+            dataMemberSaveSV(sender, e);
             indexforMember(sender, e);
+            manageImg(sender, e);
+            boolfileWaitImg = imgForFile;
             MessageBox.Show("บันทึกข้อมูลสำเร็จ!");
-            imgforMember = true;
-            imgMember.Hide();
         }
 
         //การลงทะเบียน

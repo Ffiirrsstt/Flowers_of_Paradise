@@ -58,6 +58,25 @@
             this.imglog1 = new System.Windows.Forms.PictureBox();
             this.label48 = new System.Windows.Forms.Label();
             this.loginPageV2 = new System.Windows.Forms.TabPage();
+            this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.signUpPassPLog = new System.Windows.Forms.TextBox();
+            this.signUpPassCFPLog = new System.Windows.Forms.TextBox();
+            this.passwordNotMatch = new System.Windows.Forms.Label();
+            this.label92 = new System.Windows.Forms.Label();
+            this.btnSignUpPLog = new System.Windows.Forms.Button();
+            this.label99 = new System.Windows.Forms.Label();
+            this.label103 = new System.Windows.Forms.Label();
+            this.label104 = new System.Windows.Forms.Label();
+            this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.label78 = new System.Windows.Forms.Label();
+            this.label76 = new System.Windows.Forms.Label();
+            this.button10 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label82 = new System.Windows.Forms.Label();
+            this.label91 = new System.Windows.Forms.Label();
             this.imgPage = new System.Windows.Forms.TabPage();
             this.button1 = new System.Windows.Forms.Button();
             this.btn_reduce = new System.Windows.Forms.Button();
@@ -225,8 +244,8 @@
             this.label52 = new System.Windows.Forms.Label();
             this.user = new System.Windows.Forms.TextBox();
             this.label51 = new System.Windows.Forms.Label();
-            this.label46 = new System.Windows.Forms.Label();
             this.eyePassSignIn = new System.Windows.Forms.PictureBox();
+            this.label46 = new System.Windows.Forms.Label();
             this.windowSignUp = new System.Windows.Forms.TabPage();
             this.textDesName = new System.Windows.Forms.Label();
             this.textDesConfirm = new System.Windows.Forms.Label();
@@ -257,10 +276,10 @@
             this.newUser = new System.Windows.Forms.TextBox();
             this.headSignUp = new System.Windows.Forms.Label();
             this.passwordSignUp = new System.Windows.Forms.TextBox();
-            this.label67 = new System.Windows.Forms.Label();
             this.eyeConfirmPass = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.eyePassSignUp = new System.Windows.Forms.PictureBox();
+            this.label67 = new System.Windows.Forms.Label();
             this.Flowers.SuspendLayout();
             this.firstPage.SuspendLayout();
             this.mainPage.SuspendLayout();
@@ -269,6 +288,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.imglog4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imglog2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imglog1)).BeginInit();
+            this.loginPageV2.SuspendLayout();
+            this.groupBox9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.groupBox8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             this.imgPage.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.img3)).BeginInit();
@@ -626,13 +651,241 @@
             // 
             // loginPageV2
             // 
+            this.loginPageV2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(168)))), ((int)(((byte)(208)))));
+            this.loginPageV2.Controls.Add(this.groupBox9);
+            this.loginPageV2.Controls.Add(this.groupBox8);
             this.loginPageV2.Cursor = System.Windows.Forms.Cursors.Default;
             this.loginPageV2.Location = new System.Drawing.Point(4, 34);
             this.loginPageV2.Name = "loginPageV2";
             this.loginPageV2.Size = new System.Drawing.Size(1386, 675);
             this.loginPageV2.TabIndex = 8;
             this.loginPageV2.Text = "ล็อกอิน";
-            this.loginPageV2.UseVisualStyleBackColor = true;
+            // 
+            // groupBox9
+            // 
+            this.groupBox9.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.groupBox9.Controls.Add(this.pictureBox11);
+            this.groupBox9.Controls.Add(this.pictureBox4);
+            this.groupBox9.Controls.Add(this.signUpPassPLog);
+            this.groupBox9.Controls.Add(this.signUpPassCFPLog);
+            this.groupBox9.Controls.Add(this.passwordNotMatch);
+            this.groupBox9.Controls.Add(this.label92);
+            this.groupBox9.Controls.Add(this.btnSignUpPLog);
+            this.groupBox9.Controls.Add(this.label99);
+            this.groupBox9.Controls.Add(this.label103);
+            this.groupBox9.Controls.Add(this.label104);
+            this.groupBox9.Location = new System.Drawing.Point(699, 33);
+            this.groupBox9.Name = "groupBox9";
+            this.groupBox9.Size = new System.Drawing.Size(607, 611);
+            this.groupBox9.TabIndex = 42;
+            this.groupBox9.TabStop = false;
+            this.groupBox9.Text = "ลงทะเบียน";
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
+            this.pictureBox11.Location = new System.Drawing.Point(449, 251);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(63, 54);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox11.TabIndex = 49;
+            this.pictureBox11.TabStop = false;
+            this.pictureBox11.Click += new System.EventHandler(this.pictureBox11_Click);
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(449, 373);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(63, 54);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 49;
+            this.pictureBox4.TabStop = false;
+            // 
+            // signUpPassPLog
+            // 
+            this.signUpPassPLog.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.signUpPassPLog.Location = new System.Drawing.Point(105, 251);
+            this.signUpPassPLog.Multiline = true;
+            this.signUpPassPLog.Name = "signUpPassPLog";
+            this.signUpPassPLog.PasswordChar = '*';
+            this.signUpPassPLog.Size = new System.Drawing.Size(325, 54);
+            this.signUpPassPLog.TabIndex = 48;
+            this.signUpPassPLog.TextChanged += new System.EventHandler(this.signUpPassPLog_TextChanged);
+            // 
+            // signUpPassCFPLog
+            // 
+            this.signUpPassCFPLog.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.signUpPassCFPLog.Location = new System.Drawing.Point(105, 373);
+            this.signUpPassCFPLog.Multiline = true;
+            this.signUpPassCFPLog.Name = "signUpPassCFPLog";
+            this.signUpPassCFPLog.PasswordChar = '*';
+            this.signUpPassCFPLog.Size = new System.Drawing.Size(325, 54);
+            this.signUpPassCFPLog.TabIndex = 48;
+            this.signUpPassCFPLog.TextChanged += new System.EventHandler(this.signUpPassCFPLog_TextChanged);
+            // 
+            // passwordNotMatch
+            // 
+            this.passwordNotMatch.BackColor = System.Drawing.Color.White;
+            this.passwordNotMatch.ForeColor = System.Drawing.Color.Red;
+            this.passwordNotMatch.Location = new System.Drawing.Point(261, 323);
+            this.passwordNotMatch.Name = "passwordNotMatch";
+            this.passwordNotMatch.Size = new System.Drawing.Size(251, 41);
+            this.passwordNotMatch.TabIndex = 46;
+            this.passwordNotMatch.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // label92
+            // 
+            this.label92.BackColor = System.Drawing.Color.White;
+            this.label92.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label92.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(57)))), ((int)(((byte)(108)))));
+            this.label92.Location = new System.Drawing.Point(103, 323);
+            this.label92.Name = "label92";
+            this.label92.Size = new System.Drawing.Size(170, 35);
+            this.label92.TabIndex = 46;
+            this.label92.Text = "ยืนยันรหัสผ่าน";
+            // 
+            // btnSignUpPLog
+            // 
+            this.btnSignUpPLog.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(57)))), ((int)(((byte)(108)))));
+            this.btnSignUpPLog.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSignUpPLog.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.btnSignUpPLog.ForeColor = System.Drawing.Color.White;
+            this.btnSignUpPLog.Location = new System.Drawing.Point(105, 452);
+            this.btnSignUpPLog.Name = "btnSignUpPLog";
+            this.btnSignUpPLog.Size = new System.Drawing.Size(407, 100);
+            this.btnSignUpPLog.TabIndex = 38;
+            this.btnSignUpPLog.Text = "ลงทะเบียน";
+            this.btnSignUpPLog.UseVisualStyleBackColor = false;
+            this.btnSignUpPLog.Click += new System.EventHandler(this.btnSignUpPLog_Click);
+            // 
+            // label99
+            // 
+            this.label99.BackColor = System.Drawing.Color.White;
+            this.label99.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label99.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(57)))), ((int)(((byte)(108)))));
+            this.label99.Location = new System.Drawing.Point(105, 197);
+            this.label99.Name = "label99";
+            this.label99.Size = new System.Drawing.Size(128, 36);
+            this.label99.TabIndex = 44;
+            this.label99.Text = "รหัสผ่าน";
+            // 
+            // label103
+            // 
+            this.label103.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(57)))), ((int)(((byte)(108)))));
+            this.label103.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label103.ForeColor = System.Drawing.Color.White;
+            this.label103.Location = new System.Drawing.Point(38, 52);
+            this.label103.Name = "label103";
+            this.label103.Size = new System.Drawing.Size(525, 114);
+            this.label103.TabIndex = 36;
+            this.label103.Text = "ลงทะเบียนสมาชิก Flowers of Paradise ID";
+            this.label103.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label104
+            // 
+            this.label104.BackColor = System.Drawing.Color.White;
+            this.label104.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label104.Location = new System.Drawing.Point(40, 53);
+            this.label104.Name = "label104";
+            this.label104.Size = new System.Drawing.Size(523, 525);
+            this.label104.TabIndex = 35;
+            // 
+            // groupBox8
+            // 
+            this.groupBox8.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.groupBox8.Controls.Add(this.pictureBox12);
+            this.groupBox8.Controls.Add(this.label78);
+            this.groupBox8.Controls.Add(this.label76);
+            this.groupBox8.Controls.Add(this.button10);
+            this.groupBox8.Controls.Add(this.textBox1);
+            this.groupBox8.Controls.Add(this.label82);
+            this.groupBox8.Controls.Add(this.label91);
+            this.groupBox8.Location = new System.Drawing.Point(71, 33);
+            this.groupBox8.Name = "groupBox8";
+            this.groupBox8.Size = new System.Drawing.Size(607, 611);
+            this.groupBox8.TabIndex = 41;
+            this.groupBox8.TabStop = false;
+            this.groupBox8.Text = "เข้าสู่ระบบ";
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox12.Image")));
+            this.pictureBox12.Location = new System.Drawing.Point(450, 312);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(62, 54);
+            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox12.TabIndex = 47;
+            this.pictureBox12.TabStop = false;
+            // 
+            // label78
+            // 
+            this.label78.BackColor = System.Drawing.Color.White;
+            this.label78.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label78.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(57)))), ((int)(((byte)(108)))));
+            this.label78.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label78.Location = new System.Drawing.Point(99, 256);
+            this.label78.Name = "label78";
+            this.label78.Size = new System.Drawing.Size(170, 36);
+            this.label78.TabIndex = 41;
+            this.label78.Text = "รหัสผ่าน";
+            // 
+            // label76
+            // 
+            this.label76.BackColor = System.Drawing.Color.White;
+            this.label76.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label76.ForeColor = System.Drawing.Color.Red;
+            this.label76.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.label76.Location = new System.Drawing.Point(275, 256);
+            this.label76.Name = "label76";
+            this.label76.Size = new System.Drawing.Size(237, 36);
+            this.label76.TabIndex = 40;
+            this.label76.Text = "รหัสผ่านไม่ถูกต้อง";
+            this.label76.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // button10
+            // 
+            this.button10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(57)))), ((int)(((byte)(108)))));
+            this.button10.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.button10.ForeColor = System.Drawing.Color.White;
+            this.button10.Location = new System.Drawing.Point(99, 452);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(413, 100);
+            this.button10.TabIndex = 38;
+            this.button10.Text = "เข้าสู่ระบบ";
+            this.button10.UseVisualStyleBackColor = false;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.textBox1.Location = new System.Drawing.Point(99, 312);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.PasswordChar = '*';
+            this.textBox1.Size = new System.Drawing.Size(335, 54);
+            this.textBox1.TabIndex = 37;
+            // 
+            // label82
+            // 
+            this.label82.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(57)))), ((int)(((byte)(108)))));
+            this.label82.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label82.ForeColor = System.Drawing.Color.White;
+            this.label82.Location = new System.Drawing.Point(38, 52);
+            this.label82.Name = "label82";
+            this.label82.Size = new System.Drawing.Size(525, 114);
+            this.label82.TabIndex = 36;
+            this.label82.Text = "เข้าสู่ระบบด้วยสมาชิก Flowers of Paradise ID";
+            this.label82.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label91
+            // 
+            this.label91.BackColor = System.Drawing.Color.White;
+            this.label91.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label91.Location = new System.Drawing.Point(40, 53);
+            this.label91.Name = "label91";
+            this.label91.Size = new System.Drawing.Size(523, 525);
+            this.label91.TabIndex = 35;
             // 
             // imgPage
             // 
@@ -1770,6 +2023,7 @@
             // 
             // dropFileImg
             // 
+            this.dropFileImg.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dropFileImg.Location = new System.Drawing.Point(144, 474);
             this.dropFileImg.Name = "dropFileImg";
             this.dropFileImg.Size = new System.Drawing.Size(227, 46);
@@ -1780,6 +2034,7 @@
             // 
             // btnDeleteImg
             // 
+            this.btnDeleteImg.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.btnDeleteImg.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.btnDeleteImg.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(189)))), ((int)(((byte)(189)))));
             this.btnDeleteImg.Location = new System.Drawing.Point(332, 466);
@@ -2487,8 +2742,8 @@
             this.windowSignIn.Controls.Add(this.label52);
             this.windowSignIn.Controls.Add(this.user);
             this.windowSignIn.Controls.Add(this.label51);
-            this.windowSignIn.Controls.Add(this.label46);
             this.windowSignIn.Controls.Add(this.eyePassSignIn);
+            this.windowSignIn.Controls.Add(this.label46);
             this.windowSignIn.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.windowSignIn.Location = new System.Drawing.Point(4, 34);
             this.windowSignIn.Name = "windowSignIn";
@@ -2543,6 +2798,7 @@
             // label58
             // 
             this.label58.BackColor = System.Drawing.Color.White;
+            this.label58.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label58.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(151)))), ((int)(((byte)(177)))));
             this.label58.Location = new System.Drawing.Point(485, 493);
             this.label58.Name = "label58";
@@ -2690,17 +2946,9 @@
             this.label51.Text = "เข้าสู่ระบบด้วยสมาชิก Flowers of Paradise ID";
             this.label51.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label46
-            // 
-            this.label46.BackColor = System.Drawing.Color.White;
-            this.label46.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label46.Location = new System.Drawing.Point(422, 71);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(523, 525);
-            this.label46.TabIndex = 0;
-            // 
             // eyePassSignIn
             // 
+            this.eyePassSignIn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.eyePassSignIn.Image = ((System.Drawing.Image)(resources.GetObject("eyePassSignIn.Image")));
             this.eyePassSignIn.Location = new System.Drawing.Point(830, 416);
             this.eyePassSignIn.Name = "eyePassSignIn";
@@ -2709,6 +2957,15 @@
             this.eyePassSignIn.TabIndex = 16;
             this.eyePassSignIn.TabStop = false;
             this.eyePassSignIn.Click += new System.EventHandler(this.eyePassSignIn_Click);
+            // 
+            // label46
+            // 
+            this.label46.BackColor = System.Drawing.Color.White;
+            this.label46.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label46.Location = new System.Drawing.Point(422, 71);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(523, 525);
+            this.label46.TabIndex = 0;
             // 
             // windowSignUp
             // 
@@ -2742,10 +2999,10 @@
             this.windowSignUp.Controls.Add(this.newUser);
             this.windowSignUp.Controls.Add(this.headSignUp);
             this.windowSignUp.Controls.Add(this.passwordSignUp);
-            this.windowSignUp.Controls.Add(this.label67);
             this.windowSignUp.Controls.Add(this.eyeConfirmPass);
             this.windowSignUp.Controls.Add(this.pictureBox2);
             this.windowSignUp.Controls.Add(this.eyePassSignUp);
+            this.windowSignUp.Controls.Add(this.label67);
             this.windowSignUp.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.windowSignUp.Location = new System.Drawing.Point(4, 34);
             this.windowSignUp.Name = "windowSignUp";
@@ -2893,6 +3150,7 @@
             // label59
             // 
             this.label59.BackColor = System.Drawing.Color.White;
+            this.label59.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label59.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(151)))), ((int)(((byte)(177)))));
             this.label59.Location = new System.Drawing.Point(485, 493);
             this.label59.Name = "label59";
@@ -3040,17 +3298,9 @@
             this.passwordSignUp.TabIndex = 24;
             this.passwordSignUp.TextChanged += new System.EventHandler(this.passwordSignUp_TextChanged);
             // 
-            // label67
-            // 
-            this.label67.BackColor = System.Drawing.Color.White;
-            this.label67.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label67.Location = new System.Drawing.Point(422, 70);
-            this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(523, 525);
-            this.label67.TabIndex = 0;
-            // 
             // eyeConfirmPass
             // 
+            this.eyeConfirmPass.Cursor = System.Windows.Forms.Cursors.Hand;
             this.eyeConfirmPass.Image = ((System.Drawing.Image)(resources.GetObject("eyeConfirmPass.Image")));
             this.eyeConfirmPass.Location = new System.Drawing.Point(841, 447);
             this.eyeConfirmPass.Name = "eyeConfirmPass";
@@ -3072,6 +3322,7 @@
             // 
             // eyePassSignUp
             // 
+            this.eyePassSignUp.Cursor = System.Windows.Forms.Cursors.Hand;
             this.eyePassSignUp.Image = ((System.Drawing.Image)(resources.GetObject("eyePassSignUp.Image")));
             this.eyePassSignUp.Location = new System.Drawing.Point(841, 348);
             this.eyePassSignUp.Name = "eyePassSignUp";
@@ -3080,6 +3331,15 @@
             this.eyePassSignUp.TabIndex = 27;
             this.eyePassSignUp.TabStop = false;
             this.eyePassSignUp.Click += new System.EventHandler(this.eyePassSignUp_Click);
+            // 
+            // label67
+            // 
+            this.label67.BackColor = System.Drawing.Color.White;
+            this.label67.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label67.Location = new System.Drawing.Point(422, 70);
+            this.label67.Name = "label67";
+            this.label67.Size = new System.Drawing.Size(523, 525);
+            this.label67.TabIndex = 0;
             // 
             // Form
             // 
@@ -3103,6 +3363,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.imglog4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imglog2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imglog1)).EndInit();
+            this.loginPageV2.ResumeLayout(false);
+            this.groupBox9.ResumeLayout(false);
+            this.groupBox9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            this.groupBox8.ResumeLayout(false);
+            this.groupBox8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             this.imgPage.ResumeLayout(false);
             this.imgPage.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -3263,7 +3531,6 @@
         private System.Windows.Forms.PictureBox imglog1;
         private System.Windows.Forms.Label label48;
         private System.Windows.Forms.TabPage windowSignIn;
-        private System.Windows.Forms.TabPage loginPageV2;
         private System.Windows.Forms.Label label50;
         private System.Windows.Forms.Label label47;
         private System.Windows.Forms.Label btnSignIn;
@@ -3388,6 +3655,26 @@
         private System.Windows.Forms.Label fileImg;
         private System.Windows.Forms.Label label75;
         private System.Windows.Forms.Button dropFileImg;
+        private System.Windows.Forms.TabPage loginPageV2;
+        private System.Windows.Forms.GroupBox groupBox9;
+        private System.Windows.Forms.PictureBox pictureBox11;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.TextBox signUpPassPLog;
+        private System.Windows.Forms.TextBox signUpPassCFPLog;
+        private System.Windows.Forms.Label passwordNotMatch;
+        private System.Windows.Forms.Label label92;
+        private System.Windows.Forms.Button btnSignUpPLog;
+        private System.Windows.Forms.Label label99;
+        private System.Windows.Forms.Label label103;
+        private System.Windows.Forms.Label label104;
+        private System.Windows.Forms.GroupBox groupBox8;
+        private System.Windows.Forms.PictureBox pictureBox12;
+        private System.Windows.Forms.Label label78;
+        private System.Windows.Forms.Label label76;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label82;
+        private System.Windows.Forms.Label label91;
     }
 }
 

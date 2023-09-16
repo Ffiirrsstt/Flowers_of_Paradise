@@ -44,7 +44,7 @@ namespace Project_Int
         Boolean boolfileWaitImg = false;
         Boolean[] boolSV = {false, false, false};
         double numberCal;
-        int CountPage, indexselect, countEyePassSignUp, countEyePassConSignUp, countEyePassSignIn;
+        int CountPage, indexselect;
         int indexGender=3, indexStatus=2;
 
         //จัดการรูปในหน้าสมาชิกตัวที่ทำการบันทึกแล้วว่าจะแสดงรูปหรือไม่แสดง (ถ้าระบบยังไม่เคยทำการบันทึกจะไม่แสดงรูป ถ้าระบบเคยทำการบันทึกแล้วจะทำการแสดงรูปภาพ)
@@ -281,6 +281,7 @@ namespace Project_Int
         }
 
         //การซ่อนสลับกับเปิดรหัสผ่านให้สามารถอ่านได้
+
         private void checkEye(object sender, EventArgs e, string selectData)
         {
             string dataPathEye, dataPathEyeHide;
@@ -288,7 +289,7 @@ namespace Project_Int
             dataPathEyeHide = Application.StartupPath + "\\img\\eyehide.jpg";
             if (selectData == "signUp")
             {
-                if (countEyePassSignUp % 2 == 0)
+                if (passwordSignUp.PasswordChar == '\0')
                 {
                     passwordSignUp.PasswordChar = '*';
                     eyePassSignUp.ImageLocation = dataPathEye;
@@ -298,11 +299,10 @@ namespace Project_Int
                     passwordSignUp.PasswordChar = '\0';
                     eyePassSignUp.ImageLocation = dataPathEyeHide;
                 }
-                countEyePassSignUp++;
             }
             else if (selectData == "confirmSignUp")
             {
-                if (countEyePassConSignUp % 2 == 0)
+                if (passwordConSignUp.PasswordChar == '\0')
                 {
                     passwordConSignUp.PasswordChar = '*';
                     eyeConfirmPass.ImageLocation = dataPathEye;
@@ -312,11 +312,10 @@ namespace Project_Int
                     passwordConSignUp.PasswordChar = '\0';
                     eyeConfirmPass.ImageLocation = dataPathEyeHide;
                 }
-                countEyePassConSignUp++;
             }
             else
             {
-                if (countEyePassSignIn % 2 == 0)
+                if (password.PasswordChar == '\0')
                 {
                     password.PasswordChar = '*';
                     eyePassSignIn.ImageLocation = dataPathEye;
@@ -326,30 +325,43 @@ namespace Project_Int
                     password.PasswordChar = '\0';
                     eyePassSignIn.ImageLocation = dataPathEyeHide;
                 }
-                countEyePassSignIn++;
             }
+        }
+
+        private void basicPassHideSignIn(object sender, EventArgs e)
+        {
+            string dataPathEye = Application.StartupPath + "\\img\\eye.jpg";
+            password.PasswordChar = '*';
+            eyePassSignIn.ImageLocation = dataPathEye;
         }
 
         private void basicSignIn(object sender, EventArgs e)
         {
             callWindow(sender, e);
-            countEyePassSignIn = 0;
             user.Clear();
             password.Clear();
             checkEye(sender, e, "signIn");
+            basicPassHideSignIn(sender, e);
             describesUser.Text = "";
             describesPassword.Text = "";
         }
+
+        private void basicPassHideSignUp(object sender, EventArgs e)
+        {
+            string dataPathEye = Application.StartupPath + "\\img\\eye.jpg";
+            passwordSignUp.PasswordChar = '*';
+            eyePassSignUp.ImageLocation = dataPathEye;
+            passwordConSignUp.PasswordChar = '*';
+            eyeConfirmPass.ImageLocation = dataPathEye;
+        }
+
         private void basicSignUp(object sender, EventArgs e)
         {
             callWindow(sender, e);
-            countEyePassSignUp = 0;
-            countEyePassConSignUp = 0;
             newUser.Clear();
             passwordSignUp.Clear();
             passwordConSignUp.Clear();
-            checkEye(sender, e, "signUp");
-            checkEye(sender, e, "confirmSignUp");
+            basicPassHideSignUp(sender, e);
             textDesName.Text = "";
             textDesPassword.Text = "";
             textDesConfirm.Text = "";
@@ -930,6 +942,48 @@ namespace Project_Int
                 funHideShowBtnImg(sender, e);
         }
 
+        //สำหรับ login v2
+        string dataforPassword;
+
+
+        //หน้า login V2
+        private void btnSignUpPLog_Click(object sender, EventArgs e)
+        {
+            if (signUpPassPLog.Text == signUpPassCFPLog.Text)
+            {
+                dataforPassword = signUpPassPLog.Text;
+                signUpPassPLog.Clear();
+                signUpPassCFPLog.Clear();
+                MessageBox.Show("การลงทะเบียนสำเร็จ!");
+            }else
+            {
+                MessageBox.Show("ขออภัย! รหัสผ่านกับรหัสยืนยันไม่ตรงกัน");
+                passwordNotMatch.Text = "รหัสผ่านกับรหัสยืนยันไม่ตรง";
+            }
+        }
+            private void checkPasswordLog2(object sender, EventArgs e)
+        {
+            if (signUpPassPLog.Text == signUpPassCFPLog.Text)
+                passwordNotMatch.Text = "";
+            else
+                passwordNotMatch.Text = "รหัสผ่านกับรหัสยืนยันไม่ตรง";
+        }
+
+        private void signUpPassPLog_TextChanged(object sender, EventArgs e)
+        {
+            checkPasswordLog2(sender, e);
+        }
+
+        private void signUpPassCFPLog_TextChanged(object sender, EventArgs e)
+        {
+            checkPasswordLog2(sender, e);
+        }
+
+        private void pictureBox11_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void pictureOnCard(object sender, EventArgs e)
         {
             imgForFile = true;
@@ -1025,34 +1079,42 @@ namespace Project_Int
         private void signUp_Click(object sender, EventArgs e)
         {
             //เช็กว่าชื่อผู้ใช้ซ้ำไหม
-            if (!userRepeat)
-            {
-                if (passwordSignUp.Text.Length < 8)
+            if (newUser.Text != "") {
+                if (!userRepeat)
                 {
-                    MessageBox.Show("ขออภัย! กรุณาสร้างรหัสผ่านอย่างน้อย 8 อักขระ\nโดยสามารถใช้ได้ทั้งตัวเลข ตัวอักษรรวมทั้งตัวอักขระพิเศษ");
-                    passwordSignUp.Focus();
+                    if (passwordSignUp.Text.Length < 8)
+                    {
+                        MessageBox.Show("ขออภัย! กรุณาสร้างรหัสผ่านอย่างน้อย 8 อักขระ\nโดยสามารถใช้ได้ทั้งตัวเลข ตัวอักษรรวมทั้งตัวอักขระพิเศษ");
+                        passwordSignUp.Focus();
+                    }
+                    else { 
+                        if (passwordConfirmOk)
+                        {
+                            MessageBox.Show("การลงทะเบียนสำเร็จ!");
+                            List<string> fornewUser = new List<string> { newUser.Text, passwordSignUp.Text };
+                            dataSignUp.Add(fornewUser);
+                            Flowers.TabPages.Remove(windowSignUp);
+                            callWindowUp(sender, e);    
+                        }
+                        else
+                        {
+                            MessageBox.Show("ขออภัย! รหัสผ่านกับรหัสยืนยันไม่ตรงกัน");
+                            passwordConSignUp.Focus();
+                        }
+                    }
                 }
-                else { 
-                    if (passwordConfirmOk)
-                    {
-                        MessageBox.Show("การลงทะเบียนสำเร็จ!");
-                        List<string> fornewUser = new List<string> { newUser.Text, passwordSignUp.Text };
-                        dataSignUp.Add(fornewUser);
-                        Flowers.TabPages.Remove(windowSignUp);
-                        callWindowUp(sender, e);    
-                    }
-                    else
-                    {
-                        MessageBox.Show("ขออภัย! รหัสผ่านกับรหัสยืนยันไม่ตรงกัน");
-                        passwordConSignUp.Focus();
-                    }
+                else
+                {
+                    MessageBox.Show("มีผู้ใช้ได้ใช้งานชื่อนี้แล้ว");
+                    newUser.Focus();
                 }
             }
             else
             {
-                MessageBox.Show("มีผู้ใช้ได้ใช้งานชื่อนี้แล้ว");
+                MessageBox.Show("กรุณากรอกชื่อผู้ใช้");
                 newUser.Focus();
-            }
+            } 
+                
         }
 
         private void linkWindowIn_Click(object sender, EventArgs e)

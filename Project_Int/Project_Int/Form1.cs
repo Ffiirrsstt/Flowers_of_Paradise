@@ -47,6 +47,12 @@ namespace Project_Int
         int CountPage, indexselect;
         int indexGender=3, indexStatus=2;
 
+        //ไฟล์รูป
+        string dataPathEye = Application.StartupPath + "\\img\\eye.jpg", dataPathEyeHide= Application.StartupPath + "\\img\\eyehide.jpg";
+
+        //สำหรับ login v2
+        string dataforPassword;
+
         //จัดการรูปในหน้าสมาชิกตัวที่ทำการบันทึกแล้วว่าจะแสดงรูปหรือไม่แสดง (ถ้าระบบยังไม่เคยทำการบันทึกจะไม่แสดงรูป ถ้าระบบเคยทำการบันทึกแล้วจะทำการแสดงรูปภาพ)
         //จากโจทย์เป็นการตั้งรูปไว้แล้ว แล้วเอารูปสีดำมาวางทับปิด จึงออกคำสั่งกับรูปสีดำให้ซ่อนหรือแสดงเพื่อให้เห็นรูปภาพ
 
@@ -284,9 +290,6 @@ namespace Project_Int
 
         private void checkEye(object sender, EventArgs e, string selectData)
         {
-            string dataPathEye, dataPathEyeHide;
-            dataPathEye = Application.StartupPath + "\\img\\eye.jpg";
-            dataPathEyeHide = Application.StartupPath + "\\img\\eyehide.jpg";
             if (selectData == "signUp")
             {
                 if (passwordSignUp.PasswordChar == '\0')
@@ -552,6 +555,69 @@ namespace Project_Int
             }
         }
 
+        //หน้าล็อกอิน v2 แบบไม่มีชื่อผู้ใช้
+        private void checkPasswordLog2(object sender, EventArgs e)
+        {
+            if (signUpPassLog.Text == signUpPassCFLog.Text)
+                passwordNotMatch.Text = "";
+            else
+                passwordNotMatch.Text = "รหัสผ่านกับรหัสยืนยันไม่ตรง";
+        }
+        private void basicPageLogin(object sender, EventArgs e)
+        {
+            //SignUp
+            signUpPassLog.PasswordChar = '*';
+            iconPass.ImageLocation = dataPathEye;
+
+            signUpPassCFLog.PasswordChar = '*';
+            iconPassCF.ImageLocation = dataPathEye;
+            //SignIn
+            passSignInLog.PasswordChar = '*';
+            iconPassSignInlog.ImageLocation = dataPathEye;
+        }
+        private void checkHideShowLog(object sender, EventArgs e, string selectData)
+        {
+            if (selectData == "logsignUp")
+            {
+                if (signUpPassLog.PasswordChar == '\0')
+                {
+                    signUpPassLog.PasswordChar = '*';
+                    iconPass.ImageLocation = dataPathEye;
+                }
+                else
+                {
+                    signUpPassLog.PasswordChar = '\0';
+                    iconPass.ImageLocation = dataPathEyeHide;
+                }
+            }
+            else if (selectData == "logCFsignUp")
+            {
+                if (signUpPassCFLog.PasswordChar == '\0')
+                {
+                    signUpPassCFLog.PasswordChar = '*';
+                    iconPassCF.ImageLocation = dataPathEye;
+                }
+                else
+                {
+                    signUpPassCFLog.PasswordChar = '\0';
+                    iconPassCF.ImageLocation = dataPathEyeHide;
+                }
+            }
+            else
+            {
+                if (passSignInLog.PasswordChar == '\0')
+                {
+                    passSignInLog.PasswordChar = '*';
+                    iconPassSignInlog.ImageLocation = dataPathEye;
+                }
+                else
+                {
+                    passSignInLog.PasswordChar = '\0';
+                    iconPassSignInlog.ImageLocation = dataPathEyeHide;
+                }
+            }
+        }
+
         public Form()
 
         {
@@ -578,7 +644,7 @@ namespace Project_Int
         {
             defultRemoveTab(sender, e);
 
-            if (Flowers.SelectedTab == Flowers.TabPages[5])
+            if (Flowers.SelectedTab == Flowers.TabPages[5]) //หน้าสมาชิก
             {
                 nameFMember.Clear();
                 nameSMember.Clear();
@@ -590,6 +656,16 @@ namespace Project_Int
                 imgForFile = boolfileWaitImg;
                 manageImg(sender, e);
                 otherClear(sender, e);
+            }
+            if (Flowers.SelectedTab == Flowers.TabPages[2]) //หน้าล็อกอิน v2
+            {
+                signUpPassLog.Clear();
+                signUpPassCFLog.Clear();
+                passSignInLog.Clear();
+                PassWLog.Text = "";
+                passwordNotMatch.Text = "";
+                basicPageLogin(sender, e);
+
             }
         }
 
@@ -942,48 +1018,6 @@ namespace Project_Int
                 funHideShowBtnImg(sender, e);
         }
 
-        //สำหรับ login v2
-        string dataforPassword;
-
-
-        //หน้า login V2
-        private void btnSignUpPLog_Click(object sender, EventArgs e)
-        {
-            if (signUpPassPLog.Text == signUpPassCFPLog.Text)
-            {
-                dataforPassword = signUpPassPLog.Text;
-                signUpPassPLog.Clear();
-                signUpPassCFPLog.Clear();
-                MessageBox.Show("การลงทะเบียนสำเร็จ!");
-            }else
-            {
-                MessageBox.Show("ขออภัย! รหัสผ่านกับรหัสยืนยันไม่ตรงกัน");
-                passwordNotMatch.Text = "รหัสผ่านกับรหัสยืนยันไม่ตรง";
-            }
-        }
-            private void checkPasswordLog2(object sender, EventArgs e)
-        {
-            if (signUpPassPLog.Text == signUpPassCFPLog.Text)
-                passwordNotMatch.Text = "";
-            else
-                passwordNotMatch.Text = "รหัสผ่านกับรหัสยืนยันไม่ตรง";
-        }
-
-        private void signUpPassPLog_TextChanged(object sender, EventArgs e)
-        {
-            checkPasswordLog2(sender, e);
-        }
-
-        private void signUpPassCFPLog_TextChanged(object sender, EventArgs e)
-        {
-            checkPasswordLog2(sender, e);
-        }
-
-        private void pictureBox11_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void pictureOnCard(object sender, EventArgs e)
         {
             imgForFile = true;
@@ -1160,6 +1194,67 @@ namespace Project_Int
         {
             Flowers.TabPages.Remove(windowSignIn);
             callWindowUp(sender, e);
+        }
+
+        //หน้า login V2
+
+        private void btnSignInlog(object sender, EventArgs e)
+        {
+            if(passSignInLog.Text == dataforPassword)
+            {
+                MessageBox.Show("เข้าสู่ระบบสำเร็จ!");
+                Flowers.SelectedTab = imgPage;
+            }
+            else
+            {
+                MessageBox.Show("ขออภัย! รหัสผ่านไม่ถูกต้อง");
+                passSignInLog.Clear();
+                passSignInLog.Focus();
+                PassWLog.Text = "รหัสผ่านไม่ถูกต้อง";
+            }
+        }
+        private void btnSignUpPLog_Click(object sender, EventArgs e)
+        {
+            if (signUpPassLog.Text == signUpPassCFLog.Text)
+            {
+                dataforPassword = signUpPassLog.Text;
+                signUpPassLog.Clear();
+                signUpPassCFLog.Clear();
+                MessageBox.Show("การลงทะเบียนสำเร็จ!");
+            }
+            else
+            {
+                MessageBox.Show("ขออภัย! รหัสผ่านกับรหัสยืนยันไม่ตรงกัน");
+                passwordNotMatch.Text = "รหัสผ่านกับรหัสยืนยันไม่ตรง";
+                signUpPassCFLog.Clear();
+                signUpPassCFLog.Focus();
+            }
+        }
+
+        private void signUpPassPLog_TextChanged(object sender, EventArgs e)
+        {
+            if(signUpPassCFLog.Text != "")
+                checkPasswordLog2(sender, e);
+        }
+
+        private void signUpPassCFPLog_TextChanged(object sender, EventArgs e)
+        {
+            checkPasswordLog2(sender, e);
+        }
+        //ปุ่มicon ในหน้า login
+        private void iconPassSignInlog_Click(object sender, EventArgs e)
+        {
+            checkHideShowLog(sender, e, "logsignIn");
+        }
+
+        private void passHideShow(object sender, EventArgs e)
+        {
+            checkHideShowLog(sender, e, "logsignUp");
+        }
+
+        private void passCFHideShow(object sender, EventArgs e)
+        {
+            checkHideShowLog(sender, e, "logCFsignUp");
         }
     }
     }

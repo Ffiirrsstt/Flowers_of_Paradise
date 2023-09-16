@@ -59,10 +59,10 @@
             this.label48 = new System.Windows.Forms.Label();
             this.loginPageV2 = new System.Windows.Forms.TabPage();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.signUpPassPLog = new System.Windows.Forms.TextBox();
-            this.signUpPassCFPLog = new System.Windows.Forms.TextBox();
+            this.iconPass = new System.Windows.Forms.PictureBox();
+            this.iconPassCF = new System.Windows.Forms.PictureBox();
+            this.signUpPassLog = new System.Windows.Forms.TextBox();
+            this.signUpPassCFLog = new System.Windows.Forms.TextBox();
             this.passwordNotMatch = new System.Windows.Forms.Label();
             this.label92 = new System.Windows.Forms.Label();
             this.btnSignUpPLog = new System.Windows.Forms.Button();
@@ -70,11 +70,11 @@
             this.label103 = new System.Windows.Forms.Label();
             this.label104 = new System.Windows.Forms.Label();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
+            this.iconPassSignInlog = new System.Windows.Forms.PictureBox();
             this.label78 = new System.Windows.Forms.Label();
-            this.label76 = new System.Windows.Forms.Label();
+            this.PassWLog = new System.Windows.Forms.Label();
             this.button10 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.passSignInLog = new System.Windows.Forms.TextBox();
             this.label82 = new System.Windows.Forms.Label();
             this.label91 = new System.Windows.Forms.Label();
             this.imgPage = new System.Windows.Forms.TabPage();
@@ -290,10 +290,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.imglog1)).BeginInit();
             this.loginPageV2.SuspendLayout();
             this.groupBox9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPass)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPassCF)).BeginInit();
             this.groupBox8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPassSignInlog)).BeginInit();
             this.imgPage.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.img3)).BeginInit();
@@ -664,16 +664,18 @@
             // groupBox9
             // 
             this.groupBox9.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.groupBox9.Controls.Add(this.pictureBox11);
-            this.groupBox9.Controls.Add(this.pictureBox4);
-            this.groupBox9.Controls.Add(this.signUpPassPLog);
-            this.groupBox9.Controls.Add(this.signUpPassCFPLog);
+            this.groupBox9.Controls.Add(this.iconPass);
+            this.groupBox9.Controls.Add(this.iconPassCF);
+            this.groupBox9.Controls.Add(this.signUpPassLog);
+            this.groupBox9.Controls.Add(this.signUpPassCFLog);
             this.groupBox9.Controls.Add(this.passwordNotMatch);
             this.groupBox9.Controls.Add(this.label92);
             this.groupBox9.Controls.Add(this.btnSignUpPLog);
             this.groupBox9.Controls.Add(this.label99);
             this.groupBox9.Controls.Add(this.label103);
             this.groupBox9.Controls.Add(this.label104);
+            this.groupBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.groupBox9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(57)))), ((int)(((byte)(108)))));
             this.groupBox9.Location = new System.Drawing.Point(699, 33);
             this.groupBox9.Name = "groupBox9";
             this.groupBox9.Size = new System.Drawing.Size(607, 611);
@@ -681,52 +683,56 @@
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "ลงทะเบียน";
             // 
-            // pictureBox11
+            // iconPass
             // 
-            this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
-            this.pictureBox11.Location = new System.Drawing.Point(449, 251);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(63, 54);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox11.TabIndex = 49;
-            this.pictureBox11.TabStop = false;
-            this.pictureBox11.Click += new System.EventHandler(this.pictureBox11_Click);
+            this.iconPass.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.iconPass.Image = ((System.Drawing.Image)(resources.GetObject("iconPass.Image")));
+            this.iconPass.Location = new System.Drawing.Point(449, 251);
+            this.iconPass.Name = "iconPass";
+            this.iconPass.Size = new System.Drawing.Size(63, 54);
+            this.iconPass.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.iconPass.TabIndex = 49;
+            this.iconPass.TabStop = false;
+            this.iconPass.Click += new System.EventHandler(this.passHideShow);
             // 
-            // pictureBox4
+            // iconPassCF
             // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(449, 373);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(63, 54);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 49;
-            this.pictureBox4.TabStop = false;
+            this.iconPassCF.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.iconPassCF.Image = ((System.Drawing.Image)(resources.GetObject("iconPassCF.Image")));
+            this.iconPassCF.Location = new System.Drawing.Point(449, 373);
+            this.iconPassCF.Name = "iconPassCF";
+            this.iconPassCF.Size = new System.Drawing.Size(63, 54);
+            this.iconPassCF.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.iconPassCF.TabIndex = 49;
+            this.iconPassCF.TabStop = false;
+            this.iconPassCF.Click += new System.EventHandler(this.passCFHideShow);
             // 
-            // signUpPassPLog
+            // signUpPassLog
             // 
-            this.signUpPassPLog.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.signUpPassPLog.Location = new System.Drawing.Point(105, 251);
-            this.signUpPassPLog.Multiline = true;
-            this.signUpPassPLog.Name = "signUpPassPLog";
-            this.signUpPassPLog.PasswordChar = '*';
-            this.signUpPassPLog.Size = new System.Drawing.Size(325, 54);
-            this.signUpPassPLog.TabIndex = 48;
-            this.signUpPassPLog.TextChanged += new System.EventHandler(this.signUpPassPLog_TextChanged);
+            this.signUpPassLog.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.signUpPassLog.Location = new System.Drawing.Point(105, 251);
+            this.signUpPassLog.Multiline = true;
+            this.signUpPassLog.Name = "signUpPassLog";
+            this.signUpPassLog.PasswordChar = '*';
+            this.signUpPassLog.Size = new System.Drawing.Size(325, 54);
+            this.signUpPassLog.TabIndex = 48;
+            this.signUpPassLog.TextChanged += new System.EventHandler(this.signUpPassPLog_TextChanged);
             // 
-            // signUpPassCFPLog
+            // signUpPassCFLog
             // 
-            this.signUpPassCFPLog.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.signUpPassCFPLog.Location = new System.Drawing.Point(105, 373);
-            this.signUpPassCFPLog.Multiline = true;
-            this.signUpPassCFPLog.Name = "signUpPassCFPLog";
-            this.signUpPassCFPLog.PasswordChar = '*';
-            this.signUpPassCFPLog.Size = new System.Drawing.Size(325, 54);
-            this.signUpPassCFPLog.TabIndex = 48;
-            this.signUpPassCFPLog.TextChanged += new System.EventHandler(this.signUpPassCFPLog_TextChanged);
+            this.signUpPassCFLog.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.signUpPassCFLog.Location = new System.Drawing.Point(105, 373);
+            this.signUpPassCFLog.Multiline = true;
+            this.signUpPassCFLog.Name = "signUpPassCFLog";
+            this.signUpPassCFLog.PasswordChar = '*';
+            this.signUpPassCFLog.Size = new System.Drawing.Size(325, 54);
+            this.signUpPassCFLog.TabIndex = 48;
+            this.signUpPassCFLog.TextChanged += new System.EventHandler(this.signUpPassCFPLog_TextChanged);
             // 
             // passwordNotMatch
             // 
             this.passwordNotMatch.BackColor = System.Drawing.Color.White;
+            this.passwordNotMatch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.passwordNotMatch.ForeColor = System.Drawing.Color.Red;
             this.passwordNotMatch.Location = new System.Drawing.Point(261, 323);
             this.passwordNotMatch.Name = "passwordNotMatch";
@@ -794,13 +800,15 @@
             // groupBox8
             // 
             this.groupBox8.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.groupBox8.Controls.Add(this.pictureBox12);
+            this.groupBox8.Controls.Add(this.iconPassSignInlog);
             this.groupBox8.Controls.Add(this.label78);
-            this.groupBox8.Controls.Add(this.label76);
+            this.groupBox8.Controls.Add(this.PassWLog);
             this.groupBox8.Controls.Add(this.button10);
-            this.groupBox8.Controls.Add(this.textBox1);
+            this.groupBox8.Controls.Add(this.passSignInLog);
             this.groupBox8.Controls.Add(this.label82);
             this.groupBox8.Controls.Add(this.label91);
+            this.groupBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.groupBox8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(57)))), ((int)(((byte)(108)))));
             this.groupBox8.Location = new System.Drawing.Point(71, 33);
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.Size = new System.Drawing.Size(607, 611);
@@ -808,15 +816,17 @@
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "เข้าสู่ระบบ";
             // 
-            // pictureBox12
+            // iconPassSignInlog
             // 
-            this.pictureBox12.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox12.Image")));
-            this.pictureBox12.Location = new System.Drawing.Point(450, 312);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(62, 54);
-            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox12.TabIndex = 47;
-            this.pictureBox12.TabStop = false;
+            this.iconPassSignInlog.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.iconPassSignInlog.Image = ((System.Drawing.Image)(resources.GetObject("iconPassSignInlog.Image")));
+            this.iconPassSignInlog.Location = new System.Drawing.Point(450, 312);
+            this.iconPassSignInlog.Name = "iconPassSignInlog";
+            this.iconPassSignInlog.Size = new System.Drawing.Size(62, 54);
+            this.iconPassSignInlog.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.iconPassSignInlog.TabIndex = 47;
+            this.iconPassSignInlog.TabStop = false;
+            this.iconPassSignInlog.Click += new System.EventHandler(this.iconPassSignInlog_Click);
             // 
             // label78
             // 
@@ -830,18 +840,17 @@
             this.label78.TabIndex = 41;
             this.label78.Text = "รหัสผ่าน";
             // 
-            // label76
+            // PassWLog
             // 
-            this.label76.BackColor = System.Drawing.Color.White;
-            this.label76.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label76.ForeColor = System.Drawing.Color.Red;
-            this.label76.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-            this.label76.Location = new System.Drawing.Point(275, 256);
-            this.label76.Name = "label76";
-            this.label76.Size = new System.Drawing.Size(237, 36);
-            this.label76.TabIndex = 40;
-            this.label76.Text = "รหัสผ่านไม่ถูกต้อง";
-            this.label76.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.PassWLog.BackColor = System.Drawing.Color.White;
+            this.PassWLog.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.PassWLog.ForeColor = System.Drawing.Color.Red;
+            this.PassWLog.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.PassWLog.Location = new System.Drawing.Point(275, 256);
+            this.PassWLog.Name = "PassWLog";
+            this.PassWLog.Size = new System.Drawing.Size(237, 36);
+            this.PassWLog.TabIndex = 40;
+            this.PassWLog.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // button10
             // 
@@ -855,16 +864,17 @@
             this.button10.TabIndex = 38;
             this.button10.Text = "เข้าสู่ระบบ";
             this.button10.UseVisualStyleBackColor = false;
+            this.button10.Click += new System.EventHandler(this.btnSignInlog);
             // 
-            // textBox1
+            // passSignInLog
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.textBox1.Location = new System.Drawing.Point(99, 312);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.PasswordChar = '*';
-            this.textBox1.Size = new System.Drawing.Size(335, 54);
-            this.textBox1.TabIndex = 37;
+            this.passSignInLog.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.passSignInLog.Location = new System.Drawing.Point(99, 312);
+            this.passSignInLog.Multiline = true;
+            this.passSignInLog.Name = "passSignInLog";
+            this.passSignInLog.PasswordChar = '*';
+            this.passSignInLog.Size = new System.Drawing.Size(335, 54);
+            this.passSignInLog.TabIndex = 37;
             // 
             // label82
             // 
@@ -3366,11 +3376,11 @@
             this.loginPageV2.ResumeLayout(false);
             this.groupBox9.ResumeLayout(false);
             this.groupBox9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPass)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPassCF)).EndInit();
             this.groupBox8.ResumeLayout(false);
             this.groupBox8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPassSignInlog)).EndInit();
             this.imgPage.ResumeLayout(false);
             this.imgPage.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -3657,10 +3667,10 @@
         private System.Windows.Forms.Button dropFileImg;
         private System.Windows.Forms.TabPage loginPageV2;
         private System.Windows.Forms.GroupBox groupBox9;
-        private System.Windows.Forms.PictureBox pictureBox11;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.TextBox signUpPassPLog;
-        private System.Windows.Forms.TextBox signUpPassCFPLog;
+        private System.Windows.Forms.PictureBox iconPass;
+        private System.Windows.Forms.PictureBox iconPassCF;
+        private System.Windows.Forms.TextBox signUpPassLog;
+        private System.Windows.Forms.TextBox signUpPassCFLog;
         private System.Windows.Forms.Label passwordNotMatch;
         private System.Windows.Forms.Label label92;
         private System.Windows.Forms.Button btnSignUpPLog;
@@ -3668,11 +3678,11 @@
         private System.Windows.Forms.Label label103;
         private System.Windows.Forms.Label label104;
         private System.Windows.Forms.GroupBox groupBox8;
-        private System.Windows.Forms.PictureBox pictureBox12;
+        private System.Windows.Forms.PictureBox iconPassSignInlog;
         private System.Windows.Forms.Label label78;
-        private System.Windows.Forms.Label label76;
+        private System.Windows.Forms.Label PassWLog;
         private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox passSignInLog;
         private System.Windows.Forms.Label label82;
         private System.Windows.Forms.Label label91;
     }
